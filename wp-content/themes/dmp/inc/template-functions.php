@@ -128,7 +128,13 @@ function sectionInlineCssBg( $cssContainer, $imgArray, $bgColor = "transparent" 
             }
 
             /* Medium screen, retina, stuff to override above media query */
-            @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 992px), only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 992px), only screen and (        min-device-pixel-ratio: 2)      and (min-width: 992px), only screen and (                min-resolution: 192dpi) and (min-width: 992px), only screen and (                min-resolution: 2dppx)  and (min-width: 992px) {
+            @media only screen and (-webkit-min-device-pixel-ratio: 2)
+            and (min-width: 992px), only screen and (   min--moz-device-pixel-ratio: 2)
+            and (min-width: 992px), only screen and (     -o-min-device-pixel-ratio: 2/1)
+            and (min-width: 992px), only screen and (        min-device-pixel-ratio: 2)
+            and (min-width: 992px), only screen and (                min-resolution: 192dpi)
+            and (min-width: 992px), only screen and (                min-resolution: 2dppx)
+            and (min-width: 992px) {
                 .<?= $cssContainer ?> {
                     background-image: url('<?= webp_image( $img_xl); ?>');
                 <?= $bgColor ? 'background-color: ' . $bgColor : '' ?>

@@ -13,14 +13,14 @@
  */
 
 get_header();
-get_template_part( 'template-parts/content', 'page-hero' );
+//get_template_part( 'template-parts/content', 'page-hero' );
 ?>
 
 	<main id="primary" class="site-main">
         <section class="page-intro">
             <div class="section-features">
                 <div class="container">
-                    text
+
                 </div>
             </div>
         </section>
