@@ -1,0 +1,212 @@
+.wpbdp-abc-filtering {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3px;
+}
+
+.wpbdp-abc-filtering .reset {
+    font-size: 90%;
+}
+
+.wpbdp-abc-filtering .letter {
+	margin: 0 4px;
+}
+
+.wpbdp-abc-filtering .letter.current a {
+    color: inherit;
+	font-weight: bold;
+}
+
+.wpbdp-wp-theme-twentytwenty .wpbdp-abc-filtering {
+    font-size: 1.5rem;
+}
+
+/* Listings table */
+.wpbdp-is-table#wpbdp-listings-list {
+	display: table !important;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.wpbdp-is-table .wpbdp-listing {
+	display: table-row;
+	border-bottom: 1px solid #EEEEF4;
+    border-color: var(--bd-main-color-20);
+	padding: 0;
+}
+
+.wpbdp-is-table .wpbdp-listing > div {
+	display: table-cell;
+	vertical-align: top;
+	padding: 12px;
+	font-size: 85%;
+}
+
+.wpbdp-is-table .wpbdp-listing-table-header {
+	font-size: 90%;
+	opacity: .8;
+	background: rgba(241, 243, 248, 0.5);
+	background: var(--bd-main-color-8);
+	vertical-align: middle;
+	font-weight: 500;
+}
+
+.wpbdp-is-table .wpbdp-show-hover {
+	visibility: hidden;
+}
+
+.wpbdp-is-table a:hover .wpbdp-show-hover {
+	visibility: visible;
+}
+
+.wpbdp-is-table .wpbdp-listing-table-header a {
+	color: inherit;
+}
+
+.wpbdp-is-table .wpbdp-listing.wpbdp-listing-table-header > div {
+	vertical-align: middle;
+	line-height: 1.2;
+}
+
+.wpbdp-is-table .wpbdp-listing .listing-thumbnail {
+	float: none;
+	width: 40px;
+	margin: 0;
+}
+
+.wpbdp-is-table .listing-thumbnail a {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.wpbdp-is-table .listing-thumbnail img {
+	display: inline;
+	margin: 0 auto;
+	width: 32px;
+}
+
+.wpbdp-is-table .wpbdp-field-title {
+	font-weight: 400;
+}
+
+.wpbdp-is-table .wpbdp-star-group .bd-star-rating svg {
+	width: 15px;
+	height: 15px;
+}
+
+.wpbdp-is-table .wpbdp-field-type-ratings .count {
+	display: none;
+}
+
+.wpbdp-is-table .stickytag,
+.wpbdp-is-table .wpbdp-claim-listings,
+.wpbdp-is-table .listing-actions {
+	display: none !important;
+}
+
+.wpbdp-is-table .wpbdp-listing .field-label {
+	font-size: 0 !important;
+}
+
+.wpbdp-is-table .wpbdp-listing .field-label .wpbdp-icon {
+	line-height: inherit;
+}
+
+.wpbdp-is-table .wpbdp-listing .field-label .wpbdp-icon:not(.dashicons) {
+	font-size: initial;
+}
+
+.wpbdp-is-table > div:not(.wpbdp-listing) {
+	caption-side: top;
+	display: table-caption;
+}
+
+.wpbdp-is-table .wpbdp-listing ~ div:not(.wpbdp-listing) {
+	caption-side: bottom;
+}
+
+.wpbdp-is-table .wpbdp-map {
+	margin-bottom: 50px;
+}
+
+.wpbdp_frontend_statistic_detail .ab-item{
+	min-height: 40px;
+}
+
+.wpbdp_frontend_statistic_detail .ab-item .wpbdp-statistic-title {
+	font-size: 11px !important;
+	line-height: 2px !important;
+	padding-top: 5px !important;
+}
+
+.wpbdp_frontend_statistic_detail .ab-item .counts{
+	font-size: 16px !important;
+}
+
+.wpbdp-listing .listing-details .wpbdp-icon.dashicons {
+	vertical-align: middle;
+}
+
+.wpbdp-listing .listing-details .wpbdp-field-has-icon-value {
+	display: inline-block;
+  	width : auto !important;
+}
+
+.wpbdp-listing .listing-details .wpbdp-field-has-icon-value .field-label {
+	display: none;
+}
+
+/* Listings Table - Small Viewport */
+@media only screen and (max-width: 767px) {
+  .wpbdp-is-table#wpbdp-listings-list {
+    display: block !important;
+  }
+
+  .wpbdp-is-table .wpbdp-listing-table-header {
+    display: none !important;
+  }
+
+  .wpbdp-is-table .wpbdp-listing {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .wpbdp-is-table .wpbdp-listing > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    margin: 0;
+  }
+
+  .wpbdp-is-table .wpbdp-listing > div:empty {
+    display: none;
+  }
+
+  .wpbdp-is-table .wpbdp-listing .field-label {
+    display: block !important;
+  }
+
+  .wpbdp-is-table .field-value .value {
+    grid-column: span 2;
+  }
+
+  .wpbdp-is-table .listing-thumbnail img {
+    height: 32px;
+  }
+
+  .wpbdp-is-table .social-fields:empty {
+    display: none !important;
+  }
+
+  .wpbdp-is-table .social-fields::before,
+  .wpbdp-is-table .social-fields::after {
+    display: none;
+  }
+}

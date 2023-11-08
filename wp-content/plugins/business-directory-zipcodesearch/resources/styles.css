@@ -1,0 +1,52 @@
+.widget_wpbdp_zipsearchwidget .zipcode-search-zip, .widget_wpbdp_searchwidget .zipcode-search-zip {
+    width: 90%;
+}
+
+.widget_wpbdp_zipsearchwidget .invalid {
+    border: 1px solid red;
+}
+
+.widget_wpbdp_zipsearchwidget .invalid-msg {
+    display: none;
+    margin: 4px 0 4px 0;
+    font-size: 10px;
+    color: red;
+}
+
+#wpbdp-main-box .box-col.distance-field {
+    width: 60% !important;
+}
+
+#wpbdp-main-box .box-col.unit-label {
+    width: 40% !important;
+    text-align: center;
+    color: #666;
+}
+
+.wpbdp-zipcodesearch-distance-fields.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    #wpbdp-main-box .box-col.distance-field {
+        width: 100% !important;
+    }
+
+    #wpbdp-main-box .box-col.unit-label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #wpbdp-main-box .box-col.distance-field-wrapper {
+        display: none;
+    }
+
+    #wpbdp-main-box .box-col.zip-field {
+        width: 100% !important;
+    }
+}
+
+.wpbdp-wp-theme-twentytwenty .wpbdp-main-box .box-col.unit-label {
+    font-size: 1.5rem;
+}

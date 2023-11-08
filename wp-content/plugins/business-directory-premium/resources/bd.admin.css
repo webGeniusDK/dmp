@@ -1,0 +1,98 @@
+.wpbdp-icon-picker-container {
+	position: absolute;
+	width: 273px;
+	height: 261px;
+	font-size: 14px;
+	background-color:#fff;
+	overflow: hidden;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	border: 1px solid #C5CCDB;
+	border-radius: 3px;
+}
+
+.wpbdp-icon-picker-container.wpbdp-with-fa {
+	height: 287px;
+}
+
+.wpbdp-icon-picker-container ul {
+	margin: 5px 0 10px;
+	padding: 0;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.wpbdp-icon-picker-container ul li {
+	margin: 0;
+}
+
+.wpbdp-icon-picker-container ul li a {
+	display: block;
+	text-decoration: none;
+	color: #607297;
+	padding: 6px 10px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+
+.wpbdp-icon-picker-container ul li a span {
+	display: block;
+}
+
+.wpbdp-icon-picker-control a {
+	padding:5px;
+	text-decoration: none;
+	line-height: 32px;
+	width:25px;
+	color: #7e92bc;
+}
+
+.wpbdp-icon-picker-control a span {
+	display: inline;
+	vertical-align: middle;
+}
+
+.wpbdp-icon-picker-control input[type=text] {
+	width: 185px !important;
+	margin: 0;
+}
+
+.wpbdp-icon-picker-control p {
+	text-align: center;
+	margin: 0;
+	padding: 2px;
+}
+
+.wpbdp-icon-picker-control p label {
+	padding-left: 5px;
+}
+
+/* DIV Button with Preview */
+.wpbdp-icon-picker-container ul li a span,
+div.button.wpbdp-icon-picker {
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	text-align: center;
+	transition: none;
+}
+
+.wpbdp-icon-picker-container ul li a:hover,
+div.button.wpbdp-icon-picker:hover {
+	border-color: #607297;
+	background: #607297;
+	color: #fff;
+}
+
+div.button.wpbdp-icon-picker {
+	padding: 4px 10px;
+	border-color: #C5CCDB !important;
+	box-sizing: content-box;
+	line-height: 1;
+	font-weight: 900; /* Some fa icons won't show without this. */
+}
+
+.wpbdp-icon-picker:before {
+	vertical-align: sub;
+}

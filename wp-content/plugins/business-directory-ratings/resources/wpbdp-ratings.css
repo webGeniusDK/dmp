@@ -1,0 +1,183 @@
+/*
+ * Form
+ */
+
+.wpbdp-ratings-reviews .review-form {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.wpbdp-ratings-reviews .review-form .field label {
+    margin-right: 10px;
+}
+
+.wpbdp-ratings-reviews .review-form .field .stars {
+    vertical-align: middle;
+}
+
+.wpbdp-ratings-reviews .review-form .allowed-tags span{
+    font-family: "courier", sans-serif;
+}
+
+/* Star ratings */
+.wpbdp-star-group input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.wpbdp-star-group .bd-star-rating,
+.wpbdp-star-group input + label {
+    line-height:1;
+    cursor: pointer;
+    background: transparent;
+    margin: 0 !important;
+    opacity: .8;
+    vertical-align: text-top;
+    display: inline-block;
+}
+
+.wpbdp-star-group .bd-star-rating svg {
+    width: 20px;
+    height: 20px;
+}
+
+.wpbdp-star-group input[type=radio]:checked + label,
+.wpbdp-star-group:not(.wpbdp-star-hovered) input[type=radio]:checked + label{
+    opacity: .8;
+    color:inherit;
+}
+
+.wpbdp-star-group:not(.wpbdp-star-hovered) input[type=radio]:checked + label,
+.wpbdp-star-group input + label:hover,
+.wpbdp-star-group:hover input + label:hover,
+.wpbdp-star-group .bd-star-rating-on,
+.wpbdp-star-group .bd-star-rating-hover{
+    color:#ef9f3e !important;
+}
+
+.wpbdp-star-group .bd-star-rating-half path {
+    fill: url(#bd_half_grad);
+}
+
+.wpbdp-star-group .bd-star-rating-readonly{
+    cursor:default !important;
+}
+
+.wpbdp-star-group .rating-stars-suffix{
+    vertical-align:middle;
+}
+
+/*
+ * Rating info
+ */
+
+.wpbdp-field-type-ratings .value { margin-left: 5px; vertical-align: middle; }
+
+.wpbdp-field-type-ratings .wpbdp-star-group{
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.wpbdp-field-type-ratings .wpbdp-star-group + div{
+	display: none; /* Prevent clear */
+}
+
+.wpbdp-field-type-ratings .count { margin-left: 10px; }
+.wpbdp-field-type-ratings .rate-listing-link { margin-left: 10px; }
+
+
+/*
+ * Reviews
+ */
+
+.wpbdp-ratings-reviews .listing-ratings {
+    margin-top: 20px;
+}
+
+.wpbdp-ratings-reviews .listing-ratings .rating {
+    margin-bottom: 40px;
+}
+
+.wpbdp-ratings-reviews .listing-ratings .rating .rating-authoring-info {
+    opacity: .8;
+}
+
+.wpbdp-ratings-reviews .listing-ratings .rating .author {
+    font-weight: bold;
+}
+
+.wpbdp-ratings-reviews .listing-ratings .rating .edit-actions {
+    visibility: hidden;
+    float: right;
+}
+
+.listing-ratings .cancel-button {
+	display: none;
+}
+
+.wpbdp-ratings-reviews .listing-ratings .rating:hover .edit-actions {
+    visibility: visible;
+}
+
+
+/*
+ * Admin.
+ */
+#wpbdp-ratings.postbox .inside {
+    padding: 0;
+    margin: 0;
+}
+
+#wpbdp-ratings.postbox .comment-edit textarea {
+    width: 90%;
+    min-height: 50px;
+    display: block;
+}
+
+#wpbdp-ratings.postbox table td.authoring-info {
+    width: 25%;
+}
+
+#wpbdp-ratings-pending-review .column-user_ip {
+    width: 20%;
+}
+
+#wpbdp-ratings-pending-review .column-rating {
+    width: 15%;
+}
+
+#wpbdp-ratings-pending-review .column-comment {
+    width: 40%;
+}
+
+#wpbdp-ratings-admin-post-review {
+    padding: 2px 0 0 10px;
+}
+
+#wpbdp-ratings-admin-post-review .form {
+    padding: 0 20px 20px 0;
+}
+
+#wpbdp-ratings-admin-post-review .form .field label {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+#wpbdp-ratings-admin-post-review .form .field {
+    margin: 3px 0;
+    clear: both;
+}
+
+/* {{ Mobile. */
+@media screen and (max-width: 500px) {
+    .wpbdp-ratings-reviews .review-form {
+        margin-top: 10px;
+    }
+
+    .wpbdp-ratings-reviews .review-form textarea {
+        width: 90%;
+    }
+}
+/* }} */
+

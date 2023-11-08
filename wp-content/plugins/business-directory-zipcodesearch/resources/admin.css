@@ -1,0 +1,98 @@
+
+.wpbdp-admin-page-zip-db-import table.import-status tr th {
+    width: 120px;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status tr td {
+    padding: 5px;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status tr:nth-child(2n) {
+    background: #f5f5f5;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status tr td.progress .progress-text {
+    float: left;
+    margin-right: 15px;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status tr td.progress .progress-bar {
+    float: right;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status tr td.progress .progress-bar-outer {
+    min-width: 200px;
+    height: 12px;
+    border: solid 1px #3366CC;
+    padding: 0;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status tr td.progress .progress-bar-inner {
+    height: 100%;
+    background: #99CCFF;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status .import-status-text {
+    clear: both;
+    color: #bbb;
+    font-size: 90%;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status .import-status-text.working {
+    color: #000;
+}
+
+.wpbdp-admin-page-zip-db-import .columns-wrapper .col-1 {
+    float: left;
+    width: 50%;
+}
+
+.wpbdp-admin-page-zip-db-import .columns-wrapper .col-2 {
+    border-left: solid 1px #ddd;
+    padding: 0 0 0 20px;
+    width: 45%;
+    float: right;
+}
+
+.wpbdp-admin-page-zip-db-import table.import-status a.cancel-import {
+    color: #ff0000;
+    float: right;
+    margin-top: 3px;
+}
+
+.wpbdp-admin-page-settings .zipcodesearch-cache .status.notok {
+    color: #ff0000;
+}
+
+.wpbdp-admin-page-settings .zipcodesearch-cache .status.ok {
+    color: green;
+}
+
+.wpbdp-admin-page-settings .dbline {
+    .delete-db {
+        margin-left: 20px;
+        font-size: 90%;
+
+        a {
+            color: #ff0000;
+            visibility: hidden;
+        }
+
+        &:hover {
+            .dashicons {
+                color: #ff0000;
+            }
+
+            a {
+                visibility: visible;
+            }
+        }
+    }
+
+    .update-available {
+        margin-left: 30px;
+        color: green;
+        font-size: 90%;
+    }
+}
+

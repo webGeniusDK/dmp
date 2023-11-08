@@ -1,0 +1,542 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Plugin - Google Maps\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-googlemaps\n"
+"POT-Creation-Date: 2022-05-11 22:03:08+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BD Team <support@businessdirectoryplugin.com>\n"
+"Language-Team: BD Team <support@businessdirectoryplugin.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: admin.php:51
+#, fuzzy
+msgid "Business Directory Google Maps: API key required."
+msgstr "Business Directory - Google Maps Modul: API-Schlüssel erforderlich."
+
+#: admin.php:52
+msgid "Google requires an API key to use their geocoding system."
+msgstr ""
+
+#: admin.php:55
+msgid "Add an API key"
+msgstr ""
+
+#: admin.php:62
+msgid "The Google Maps API key was succesfully verified."
+msgstr ""
+
+#: business-directory-googlemaps.php:419
+#, fuzzy
+msgid "Address"
+msgstr "Adresse:"
+
+#: business-directory-googlemaps.php:420
+msgid "Search"
+msgstr ""
+
+#: business-directory-googlemaps.php:421
+msgid "Return"
+msgstr ""
+
+#: business-directory-googlemaps.php:422
+msgid "Lat."
+msgstr ""
+
+#: business-directory-googlemaps.php:423
+msgid "Long."
+msgstr ""
+
+#: business-directory-googlemaps.php:424
+#, fuzzy
+msgid "Set Location"
+msgstr "Ihr Standort."
+
+#: business-directory-googlemaps.php:437 templates/map.tpl.php:45
+msgid "Show Directions"
+msgstr "Anfahrt zeigen"
+
+#: business-directory-googlemaps.php:438
+msgid "Working..."
+msgstr "Bearbeitung.."
+
+#. translators: %s the address
+#: business-directory-googlemaps.php:441
+msgid "Driving directions to \"%s\""
+msgstr "Anfahrtsbeschreibung zu \"%s\""
+
+#. translators: %s the address
+#: business-directory-googlemaps.php:444
+msgid "Cycling directions to \"%s\""
+msgstr "Radfahren nach \"%s\""
+
+#. translators: %s the address
+#: business-directory-googlemaps.php:447
+msgid "Public Transit directions to \"%s\""
+msgstr "Öffentlicher Verkehr nach \"%s\""
+
+#. translators: %s the address
+#: business-directory-googlemaps.php:450
+msgid "Walking directions to \"%s\""
+msgstr "Fußweg-Plan zu \"%s\""
+
+#: business-directory-googlemaps.php:451
+msgid "Could not find a route from your location."
+msgstr "Kann nicht einen Weg finden."
+
+#: business-directory-googlemaps.php:525
+msgid "Show listings map on:"
+msgstr ""
+
+#: business-directory-googlemaps.php:527
+msgid "Categories"
+msgstr ""
+
+#: business-directory-googlemaps.php:536
+msgid "\"View Listings\""
+msgstr ""
+
+#: business-directory-googlemaps.php:546
+msgid "Search results"
+msgstr ""
+
+#: business-directory-googlemaps.php:582
+msgid ""
+"Allow users to grab the pin and physically place it where the actual "
+"location is, rather than rely on Google's geolocation. Helpful for rural "
+"addresses."
+msgstr ""
+
+#: business-directory-googlemaps.php:608
+#, fuzzy
+msgid "Listing Locations"
+msgstr "Eintragsort"
+
+#. translators: %s the part of the address
+#: business-directory-googlemaps.php:631
+msgid "%s field"
+msgstr ""
+
+#: business-directory-googlemaps.php:648
+msgid "Tooltip Content"
+msgstr ""
+
+#: business-directory-googlemaps.php:649
+msgid ""
+"Customize the content shown when a marker is selected. Allowed values "
+"include field ids, field shortnames, url, address, city, state, zip, and "
+"country."
+msgstr ""
+
+#: business-directory-googlemaps.php:726
+msgid "Size"
+msgstr ""
+
+#: business-directory-googlemaps.php:766
+msgid "Auto-resize"
+msgstr ""
+
+#: business-directory-googlemaps.php:1077
+msgid ""
+"Business Directory Google Maps has detected some issues while trying to "
+"contact the Google Maps API."
+msgstr ""
+
+#: business-directory-googlemaps.php:1078
+msgid ""
+"This usually happens because Google imposes a daily limit on the number of "
+"requests a site can make. If you have been seeing this warning for more than "
+"24 hours it could be because:"
+msgstr ""
+
+#: business-directory-googlemaps.php:1080
+msgid ""
+"- You have a huge number of listings that need to be geocoded. If this is "
+"the case you might need to wait several days before Business Directory has "
+"cached all the locations."
+msgstr ""
+
+#: business-directory-googlemaps.php:1082
+msgid ""
+"- You are on a shared hosting and other sites are using up the request "
+"allowance for your IP."
+msgstr ""
+
+#: business-directory-googlemaps.php:1084
+msgid ""
+"- The number of requests or Google map views in use by your site really "
+"exceeds the Google Maps API limits."
+msgstr ""
+
+#: business-directory-googlemaps.php:1089
+msgid ""
+"You might need to apply for an API key with Google. Please read <a>our "
+"documentation on the subject</a>."
+msgstr ""
+
+#: business-directory-googlemaps.php:1097
+#, fuzzy
+msgid "Business Directory Google Maps: Invalid API Key."
+msgstr "Business Directory - Google Maps Modul: API-Schlüssel erforderlich."
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1100
+msgid ""
+"The Google Maps %1$sAPI key%2$s is invalid. Maps on directory pages will not "
+"appear until this issue is addressed."
+msgstr ""
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1106
+msgid "Please visit the %1$sGoogle API Console%2$s and make sure that:"
+msgstr ""
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1112
+msgid ""
+"1. You have enabled the %1$sGoogle Maps Geocoding API%2$s in your project."
+msgstr ""
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1118
+msgid ""
+"2. You have enabled the %1$sGoogle Maps JavaScript API v3%2$s in your "
+"project."
+msgstr ""
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1124
+msgid "3. You have enabled the %1$sGoogle Maps Embed API%2$s in your project."
+msgstr ""
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1130
+msgid ""
+"For additional information on how to correctly setup your API key, visit "
+"%1$sthis link%2$s."
+msgstr ""
+
+#. translators: %s: url-open %s: url-close
+#: business-directory-googlemaps.php:1137
+msgid ""
+"%1$sClick here to verify your API key%2$s again after you adjust the "
+"settings in the Google API Console."
+msgstr ""
+
+#: business-directory-googlemaps.php:1663
+#, fuzzy
+msgid "Select Listing Location"
+msgstr "Eintragsort"
+
+#: templates/adjust-location.tpl.php:12
+#, fuzzy
+msgid "Enable manual listing location"
+msgstr "Eintragsort"
+
+#: templates/adjust-location.tpl.php:17
+msgid ""
+"If you want to adjust your listing's location, move the pin below to the "
+"correct position. You can also use \"Search nearby place\" or \"Enter "
+"coordinates\" buttons to set listing's location."
+msgstr ""
+
+#: templates/adjust-location.tpl.php:23
+msgid "Search nearby place"
+msgstr ""
+
+#: templates/adjust-location.tpl.php:24
+msgid "Enter coordinates"
+msgstr ""
+
+#: templates/adjust-location.tpl.php:25
+msgid "Done"
+msgstr ""
+
+#: templates/map.tpl.php:20
+msgid "Directions to listing"
+msgstr "Anfahrtsbeschreibung."
+
+#: templates/map.tpl.php:23
+msgid "From:"
+msgstr "Von:"
+
+#: templates/map.tpl.php:26
+msgid "Current location"
+msgstr "Ihr Standort."
+
+#: templates/map.tpl.php:30
+msgid "Specific Address"
+msgstr "Adresse:"
+
+#: templates/map.tpl.php:36
+msgid "Travel Mode:"
+msgstr "Wie?"
+
+#: templates/map.tpl.php:38
+msgid "Driving"
+msgstr "Auto"
+
+#: templates/map.tpl.php:39
+msgid "Public Transit"
+msgstr "Öffentlicher Verkehr"
+
+#: templates/map.tpl.php:40
+msgid "Walking"
+msgstr "zu Fuß"
+
+#: templates/map.tpl.php:41
+msgid "Cycling"
+msgstr "Fahrrad"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Business Directory Google Maps"
+msgstr "Business Directory - Google Maps Modul: API-Schlüssel erforderlich."
+
+#. Author URI of the plugin/theme
+msgid "https://businessdirectoryplugin.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds support for Google Maps for display in a directory listing. Map any set "
+"of fields to the address for use by Google Maps."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Business Directory Team"
+msgstr ""
+
+#: business-directory-googlemaps.php:505
+msgctxt "settings"
+msgid "Google Maps"
+msgstr "Google Maps Module"
+
+#: business-directory-googlemaps.php:508
+msgctxt "settings"
+msgid "General Settings"
+msgstr ""
+
+#: business-directory-googlemaps.php:513
+#, fuzzy
+msgctxt "settings"
+msgid "Google Maps API Key"
+msgstr "Google Maps Module"
+
+#: business-directory-googlemaps.php:515
+msgctxt "settings"
+msgid ""
+"Google requires that you use an API key to get geocoding or driving "
+"directions. You can get the <a>key here</a>."
+msgstr ""
+
+#: business-directory-googlemaps.php:556
+msgctxt "settings"
+msgid "Current page listings to show on map"
+msgstr ""
+
+#: business-directory-googlemaps.php:560
+msgctxt "settings"
+msgid "All listings"
+msgstr ""
+
+#: business-directory-googlemaps.php:561
+msgctxt "settings"
+msgid "Only visible listings on page"
+msgstr ""
+
+#: business-directory-googlemaps.php:569
+#, fuzzy
+msgctxt "settings"
+msgid "Allow visitors to get directions to listings?"
+msgstr "Anfahrtsbeschreibung."
+
+#: business-directory-googlemaps.php:573
+msgctxt "settings"
+msgid ""
+"Please note that getting directions to listings from the visitor's current "
+"location works if your website is accessed through HTTPS only. For non-HTTPS "
+"websites, visitors can still get directions, but they have to type in a "
+"specific address."
+msgstr ""
+
+#: business-directory-googlemaps.php:579
+msgctxt "settings"
+msgid "Allow users to manually adjust the location of their listings?"
+msgstr ""
+
+#: business-directory-googlemaps.php:589
+msgctxt "settings"
+msgid "Default Address/Location to use if address can't be geocoded"
+msgstr ""
+
+#: business-directory-googlemaps.php:592
+msgctxt "settings"
+msgid "USA"
+msgstr ""
+
+#: business-directory-googlemaps.php:593
+msgctxt "settings"
+msgid ""
+"Starting point for the pin used to manually adjust the location of the "
+"listings."
+msgstr ""
+
+#: business-directory-googlemaps.php:610
+msgctxt "settings"
+msgid ""
+"Please select at least one field from your listings to use for location "
+"information that maps can use to find a pin on Google Maps.  The more fields "
+"you use, the more accurate the pin's location."
+msgstr ""
+
+#: business-directory-googlemaps.php:614
+msgctxt "settings"
+msgid "-- None --"
+msgstr ""
+
+#: business-directory-googlemaps.php:620
+msgctxt "settings"
+msgid "address"
+msgstr ""
+
+#: business-directory-googlemaps.php:621
+msgctxt "settings"
+msgid "city"
+msgstr ""
+
+#: business-directory-googlemaps.php:622
+msgctxt "settings"
+msgid "state"
+msgstr ""
+
+#: business-directory-googlemaps.php:623
+msgctxt "settings"
+msgid "ZIP code"
+msgstr ""
+
+#: business-directory-googlemaps.php:624
+msgctxt "settings"
+msgid "country"
+msgstr ""
+
+#: business-directory-googlemaps.php:658
+msgctxt "settings"
+msgid "Appearance"
+msgstr ""
+
+#: business-directory-googlemaps.php:663
+msgctxt "settings"
+msgid "Use marker cluster indicators"
+msgstr ""
+
+#: business-directory-googlemaps.php:673
+msgctxt "settings"
+msgid "Display Map position"
+msgstr ""
+
+#: business-directory-googlemaps.php:676
+msgctxt "settings"
+msgid "Applies only to category, \"View Listings\" and search results maps."
+msgstr ""
+
+#: business-directory-googlemaps.php:678
+msgctxt "settings"
+msgid "Above all listings"
+msgstr ""
+
+#: business-directory-googlemaps.php:679
+msgctxt "settings"
+msgid "Below all listings"
+msgstr ""
+
+#: business-directory-googlemaps.php:692
+msgctxt "settings"
+msgid "Zoom Level"
+msgstr ""
+
+#: business-directory-googlemaps.php:703
+msgctxt "settings"
+msgid "Map Type"
+msgstr ""
+
+#: business-directory-googlemaps.php:706
+msgctxt "settings"
+msgid "Roadmap"
+msgstr ""
+
+#: business-directory-googlemaps.php:707
+msgctxt "settings"
+msgid "Satellite"
+msgstr ""
+
+#: business-directory-googlemaps.php:708
+msgctxt "settings"
+msgid "Hybrid"
+msgstr ""
+
+#: business-directory-googlemaps.php:709
+msgctxt "settings"
+msgid "Terrain"
+msgstr ""
+
+#: business-directory-googlemaps.php:717
+msgctxt "settings"
+msgid "Animate markers"
+msgstr ""
+
+#: business-directory-googlemaps.php:731
+msgctxt "settings"
+msgid "Map Size"
+msgstr ""
+
+#: business-directory-googlemaps.php:735
+msgctxt "settings"
+msgid "Automatic"
+msgstr ""
+
+#: business-directory-googlemaps.php:736
+msgctxt "settings"
+msgid "Small map (250x250px)"
+msgstr ""
+
+#: business-directory-googlemaps.php:737
+msgctxt "settings"
+msgid "Large map (400x600px)"
+msgstr ""
+
+#: business-directory-googlemaps.php:738
+msgctxt "settings"
+msgid "Custom size"
+msgstr ""
+
+#: business-directory-googlemaps.php:746
+msgctxt "settings"
+msgid "Custom map size width (px)"
+msgstr ""
+
+#: business-directory-googlemaps.php:749 business-directory-googlemaps.php:759
+msgctxt "settings"
+msgid "Applies only to the \"Custom size\" map size"
+msgstr ""
+
+#: business-directory-googlemaps.php:756
+msgctxt "settings"
+msgid "Custom map size height (px)"
+msgstr ""
+
+#: business-directory-googlemaps.php:767
+msgctxt "settings"
+msgid "Auto-resize map when container is stretched (makes Maps responsive)"
+msgstr ""
+
+#: business-directory-googlemaps.php:685
+msgctxt "settings zoom"
+msgid "Automatic"
+msgstr ""

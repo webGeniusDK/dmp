@@ -1,0 +1,658 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Plugin - ZIP Code Search\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-zipcodesearch\n"
+"POT-Creation-Date: 2023-08-22 16:04:02+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BD Team <support@businessdirectoryplugin.com>\n"
+"Language-Team: Business Directory Plugin <support@businessdirectoryplugin."
+"com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: includes/controllers/class-wpbdp-zip-admin.php:27
+#: includes/controllers/class-wpbdp-zip-admin.php:28
+msgid "Import ZIP code Database"
+msgstr ""
+
+#. translators: %1$s open link, %2$s close link
+#: includes/controllers/class-wpbdp-zip-admin.php:90
+msgid ""
+"Business Directory has detected an unfinished ZIP code database import. "
+"Please go to %1$sImport ZIP code database%2$s and either resume or cancel "
+"the import. If you are aware the import is in progress you can ignore this "
+"message."
+msgstr ""
+
+#. translators: %1$s open link, %2$s close link
+#: includes/controllers/class-wpbdp-zip-admin.php:100
+msgid ""
+"Business Directory ZIP Search is active, but no valid ZIP code database "
+"available. You must first download and configure a ZIP code database for "
+"your region. Please %1$simport a ZIP code database file%2$s."
+msgstr ""
+
+#. translators: %1$s open link, %2$s close link
+#: includes/controllers/class-wpbdp-zip-admin.php:115
+msgid ""
+"Settings for Business Directory - ZIP Code Search Module have been recently "
+"changed and a cache rebuild is needed. Go to %1$sZIP Search settings%2$s and "
+"click \"Rebuild Cache\". Not doing this results in slow searches."
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:137
+msgid "No valid ZIP code database found."
+msgstr ""
+
+#. translators: %1$s open link, %2$s close link
+#: includes/controllers/class-wpbdp-zip-admin.php:141
+msgid ""
+"Go to %1$sImport ZIP code database%2$s and follow installation instructions."
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:167
+msgid "Update available!"
+msgstr ""
+
+#. translators: %s database name
+#: includes/controllers/class-wpbdp-zip-admin.php:178
+msgid "Delete %s database"
+msgstr ""
+
+#. translators: %1$s open link, %2$s close link
+#: includes/controllers/class-wpbdp-zip-admin.php:191
+msgid "To install additional databases go to %1$sImport ZIP code database%2$s."
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:201
+msgid "OK"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:203
+msgid "Invalid cache. Please rebuild."
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:207
+msgid "Rebuild cache"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:227
+msgid ""
+"Postal Code/Zip Code field is unassigned. Please assign it above and try "
+"again."
+msgstr ""
+
+#: includes/functions.php:21
+msgid "Miles"
+msgstr ""
+
+#: includes/functions.php:22
+msgid "Kilometers"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-import.php:221
+msgid ""
+"There was an error trying to insert items into the database: <database-error>"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-import.php:228
+msgid "No items were inserted into the database."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:260
+msgid "ZIP Search"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:263
+msgid "-- Select a field --"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:282
+msgid "Units"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:325
+msgid "Available search modes"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:326
+msgid ""
+"Specific ZIP Code mode allows users to search listings associated with a "
+"particular ZIP code. Distance mode allows users to search listings near the "
+"area defined by a particular ZIP code."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:333
+msgid "Specific ZIP code"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:334
+msgid "Distance"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:344
+msgid "Add ZIP location to quick search"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:355
+msgid "Default search radius"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:365
+msgid "ZIP Database"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:630
+#: includes/models/class-wpbdp-zip-module.php:899
+#: includes/widgets/class-wpbdp-zip-search-widget.php:100
+msgid "Distance search"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:661
+#: includes/models/class-wpbdp-zip-module.php:858
+msgid "Find listings within "
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:999
+msgid "ZIP Code"
+msgstr ""
+
+#. translators: %s radius unit name
+#: includes/models/class-wpbdp-zip-module.php:1010
+msgid " %s of "
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1486
+msgid "India"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:34
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:43
+msgid "Field Label:"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:50
+msgid "Units:"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:64
+msgid "Display Settings:"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:72
+msgid "Hide search mode selector"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:81
+msgid "Hide category field selector"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:84
+msgid "Default Search Mode:"
+msgstr ""
+
+#. translators: %s field label
+#: includes/widgets/class-wpbdp-zip-search-widget.php:92
+msgid "Specific %s"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:234
+msgid "Search"
+msgstr ""
+
+#: templates/admin-import.tpl.php:4
+msgid "Import ZIP Code Database"
+msgstr ""
+
+#: templates/admin-import.tpl.php:15
+msgid "3. Database Import"
+msgstr ""
+
+#: templates/admin-import.tpl.php:19
+msgid "File"
+msgstr ""
+
+#: templates/admin-import.tpl.php:24
+msgid "Database"
+msgstr ""
+
+#: templates/admin-import.tpl.php:29
+msgid "Revision"
+msgstr ""
+
+#: templates/admin-import.tpl.php:34
+msgid "Items"
+msgstr ""
+
+#: templates/admin-import.tpl.php:41
+msgid "Progress"
+msgstr ""
+
+#: templates/admin-import.tpl.php:49
+msgid "Import has not started."
+msgstr ""
+
+#: templates/admin-import.tpl.php:51
+msgid "Import paused."
+msgstr ""
+
+#: templates/admin-import.tpl.php:60
+msgid "Start Import"
+msgstr ""
+
+#: templates/admin-import.tpl.php:62
+msgid "Resume Import"
+msgstr ""
+
+#: templates/admin-import.tpl.php:65
+msgid "Cancel"
+msgstr ""
+
+#: templates/admin-import.tpl.php:73
+msgid "3. Database imported successfully!"
+msgstr ""
+
+#: templates/admin-import.tpl.php:75
+msgid ""
+"Please delete the \"zipcodes.db\" file from your \"db/\" directory since it "
+"is no longer needed."
+msgstr ""
+
+#. translators: %s database name
+#: templates/admin-import.tpl.php:81
+msgid "The ZIP code database %s has been imported and is ready to be used."
+msgstr ""
+
+#: templates/admin-import.tpl.php:86
+msgid "You can now:"
+msgstr ""
+
+#: templates/admin-import.tpl.php:90
+msgid "Configure ZIP Search options"
+msgstr ""
+
+#: templates/admin-import.tpl.php:95
+msgid "Download/install additional databases"
+msgstr ""
+
+#: templates/admin-import.tpl.php:100
+msgid "← Return to Business Directory Admin"
+msgstr ""
+
+#: templates/admin-import.tpl.php:113
+msgid ""
+"Business Directory has detected you have an old-style database setup "
+"(zipcodes.db). If you wish, Business Directoy can migrate this ZIP code "
+"information to the new format so you don't need to download and install a "
+"new database."
+msgstr ""
+
+#: templates/admin-import.tpl.php:117
+msgid "Ignore the file. I want to import a new database."
+msgstr ""
+
+#: templates/admin-import.tpl.php:120
+msgid "Proceed with migration"
+msgstr ""
+
+#. translators: %s link
+#: templates/admin-import.tpl.php:130
+msgid "1. Download one or more databases from %s"
+msgstr ""
+
+#: templates/admin-import.tpl.php:138
+msgid "2. Upload database file(s)"
+msgstr ""
+
+#: templates/admin-import.tpl.php:146
+msgid "Database File"
+msgstr ""
+
+#: templates/admin-import.tpl.php:155
+msgid "Upload File"
+msgstr ""
+
+#: templates/admin-import.tpl.php:161
+msgid "... or choose a manually uploaded database file"
+msgstr ""
+
+#. translators: %s date
+#: templates/admin-import.tpl.php:173
+msgid "Version %s"
+msgstr ""
+
+#: templates/admin-import.tpl.php:181
+msgid "Use this file"
+msgstr ""
+
+#. translators: %s is the path
+#: templates/admin-import.tpl.php:190
+msgid ""
+"You can manually upload database files via FTP or similar if the upload form "
+"does not work for you due to upload restrictions on your host. Please use "
+"the %s directory to store these files and reload this page."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Business Directory ZIP Search"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://businessdirectoryplugin.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Add the search your Business Directory plugin listings by ZIP or Postal Code "
+"within a given radius."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Business Directory Team"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:67
+msgctxt "import"
+msgid "Start Import"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:68
+msgctxt "import"
+msgid "Pause Import"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:69
+msgctxt "import"
+msgid "Resume Import"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:263
+msgctxt "import"
+msgid "The import was canceled."
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:312
+#: includes/controllers/class-wpbdp-zip-admin.php:352
+msgctxt "import"
+msgid "You are not allowed to do this"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:317
+msgctxt "import"
+msgid "Could not upload database file: Invalid file"
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:323
+msgctxt "import"
+msgid "Could not upload database file: Invalid file type"
+msgstr ""
+
+#. translators: %s error message
+#: includes/controllers/class-wpbdp-zip-admin.php:332
+msgctxt "import"
+msgid "Could not upload database file: %s."
+msgstr ""
+
+#: includes/controllers/class-wpbdp-zip-admin.php:339
+msgctxt "import"
+msgid "Database file uploaded. Please proceed with the import."
+msgstr ""
+
+#. translators: %s file path
+#: includes/controllers/class-wpbdp-zip-admin.php:369
+msgctxt "import"
+msgid "Using database file \"%s\". Please proceed with the import."
+msgstr ""
+
+#. translators: %d item count
+#: includes/controllers/class-wpbdp-zip-admin.php:445
+msgctxt "import"
+msgid "Importing database... %d items remaining."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-import.php:35
+msgctxt "import"
+msgid ""
+"A previous database import was corrupted. All import information was deleted."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-import.php:68
+msgctxt "import"
+msgid "Can not import two different DB files at the same time."
+msgstr ""
+
+#. translators: %d count
+#: includes/controllers/class-wpbdp-zip-admin.php:246
+msgctxt "cache"
+msgid "Please wait. Rebuilding cache... %d listings remaining."
+msgstr ""
+
+#: includes/helpers/class-wpbdp-zip-db-file.php:134
+msgctxt "dbfile"
+msgid "Invalid header information."
+msgstr ""
+
+#: includes/helpers/class-wpbdp-zip-db-file.php:139
+msgctxt "dbfile"
+msgid "Unsupported database in header: %s"
+msgstr ""
+
+#: includes/helpers/class-wpbdp-zip-db-file.php:212
+msgctxt "dbfile"
+msgid "Invalid seek position (%s)."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:271
+msgctxt "settings"
+msgid "Use this field for postal code/ZIP code information"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:294
+msgctxt "settings"
+msgid "Use custom distance options for searches with postal codes"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:303
+msgctxt "settings"
+msgid "Custom radius options"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:306
+msgctxt "settings"
+msgid "Comma separated list"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:315
+msgctxt "settings"
+msgid "Sort listings from closest to farthest in the search results?"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:358
+msgctxt "settings"
+msgid "In the same units specified above."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:629
+#: includes/models/class-wpbdp-zip-module.php:889
+msgctxt "settings"
+msgid " Only this ZIP"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:369
+msgctxt "admin settings"
+msgid "Installed ZIP/Postal Code databases"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:378
+msgctxt "admin settings"
+msgid "Cache Status"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:433
+msgctxt "templates"
+msgid "No listings found."
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:860
+msgctxt "search field"
+msgid "ZIP Code"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1476
+msgctxt "databases"
+msgid "Australia"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1477
+msgctxt "databases"
+msgid "Austria"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1478
+msgctxt "databases"
+msgid "Belgium"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1479
+msgctxt "databases"
+msgid "Brazil"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1480
+msgctxt "databases"
+msgid "Canada"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1481
+msgctxt "databases"
+msgid "Czech Republic"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1482
+msgctxt "databases"
+msgid "Estonia"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1483
+msgctxt "databases"
+msgid "Finland"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1484
+msgctxt "databases"
+msgid "France"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1485
+msgctxt "databases"
+msgid "Germany"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1487
+msgctxt "databases"
+msgid "Ireland"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1488
+msgctxt "databases"
+msgid "Italy"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1489
+msgctxt "databases"
+msgid "Japan"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1490
+msgctxt "databases"
+msgid "Liechtenstein"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1491
+msgctxt "databases"
+msgid "Luxembourg"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1492
+msgctxt "databases"
+msgid "Malaysia"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1493
+msgctxt "databases"
+msgid "Mexico"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1494
+msgctxt "databases"
+msgid "Netherlands"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1495
+msgctxt "databases"
+msgid "New Zealand"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1496
+msgctxt "databases"
+msgid "Norway"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1497
+msgctxt "databases"
+msgid "Philippines"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1498
+msgctxt "databases"
+msgid "Romania"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1499
+msgctxt "databases"
+msgid "South Africa"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1500
+msgctxt "databases"
+msgid "Spain"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1501
+msgctxt "databases"
+msgid "Switzerland"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1502
+msgctxt "databases"
+msgid "United Kingdom (Great Britain)"
+msgstr ""
+
+#: includes/models/class-wpbdp-zip-module.php:1503
+msgctxt "databases"
+msgid "United States"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:15
+msgctxt "widget"
+msgid "Business Directory - Location Search"
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:16
+msgctxt "widget"
+msgid "Searches the Business Directory listings by ZIP code."
+msgstr ""
+
+#: includes/widgets/class-wpbdp-zip-search-widget.php:107
+msgctxt "widgets"
+msgid "Location Search"
+msgstr ""

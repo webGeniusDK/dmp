@@ -1,0 +1,705 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Plugin - Regions\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-regions\n"
+"POT-Creation-Date: 2023-02-24 22:56:07+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Laurent Provin <lprovin@yahoo.fr>\n"
+"Language-Team: Laurent Provin <lprovin@yahoo.fr>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: admin/admin.php:68 business-directory-regions.php:214
+#, fuzzy
+msgid "Regions"
+msgstr "Régions"
+
+#. translators: %1$d: level count, %2$s: level list
+#: admin/admin.php:242
+#, fuzzy
+msgid ""
+"Your Business Directory Regions hierarchy contains %1$d levels, but you are "
+"missing Region fields for some of them (level %2$s)."
+msgstr ""
+"Votre annuaire d'entreprise - La hiérarchie des régions contient des niveaux "
+"%d, mais vous ne disposez pas de champs régionaux pour certains d'entre eux "
+"(niveau %s)."
+
+#. translators: %1$s: Region Name, %2$s: opening <a> tag, %3$s: closing </a>
+#. tag
+#: admin/admin.php:280
+#, fuzzy
+msgid ""
+"You are currently seeing sub-regions of %1$s only. %2$sSee all regions%3$s."
+msgstr ""
+"Vous voyez actuellement des sous-régions de <strong>%s </ strong> "
+"uniquement. <a href=\"%s\"> Cliquez ici pour voir toutes les régions </a>."
+
+#: admin/admin.php:387
+#, fuzzy
+msgid "Add Child"
+msgstr "Ajouter un enfant"
+
+#: admin/admin.php:391
+msgid "Show Sub-Regions"
+msgstr "Afficher les sous-régions"
+
+#: admin/admin.php:435
+#, fuzzy
+msgid "Region home page"
+msgstr "Page d'accueil de la région"
+
+#: admin/admin.php:438
+#, fuzzy
+msgid "Region listings"
+msgstr "Listes de régions"
+
+#: admin/admin.php:620
+#, fuzzy
+msgid "Show Regions:"
+msgstr "Afficher les régions:"
+
+#: admin/admin.php:828
+msgid "Parent"
+msgstr "Parent"
+
+#: admin/admin.php:833
+msgid "Leave blank for top-level regions."
+msgstr ""
+
+#: api/form-fields.php:48
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: business-directory-regions.php:112
+#, fuzzy
+msgid "There were one or more errors trying to create the default regions:"
+msgstr ""
+"Il y a eu une ou plusieurs erreurs en tentant de créer les régions par "
+"défaut: <br/><br/>%s"
+
+#. translators: %1$s: start link HTML, %2$s: end link HTML
+#: business-directory-regions.php:270
+msgid "Go to the %1$sRegions hierarchy%2$s."
+msgstr ""
+
+#: business-directory-regions.php:275
+#, fuzzy
+msgid "General Settings"
+msgstr "Réglages généraux"
+
+#: business-directory-regions.php:292
+#, fuzzy
+msgid "Legacy Regions URLs"
+msgstr "Rechercher des régions"
+
+#: business-directory-regions.php:293
+msgid "Use links that include the directory page slug."
+msgstr ""
+
+#: business-directory-regions.php:294
+msgid ""
+"Warning: This will change the URLs for any existing regions. Once off, this "
+"cannot be turned back on."
+msgstr ""
+
+#: business-directory-regions.php:354
+msgid "Show the list of selected Regions in the main directory pages."
+msgstr ""
+
+#: business-directory-regions.php:430
+#, fuzzy
+msgid ""
+"This will attempt to create the default Regions (avoiding duplicates). "
+"Clicking the button does not remove other regions you may have created, but "
+"will restore the default regions that may have been deleted."
+msgstr ""
+"Utilisez le bouton ci-dessous pour créer ou restaurer les régions par "
+"défaut. Le module tentera de créer les régions par défaut (éviter les "
+"doublons). Cliquer sur le bouton ne supprime pas les autres régions que vous "
+"avez créées, mais restaurera les régions par défaut que vous avez supprimées."
+
+#: business-directory-regions.php:441
+#, fuzzy
+msgid ""
+"Check for missing fields and restore them. Clicking the button does not "
+"remove any of the existing fields."
+msgstr ""
+"Utilisez le bouton ci-dessous pour créer ou restaurer des champs de "
+"formulaire région. Le module vérifiera les champs manquants et les "
+"restaurera. Cliquer sur le bouton ne supprime aucun des champs existants."
+
+#: business-directory-regions.php:452
+#, fuzzy
+msgid ""
+"All regions, fields and settings will be removed and replaced. This action "
+"cannot be undone."
+msgstr ""
+"Utilisez le bouton ci-dessous pour restaurer le module Régions à son état "
+"d'origine. Toutes les régions, champs et paramètres seront supprimés et "
+"remplacés. Cette action ne peut pas être annulée."
+
+#: business-directory-regions.php:584
+#, fuzzy
+msgid "There were one or more errors trying to create the Region Form Fields:"
+msgstr ""
+"Il y a eu une ou plusieurs erreurs tentant de créer les champs de formulaire "
+"régional: <br/><br/>%s"
+
+#: frontend/frontend.php:484 templates/region-selector.tpl.php:20
+msgid "Hide or show"
+msgstr ""
+
+#: frontend/frontend.php:506
+#, fuzzy
+msgid "Location"
+msgstr "tous les lieux"
+
+#: templates/form-add-regions.tpl.php:10
+#, fuzzy
+msgid "Name"
+msgstr "Nom"
+
+#: templates/form-add-regions.tpl.php:12
+#, fuzzy
+msgid "The name of the Regions, one region per line."
+msgstr "Le nom des régions, une région par ligne."
+
+#: templates/form-add-regions.tpl.php:18
+#, fuzzy
+msgid "Add Regions"
+msgstr "Ajouter une région"
+
+#: templates/region-selector.tpl.php:26
+#, fuzzy
+msgid ""
+"Use the fields below to filter listings for a particular country, city, or "
+"state.  Start by selecting the top most region, the other fields will be "
+"automatically updated to show available locations."
+msgstr ""
+"Utilisez les champs ci-dessous pour filtrer les listes d'un pays, d'une "
+"ville ou d'un état particulier. Commencez par sélectionner la région la plus "
+"élevée, les autres champs seront automatiquement mis à jour pour afficher "
+"les emplacements disponibles."
+
+#: templates/region-selector.tpl.php:29
+#, fuzzy
+msgid "Use the Clear Filter button if you want to start over."
+msgstr ""
+"Utilisez le bouton <strong><em> Effacer filtre </ em></ strong> si vous "
+"voulez recommencer."
+
+#: templates/region-selector.tpl.php:38
+#, fuzzy
+msgid "Clear Filter"
+msgstr "Effacer le filtre"
+
+#: templates/region-selector.tpl.php:39
+#, fuzzy
+msgid "Set Filter"
+msgstr "Définir le filtre"
+
+#: templates/regions-browser.tpl.php:50
+msgid "No regions found."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Business Directory Regions"
+msgstr "Annuaire des régions"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://businessdirectoryplugin.com"
+msgstr "http://businessdirectoryplugin.com"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Add the ability to filter your Business Directory plugin listings by any "
+"region you can configure (city, state, county, village, etc)."
+msgstr ""
+"Ajoutez la possibilité de filtrer vos listes de plugins Business Directory "
+"par n'importe quelle région que vous pouvez configurer (ville, état, comté, "
+"village, etc.). Nécessite BD 2.2 ou supérieur."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "Business Directory Team"
+msgstr "Widget de recherche Business Directory - Region "
+
+#: admin/admin.php:247
+msgctxt "regions-module"
+msgid "Restore Region Form Fields"
+msgstr "Restaurer les champs de formulaire de région"
+
+#: admin/admin.php:356 admin/admin.php:402
+msgctxt "regions-module"
+msgid "Enabled"
+msgstr "Activé"
+
+#: admin/admin.php:357
+msgctxt "regions-module"
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: admin/admin.php:358
+msgctxt "regions-module"
+msgid "All"
+msgstr "Tout"
+
+#: admin/admin.php:401
+msgctxt "regions-module"
+msgid "Listings in Region"
+msgstr "Annonces dans Région"
+
+#: admin/admin.php:403
+msgctxt "regions-module"
+msgid "Frontend Links"
+msgstr "Liens visibles"
+
+#: admin/admin.php:422 admin/admin.php:580
+msgctxt "regions-module"
+msgid "Disable"
+msgstr "Désactiver"
+
+#: admin/admin.php:423
+msgctxt "regions-module"
+msgid "Yes"
+msgstr "Oui"
+
+#: admin/admin.php:425 admin/admin.php:579
+msgctxt "regions-module"
+msgid "Enable"
+msgstr "Activer"
+
+#: admin/admin.php:426
+msgctxt "regions-module"
+msgid "No"
+msgstr "Non"
+
+#: business-directory-regions.php:201 business-directory-regions.php:203
+msgctxt "regions-module"
+msgid "Directory Regions"
+msgstr "Annuaire des régions"
+
+#: business-directory-regions.php:204
+msgctxt "regions-module"
+msgid "Region"
+msgstr "Région"
+
+#: business-directory-regions.php:205
+msgctxt "regions-module"
+msgid "Search Regions"
+msgstr "Rechercher des régions"
+
+#: business-directory-regions.php:206
+msgctxt "regions-module"
+msgid "Popular Regions"
+msgstr "Régions populaires"
+
+#: business-directory-regions.php:207
+msgctxt "regions-module"
+msgid "All Regions"
+msgstr "Toutes les régions"
+
+#: business-directory-regions.php:208
+msgctxt "regions-module"
+msgid "Parent Region"
+msgstr "Région des parents"
+
+#: business-directory-regions.php:209
+msgctxt "regions-module"
+msgid "Parent Region:"
+msgstr "Région des parents:"
+
+#: business-directory-regions.php:210
+msgctxt "regions-module"
+msgid "Edit Region"
+msgstr "Modifier la région"
+
+#: business-directory-regions.php:211
+msgctxt "regions-module"
+msgid "Update Region"
+msgstr "Mise à jour de la région"
+
+#: business-directory-regions.php:212
+msgctxt "regions-module"
+msgid "Add New Region"
+msgstr "Ajouter une nouvelle région"
+
+#: business-directory-regions.php:213
+msgctxt "regions-module"
+msgid "New Region Name"
+msgstr "Nom de la nouvelle région"
+
+#: business-directory-regions.php:522
+msgctxt "regions-module"
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: admin/admin.php:698
+msgctxt "regions meta box"
+msgid "Listing Region"
+msgstr "Annuaire des régions"
+
+#: api/form-fields.php:31
+msgctxt "field settings"
+msgid "Display field in Region selector?"
+msgstr "Afficher le champ dans le sélecteur de région?"
+
+#: api/form-fields.php:294
+msgctxt "region-selector"
+msgid "Select a Region"
+msgstr "Sélectionnez une région"
+
+#: api/form-fields.php:351
+msgctxt "region-selector"
+msgid "No Regions available"
+msgstr "Aucune région disponible"
+
+#. translators: listing location
+#: frontend/frontend.php:431
+msgctxt "region-selector"
+msgid "Displaying listings from %s."
+msgstr "Afficher les annonces à partir de %s."
+
+#: frontend/frontend.php:434
+msgctxt "region-selector"
+msgid "all locations"
+msgstr "tous les lieux"
+
+#: business-directory-regions.php:169
+msgctxt "form-fields api"
+msgid "Post Region"
+msgstr "Poster une région"
+
+#: business-directory-regions.php:273
+msgctxt "admin settings"
+msgid "Regions"
+msgstr "Régions"
+
+#: business-directory-regions.php:279
+msgctxt "admin settings"
+msgid "Regions Slug"
+msgstr "Identifiant de régions"
+
+#: business-directory-regions.php:306
+msgctxt "admin settings"
+msgid "Hide Region selector?"
+msgstr "Masquer le sélecteur de région?"
+
+#: business-directory-regions.php:309
+msgctxt "admin settings"
+msgid ""
+"The region selector is the small bar displayed above listings that allows "
+"users to filter their listings based on location.  It is enabled by default."
+msgstr ""
+"Le sélecteur de région est une petite barre affichée au-dessus des listes "
+"qui permet aux utilisateurs de filtrer leurs annonces en fonction de "
+"l'emplacement. Il est activé par défaut."
+
+#: business-directory-regions.php:316
+msgctxt "admin settings"
+msgid "Show region selector open by default?"
+msgstr "Afficher le sélecteur de région ouvert par défaut?"
+
+#: business-directory-regions.php:326
+msgctxt "admin settings"
+msgid "Show post counts?"
+msgstr "Afficher le nombre d'annonces?"
+
+#: business-directory-regions.php:335
+msgctxt "admin settings"
+msgid "Add Regions location to quick search box?"
+msgstr "Ajouter des régions à la zone de recherche rapide?"
+
+#: business-directory-regions.php:344
+msgctxt "admin settings"
+msgid "Regions Sidelist"
+msgstr "Liste latérale des régions"
+
+#: business-directory-regions.php:379
+msgctxt "admin settings"
+msgid "Sidelist should start display at:"
+msgstr ""
+
+#: business-directory-regions.php:383
+msgctxt "admin settings"
+msgid ""
+"This setting will change where the Region sidelist will start to display "
+"items in the region hierarchy. For example, use this to start displaying "
+"states instead of countries on the list."
+msgstr ""
+
+#: business-directory-regions.php:393
+msgctxt "admin settings"
+msgid "Show \"Clear Filter\" option?"
+msgstr "Afficher l'option \"Effacer le filtre\"?"
+
+#: business-directory-regions.php:405
+msgctxt "admin settings"
+msgid "Keep sidelist expanded on current region?"
+msgstr "Conserver la liste latérale déroulée sur la région actuelle?"
+
+#: business-directory-regions.php:417
+msgctxt "admin settings"
+msgid "Automatically expand sidelist on page load?"
+msgstr ""
+"Dérouler automatiquement la liste latérale lors du chargement de la page?"
+
+#: business-directory-regions.php:429
+msgctxt "admin settings"
+msgid "Create Default Regions"
+msgstr "Créer des régions par défaut"
+
+#: business-directory-regions.php:440
+msgctxt "admin settings"
+msgid "Restore Region Form Fields"
+msgstr "Restaurer les champs de formulaire de région"
+
+#: business-directory-regions.php:451
+msgctxt "admin settings"
+msgid "Restore to Default Settings"
+msgstr "Restaurer les paramètres par défaut"
+
+#: business-directory-regions.php:347
+#, fuzzy
+msgctxt "region settings"
+msgid ""
+"The Sidelist is a list of selected Regions shown in the main Business "
+"Directory pages. The Regions to show can be configured in the Regions "
+"section."
+msgstr ""
+"La liste latérale est une liste des régions sélectionnées affichées dans les "
+"pages principales Business Directory. Les régions à afficher peuvent être "
+"configurées dans la section Gérer les régions."
+
+#: business-directory-regions.php:425
+#, fuzzy
+msgctxt "region settings"
+msgid "Actions"
+msgstr "tous les lieux"
+
+#: frontend/frontend.php:606
+msgctxt "sidelist"
+msgid "Regions Menu"
+msgstr "Menu Régions"
+
+#: frontend/frontend.php:613
+msgctxt "sidelist"
+msgid "Clear Filter"
+msgstr "Effacer le filtre"
+
+#: frontend/frontend.php:636
+msgctxt "region shortcode"
+msgid "Please specify the id, name or slug of a region."
+msgstr ""
+
+#: frontend/frontend.php:650
+msgctxt "region shortcode"
+msgid "The specified Region doesn't exist."
+msgstr "La région spécifiée n'existe pas."
+
+#: frontend/widgets.php:10
+msgctxt "widgets"
+msgid "Business Directory - Region Search Widget"
+msgstr "Widget de recherche Business Directory - Region "
+
+#: frontend/widgets.php:12
+msgctxt "widgets"
+msgid "Allows visitors to perform region searches on your site."
+msgstr ""
+"Permet aux visiteurs d'effectuer des recherches de régions sur votre site."
+
+#: frontend/widgets.php:23
+msgctxt "widgets"
+msgid "Title:"
+msgstr "Titre:"
+
+#: frontend/widgets.php:26
+msgctxt "widgets"
+msgid "Region Search"
+msgstr "Recherche de région"
+
+#: frontend/widgets.php:30
+msgctxt "widgets"
+msgid "Fields:"
+msgstr "Champs:"
+
+#: frontend/widgets.php:52
+msgctxt "widgets"
+msgid "Matching listings to return:"
+msgstr "Faire correspondre les annonces pour retourner:"
+
+#: frontend/widgets.php:61
+msgctxt "widgets"
+msgid "Submit button text:"
+msgstr "Texte du bouton d'envoi:"
+
+#: frontend/widgets.php:64 frontend/widgets.php:73
+msgctxt "widgets"
+msgid "Search"
+msgstr "Recherche"
+
+#. translators: %s: field name
+#: templates/regions-browser.tpl.php:14
+#, fuzzy
+msgctxt "regions browser"
+msgid "Select a %s"
+msgstr "Sélectionnez une région"
+
+#, fuzzy
+#~ msgid "Go to %1$sRegions%2$s settings to configure the Regions hierarchy."
+#~ msgstr ""
+#~ "Accédez aux paramètres <a href=\"%s\"> Gérer les régions </a> pour "
+#~ "configurer la hiérarchie des régions."
+
+#~ msgctxt "regions-module"
+#~ msgid "Dismiss Warning"
+#~ msgstr "Ignorer l'avertissement"
+
+#~ msgctxt "admin settings"
+#~ msgid "Show Sidelist"
+#~ msgstr "Montrer la liste latérale"
+
+#~ msgctxt "region settings"
+#~ msgid "Create Default Regions"
+#~ msgstr "Créer des régions par défaut"
+
+#~ msgctxt "region settings"
+#~ msgid "Restore Region Form Fields"
+#~ msgstr "Restaurer les champs de formulaire de région"
+
+#~ msgctxt "region settings"
+#~ msgid "Restore to Default Settings"
+#~ msgstr "Restaurer les paramètres par défaut"
+
+#~ msgctxt "add region form"
+#~ msgid "Add Multiple Regions"
+#~ msgstr "Ajouter des régions multiples"
+
+#~ msgctxt "add region form"
+#~ msgid ""
+#~ "To add a new Region, you must have a Name and a Parent to which the "
+#~ "region(s) belongs. If a Region has no parent, it is considered the "
+#~ "\"top\" level region.<br/><br/>(e.g. North America&#8594;United "
+#~ "States&#8594;New York&#8594;Albany)"
+#~ msgstr ""
+#~ "Pour ajouter une nouvelle région, vous devez avoir un Nom et un Parent "
+#~ "auxquels appartiennent les régions. Si une Région n'a pas de parent, elle "
+#~ "est considérée comme la région de niveau \"haut\". <br/> <br/> (par "
+#~ "exemple, l'Amérique du Nord, l'Albany, New York, et les Etats-Unis)"
+
+#~ msgctxt "admin settings"
+#~ msgid ""
+#~ "Regions also integrates with the Quick Search box. You can <a>change the "
+#~ "configuration here</a>."
+#~ msgstr ""
+#~ "Les régions s'intègre également à la zone Recherche rapide. Vous pouvez "
+#~ "<a>changer la configuration ici</a>."
+
+#~ msgctxt "main box"
+#~ msgid "Located at <City, State>"
+#~ msgstr "Situé à <Ville, État>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Business Directory Regions module has been turned on but no regions are "
+#~ "enabled. Go to %1$sManage Regions%2$s to fix this."
+#~ msgstr ""
+#~ "Le module Business Directory Regions a été activé mais aucune région "
+#~ "n'est activée. Allez dans <a href=\"%s\"> Gérer des régions </a> pour "
+#~ "résoudre ce problème."
+
+#~ msgctxt "regions-module"
+#~ msgid ""
+#~ "You must enable a region for it to show on the lists in Business "
+#~ "Directory (the filter selector, submit listing form, etc.)."
+#~ msgstr ""
+#~ "Vous devez activer une région pour qu'elle s'affiche sur les listes de "
+#~ "Business Directory (le sélecteur de filtre, le formulaire de soumission "
+#~ "d'annonce, etc.)."
+
+#~ msgctxt "regions-module"
+#~ msgid "Manage Regions"
+#~ msgstr "Gérer les régions"
+
+#~ msgctxt "shortcodes"
+#~ msgid "Pick this level"
+#~ msgstr "Choisissez ce niveau"
+
+#~ msgctxt "regions-module"
+#~ msgid ""
+#~ "You are showing the Regions sidelist but have no region marked with the "
+#~ "\"Show on Sidelist\" flag. Please review your <a href=\"%s\">Regions "
+#~ "settings</a>."
+#~ msgstr ""
+#~ "Vous affichez les points de vue des régions, mais aucune région n'a été "
+#~ "marquée avec le drapeau \"Afficher sur la liste latérale\". Veuillez "
+#~ "consulter vos <a href=\"%s\"> paramètres Régions </a>."
+
+#~ msgid "Business Directory Plugin - Regions Module"
+#~ msgstr "Module Business Directory Plugin - Regions"
+
+#~ msgid "http://www.businessdirectoryplugin.com"
+#~ msgstr "http://www.businessdirectoryplugin.com"
+
+#~ msgid "D. Rodenbaugh"
+#~ msgstr "D. Rodenbaugh"
+
+#~ msgctxt "regions-module"
+#~ msgid "On Sidelist"
+#~ msgstr "Sur la liste latérale"
+
+#~ msgctxt "regions-module"
+#~ msgid "Not on Sidelist"
+#~ msgstr "Pas sur la liste latérale"
+
+#~ msgctxt "regions-module"
+#~ msgid "Show on Sidelist"
+#~ msgstr "Afficher sur la liste latérale"
+
+#~ msgctxt "regions-module"
+#~ msgid "Hide"
+#~ msgstr "Masquer"
+
+#~ msgctxt "regions-module"
+#~ msgid "Show"
+#~ msgstr "Afficher"
+
+#~ msgctxt "regions-module"
+#~ msgid "Hide on Sidelist"
+#~ msgstr "Masquer sur la liste latérale"
+
+#~ msgctxt "admin settings"
+#~ msgid "Hide empty regions?"
+#~ msgstr "Cacher les régions vides?"
+
+#~ msgctxt "admin settings"
+#~ msgid ""
+#~ "When checked, empty regions will not be shown in the Regions selector or "
+#~ "the sidelist."
+#~ msgstr ""
+#~ "Si cette case est cochée, les zones vides ne seront pas affichées dans le "
+#~ "sélecteur de régions ou dans la liste latérale."
+
+#~ msgctxt "admin settings"
+#~ msgid "Check to show the Sidelist, uncheck to hide the Sidelist."
+#~ msgstr ""
+#~ "Cochez pour afficher la liste latérale, décochez pour masquer la liste "
+#~ "latérale."
+
+#~ msgctxt "regions-module"
+#~ msgid ""
+#~ "Business Directory - Regions Module requires Business Directory Plugin >= "
+#~ "%s."
+#~ msgstr ""
+#~ "Le module Business Directory Region nécessite le Plugin Business "
+#~ "Directory >= %s."

@@ -1,0 +1,446 @@
+msgid ""
+msgstr ""
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-premium\n"
+"POT-Creation-Date: 2022-11-14 18:22:34+00:00\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Loco-Target-Locale: ru_RU\n"
+"X-Poedit-SearchPath-0: ../../plugins/business-directory-plugin\n"
+
+#: business-directory-premium.php:55
+msgid "Business Directory Premium requires the core Business Directory Plugin."
+msgstr ""
+
+#: business-directory-premium.php:58
+#, fuzzy
+msgid "Install Business Directory Plugin"
+msgstr "http://businessdirectoryplugin.com"
+
+#: classes/class-wpbdp-abandonment.php:46
+#, fuzzy
+msgid "Abandonment"
+msgstr "Заброшено"
+
+#: classes/class-wpbdp-abandonment.php:52
+#, fuzzy
+msgid "Ask users to come back for abandoned payments?"
+msgstr "Просить авторов вернуться к неоплаченным записям?"
+
+#: classes/class-wpbdp-abandonment.php:53
+msgid ""
+"Remind users to come back and complete an unfinished payment for a new "
+"listing."
+msgstr ""
+
+#: classes/class-wpbdp-abandonment.php:64
+#, fuzzy
+msgid "Listing abandonment threshold (hours)"
+msgstr "Когда запись помечается как неоплаченная (в часах)"
+
+#. translators: %1$s start link html, %2$s end link
+#: classes/class-wpbdp-abandonment.php:67
+#, fuzzy
+msgid ""
+"Listings with pending payments are marked as abandoned after this time. You "
+"can also %1$scustomize the e-mail%2$s."
+msgstr ""
+"<br />Записи, для которых не была проведена оплата в течении этого времени, "
+"помечаются как неоплаченные. В разделе <a>Оповещения об оплате</a> Вы можете "
+"настроить текст электронного письма, отправляемого автору как напоминание."
+
+#: classes/class-wpbdp-abandonment.php:83
+#, fuzzy
+msgid "Payment abandoned reminder message"
+msgstr "Напоминание о пропущенном платеже"
+
+#: classes/class-wpbdp-abandonment.php:90
+#, fuzzy
+msgid "Listing title"
+msgstr "Название записи"
+
+#: classes/class-wpbdp-abandonment.php:91
+#, fuzzy
+msgid "Checkout URL link"
+msgstr "Адрес URL страницы оплаты"
+
+#: classes/class-wpbdp-abandonment.php:197
+#, fuzzy
+msgid "Pending Abandonment"
+msgstr "Заброшено"
+
+#: classes/class-wpbdp-abandonment.php:204
+#, fuzzy
+msgid "Abandoned"
+msgstr "Заброшено"
+
+#: classes/class-wpbdp-abandonment.php:247
+#, fuzzy
+msgid "Sent some time after a pending payment is abandoned by users."
+msgstr ""
+"Отправляется через некоторое время после того, как оплата за продление "
+"записи не была получена от автора."
+
+#. translators: %1$s start link html, %2$s end link
+#: classes/class-wpbdp-abandonment.php:251
+msgid "This email will not be sent until %1$sabandonment is turned on%2$s."
+msgstr ""
+
+#: classes/class-wpbdp-abc-filtering.php:38
+msgid "ABC filtering"
+msgstr ""
+
+#: classes/class-wpbdp-abc-filtering.php:41
+msgid "Display links above listings for alphabetic filtering"
+msgstr ""
+
+#: classes/class-wpbdp-abc-filtering.php:127
+#, fuzzy
+msgid "(Reset)"
+msgstr "(Сбросить)"
+
+#. translators: ABC filtering letters. The string should contain only
+#. characters.
+#: classes/class-wpbdp-abc-filtering.php:148
+msgid "abcdefghijklmnopqrstuvwxyz"
+msgstr ""
+
+#: classes/class-wpbdp-elementor.php:74
+#, fuzzy
+msgid "Business Directory"
+msgstr "http://businessdirectoryplugin.com"
+
+#: classes/class-wpbdp-field-icon.php:376
+msgid "Search"
+msgstr ""
+
+#: classes/class-wpbdp-list-layout.php:14
+#, fuzzy
+msgid "Listings layout"
+msgstr "Название записи"
+
+#: classes/class-wpbdp-list-layout.php:18
+msgid "Default"
+msgstr ""
+
+#: classes/class-wpbdp-list-layout.php:19
+msgid "Two column"
+msgstr ""
+
+#: classes/class-wpbdp-list-layout.php:20
+msgid "Table"
+msgstr ""
+
+#: classes/class-wpbdp-pro-license.php:20
+#, fuzzy
+msgid "License Key"
+msgstr "Лицензии"
+
+#: classes/class-wpbdp-pro-license.php:114
+msgid "Missing data. Please reload this page and try again."
+msgstr ""
+
+#: classes/class-wpbdp-pro-license.php:120
+#, fuzzy
+msgid "Please enter a license key."
+msgstr "Пожалуйста введите правильный электронный адрес."
+
+#: classes/class-wpbdp-pro-license.php:174
+#, fuzzy
+msgid "Your license has been activated. Enjoy!"
+msgstr "Ваша запись принята на сервер."
+
+#: classes/class-wpbdp-pro-license.php:175
+#: classes/class-wpbdp-pro-license.php:180
+#, fuzzy
+msgid "That license key is invalid"
+msgstr "Лицензионный ключ не правильный"
+
+#: classes/class-wpbdp-pro-license.php:176
+#, fuzzy
+msgid "That license is expired"
+msgstr "Не указан лицензионный ключ"
+
+#: classes/class-wpbdp-pro-license.php:177
+#, fuzzy
+msgid "That license has been refunded"
+msgstr "Статус записи был поднят."
+
+#: classes/class-wpbdp-pro-license.php:178
+msgid "That license has been used on too many sites"
+msgstr ""
+
+#: classes/class-wpbdp-pro-license.php:179
+msgid "Oops! That is the wrong license key for this plugin."
+msgstr ""
+
+#: classes/class-wpbdp-pro-spam.php:176
+msgid "Your entry appears to be blocked spam!"
+msgstr ""
+
+#. translators: %s: name
+#: classes/tracking/class-wpbdp-monsterinsights.php:57
+msgid "Show %s Stats"
+msgstr ""
+
+#: classes/tracking/class-wpbdp-monsterinsights.php:60
+msgid ""
+"Show listing owners the Google Analytics page reports for their own listings"
+msgstr ""
+
+#. translators: %s: addon name
+#: classes/tracking/class-wpbdp-monsterinsights.php:74
+msgid "Install %1$s for advanced Google Analytics integration."
+msgstr ""
+
+#. translators: %s: addon name
+#: classes/tracking/class-wpbdp-monsterinsights.php:94
+msgid ""
+"Please install or update %1$s with version %2$s or newer to use the %3$s "
+"integration."
+msgstr ""
+
+#: classes/tracking/class-wpbdp-tracking.php:41
+msgid "Views"
+msgstr ""
+
+#: classes/tracking/class-wpbdp-tracking.php:60
+msgid "Statistics"
+msgstr ""
+
+#: classes/tracking/class-wpbdp-tracking.php:66
+msgid "Track Page Views"
+msgstr ""
+
+#: classes/tracking/class-wpbdp-tracking.php:67
+msgid "Count the number of times a listing is viewed"
+msgstr ""
+
+#: classes/tracking/class-wpbdp-tracking.php:77
+msgid "Track Administrators"
+msgstr ""
+
+#: classes/tracking/class-wpbdp-tracking.php:78
+msgid "Include Admins in the page view counts"
+msgstr ""
+
+#. translators: %s: icon
+#: classes/tracking/class-wpbdp-tracking.php:138
+msgid "%s Statistics"
+msgstr ""
+
+#. translators: %s: div div counts
+#: classes/tracking/class-wpbdp-tracking.php:155
+msgid "%1$sListing Views%2$s %3$s"
+msgstr ""
+
+#: models/class-wpbdp-addons.php:253 models/class-wpbdp-addons.php:254
+msgid "Install"
+msgstr ""
+
+#: models/class-wpbdp-addons.php:259
+msgid "Upgrade Now"
+msgstr ""
+
+#: models/class-wpbdp-addons.php:260
+msgid "Renew Now"
+msgstr ""
+
+#: models/class-wpbdp-addons.php:279
+#, fuzzy
+msgid "Activate"
+msgstr "Активировать"
+
+#: models/class-wpbdp-plugin-api.php:111
+#, fuzzy
+msgid "Your License Key was invalid"
+msgstr "Лицензионный ключ не правильный"
+
+#. translators: %1$s: Start link HTML, %2$s: End link HTML
+#: models/class-wpbdp-plugin-api.php:115
+msgid ""
+"You had an error communicating with the Business Directory API. %1$sClick "
+"here%2$s for more information."
+msgstr ""
+
+#: models/class-wpbdp-plugin-api.php:118
+msgid "You had an HTTP error connecting to the Business Directory API"
+msgstr ""
+
+#. translators: %1$s: Error code, %2$s: Error message
+#: models/class-wpbdp-plugin-api.php:130
+msgid "There was a %1$s error: %2$s"
+msgstr ""
+
+#: views/fields/icon-selector.php:15
+msgid "Display label and/or icon"
+msgstr ""
+
+#: views/fields/icon-selector.php:21
+msgid "Show Label"
+msgstr ""
+
+#: views/fields/icon-selector.php:24
+msgid "Hide Label"
+msgstr ""
+
+#: views/fields/icon-selector.php:27
+msgid "Show Label and Icon"
+msgstr ""
+
+#: views/fields/icon-selector.php:30
+msgid "Show Icon"
+msgstr ""
+
+#: views/fields/icon-selector.php:34
+msgid "Replace Value with Icon"
+msgstr ""
+
+#: views/fields/icon-selector.php:43
+msgid "Field Icon"
+msgstr ""
+
+#: views/license/license-box.php:3
+#, fuzzy
+msgid "Enter License Key here"
+msgstr "Обновить лицензионный ключ"
+
+#: views/license/license-box.php:4
+msgid "Authorize"
+msgstr ""
+
+#: views/license/license-box.php:4 views/license/license-box.php:9
+msgid "Please wait..."
+msgstr ""
+
+#: views/license/license-box.php:10
+msgid "Deauthorize"
+msgstr ""
+
+#: views/widgets/dashboard-widget.php:10
+msgid "Name"
+msgstr ""
+
+#: views/widgets/dashboard-widget.php:11
+msgid "Status"
+msgstr ""
+
+#: views/widgets/dashboard-widget.php:12
+msgid "Price"
+msgstr ""
+
+#: views/widgets/dashboard-widget.php:13
+msgid "Date"
+msgstr ""
+
+#: views/widgets/dashboard-widget.php:38
+msgid "No Fee Plan"
+msgstr ""
+
+#: views/widgets/dashboard-widget.php:41
+msgid "Free"
+msgstr ""
+
+#: widgets/class-wpbdp-dashboard.php:26
+#, fuzzy
+msgid "Recent Directory Listings"
+msgstr "http://businessdirectoryplugin.com"
+
+#: widgets/elementor/class-wpbdp-elementor-base.php:61
+#, fuzzy
+msgid "Listing"
+msgstr "Название записи"
+
+#: widgets/elementor/class-wpbdp-elementor-base.php:65
+msgid "Current Listing"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-base.php:76
+msgid "Search for a listing. Leave blank to use current page id"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-base.php:83
+msgid "Post ID or Slug"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-base.php:86
+msgid "The Post ID or Slug of the listing"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-buttons.php:18
+#, fuzzy
+msgid "Business Directory Buttons"
+msgstr "http://businessdirectoryplugin.com"
+
+#: widgets/elementor/class-wpbdp-elementor-details.php:18
+#, fuzzy
+msgid "Business Directory Details"
+msgstr "http://businessdirectoryplugin.com"
+
+#: widgets/elementor/class-wpbdp-elementor-details.php:29
+msgid "Fields To Exclude"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-details.php:32
+msgid ""
+"A comma-separated list of fields to exclude. Options include ‘social', any "
+"field id, or short key for a field."
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-images.php:18
+#, fuzzy
+msgid "Business Directory Images"
+msgstr "http://businessdirectoryplugin.com"
+
+#: widgets/elementor/class-wpbdp-elementor-listing.php:19
+#, fuzzy
+msgid "Business Directory Listing"
+msgstr "http://businessdirectoryplugin.com"
+
+#: widgets/elementor/class-wpbdp-elementor-section.php:18
+#, fuzzy
+msgid "Business Directory Section"
+msgstr "http://businessdirectoryplugin.com"
+
+#: widgets/elementor/class-wpbdp-elementor-section.php:30
+msgid "Section"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-section.php:33
+msgid ""
+"A comma-separated list of sections from a listing to show. Options include "
+"‘comments', ‘contact_form', ‘googlemaps', ‘reviews' and more"
+msgstr ""
+
+#: widgets/elementor/class-wpbdp-elementor-socials.php:18
+#, fuzzy
+msgid "Business Directory Socials"
+msgstr "http://businessdirectoryplugin.com"
+
+#. Plugin Name of the plugin/theme
+msgid "Business Directory Premium"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://businessdirectoryplugin.com"
+msgstr "http://businessdirectoryplugin.com"
+
+#. Description of the plugin/theme
+msgid "One Business Directory Plugin to rule them all."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Business Directory Team"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Deactivate"
+#~ msgstr "Активировать"

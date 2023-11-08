@@ -1,0 +1,539 @@
+# Copyright (C) 2016 Business Directory Plugin - Ratings Module
+# This file is distributed under the same license as the Business Directory Plugin - Ratings Module package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Plugin - Ratings Module 4.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-ratings\n"
+"POT-Creation-Date: 2023-09-08 22:48:31+00:00\n"
+"PO-Revision-Date: 2017-03-30 12:41-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.php:20 admin.php:21 business-directory-ratings.php:807
+#: includes/class-ratings-privacy-policy.php:43
+#: includes/class-ratings-settings.php:6 templates/ratings.tpl.php:12
+msgid "Ratings"
+msgstr "Omdömen"
+
+#: admin.php:64
+msgid "The rating was approved."
+msgstr "Omdömet godkändes"
+
+#: admin.php:68
+msgid "The rating was deleted."
+msgstr "Omdömet togs bort."
+
+#: admin.php:86
+msgid "Search"
+msgstr ""
+
+#: admin.php:98
+msgid "Listing Ratings"
+msgstr "Annonsomdömen"
+
+#: admin.php:147
+msgid "Please fill in all required fields for the rating"
+msgstr ""
+
+#: admin.php:179
+msgid "There was an error retrieving your rating"
+msgstr ""
+
+#: admin.php:191
+msgid "There was an error saving your rating"
+msgstr ""
+
+#: business-directory-ratings.php:101
+msgid "Rating (average)"
+msgstr "Omdöme (genomsnitt)"
+
+#: business-directory-ratings.php:207 class-ratings-table.php:21
+#: templates/admin-post-review.tpl.php:17 templates/form.tpl.php:22
+msgid "Rating"
+msgstr "Omdöme"
+
+#: business-directory-ratings.php:212
+msgid "Rating Count"
+msgstr "Antal omdömen"
+
+#: business-directory-ratings.php:478
+msgid "Please enter your name."
+msgstr "Vänligen fyll i ditt namn."
+
+#: business-directory-ratings.php:483
+#, fuzzy
+msgid "Please enter your email."
+msgstr "Vänligen fyll i ditt namn."
+
+#: business-directory-ratings.php:495
+msgid "Please select a valid rating."
+msgstr "Vänligen välj ett giltigt betyg."
+
+#: business-directory-ratings.php:499
+msgid "Please enter a comment."
+msgstr "Vänligen skriv en kommentar."
+
+#: business-directory-ratings.php:624
+msgid "An unknown error occurred"
+msgstr "Ett okänt fel inträffade"
+
+#: business-directory-ratings.php:801
+#, fuzzy
+msgid "Ratings count"
+msgstr "Antal omdömen"
+
+#: class-ratings-field.php:27
+msgid "Leave a review"
+msgstr ""
+
+#: class-ratings-field.php:63
+msgid "(More feedback needed)"
+msgstr "(Mer feedback behövs)"
+
+#: class-ratings-field.php:120 templates/ratings.tpl.php:60
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: class-ratings-table.php:11
+msgid "review pending"
+msgstr "Inväntar granskning"
+
+#: class-ratings-table.php:12
+msgid "reviews pending"
+msgstr "Inväntar granskning"
+
+#: class-ratings-table.php:20
+msgid "User/IP"
+msgstr "Användare / IP"
+
+#: class-ratings-table.php:22
+msgid "Comment"
+msgstr "Kommentar"
+
+#: class-ratings-table.php:23
+msgid "Listing"
+msgstr "Annons"
+
+#: class-ratings-table.php:37
+msgid "All"
+msgstr ""
+
+#: class-ratings-table.php:38
+msgid "Pending"
+msgstr ""
+
+#. translators: %s is the date
+#: class-ratings-table.php:138
+#, fuzzy
+msgid "Submitted on %s"
+msgstr "Inskickat den"
+
+#: class-ratings-table.php:155
+msgid "Approve"
+msgstr "Godkänn"
+
+#: class-ratings-table.php:169 templates/admin-rating-row.tpl.php:34
+msgid "Delete"
+msgstr "Radera"
+
+#: includes/class-ratings-personal-data-provider.php:62
+#, fuzzy
+msgid "Rating ID"
+msgstr "Omdöme"
+
+#: includes/class-ratings-personal-data-provider.php:63
+#, fuzzy
+msgid "Rating Author"
+msgstr "Antal omdömen"
+
+#: includes/class-ratings-personal-data-provider.php:64
+#, fuzzy
+msgid "Rating Author Email"
+msgstr "Betyg tröskel"
+
+#: includes/class-ratings-personal-data-provider.php:65
+#, fuzzy
+msgid "Rating Author IP"
+msgstr "Antal omdömen"
+
+#: includes/class-ratings-personal-data-provider.php:66
+#, fuzzy
+msgid "Rating Date"
+msgstr "Verktygstips omdöme"
+
+#: includes/class-ratings-personal-data-provider.php:67
+#, fuzzy
+msgid "Rating Value"
+msgstr "Antal omdömen"
+
+#: includes/class-ratings-personal-data-provider.php:68
+#, fuzzy
+msgid "Rating Content"
+msgstr "Antal omdömen"
+
+#: includes/class-ratings-personal-data-provider.php:69
+#, fuzzy
+msgid "Rated Listing"
+msgstr "Betygsätt denna annonsör"
+
+#. Plugin Name of the plugin/theme
+#, fuzzy
+msgid "Business Directory Ratings"
+msgstr "Business Directory Plugin - Modul för betyg"
+
+#: includes/class-ratings-personal-data-provider.php:142
+msgid ""
+"An unknown error occurred while trying to delete information for review "
+"{review_id}."
+msgstr ""
+
+#: includes/class-ratings-privacy-policy.php:44
+msgid ""
+"When visitors leave reviews for directory listings we collect the data shown "
+"in the review form, and also the visitor’s IP address to help spam detection."
+msgstr ""
+
+#: includes/class-ratings-settings.php:8
+msgid "General Settings"
+msgstr "Allmänna inställningar"
+
+#: includes/class-ratings-settings.php:13
+msgid "Ratings threshold"
+msgstr "Betyg tröskel"
+
+#: includes/class-ratings-settings.php:16
+msgid "Minimum number of reviews before ratings are displayed on a listing"
+msgstr "Minsta antalet betyg innan betyg visas på en annons"
+
+#: includes/class-ratings-settings.php:23
+msgid "Allow unregistered users to post reviews?"
+msgstr "Tillåt oregistrerade användare att skriva recensioner?"
+
+#: includes/class-ratings-settings.php:32
+msgid "Allow (some) HTML in ratings comments?"
+msgstr "Tillåta (viss) HTML i betygskommentarerna?"
+
+#: includes/class-ratings-settings.php:41
+msgid "Rating comments"
+msgstr "Betygskommentar"
+
+#: includes/class-ratings-settings.php:44
+msgid ""
+"Decide whether rating comments should be required, optional or not used at "
+"all."
+msgstr ""
+"Avgör om betygskommentar ska krävas, vara frivilligt eller inte användas "
+"alls."
+
+#: includes/class-ratings-settings.php:46
+msgid "Required"
+msgstr "Obligatoriskt"
+
+#: includes/class-ratings-settings.php:47
+msgid "Optional"
+msgstr "Valfri"
+
+#: includes/class-ratings-settings.php:48
+msgid "Disabled"
+msgstr "Avaktiverad"
+
+#: includes/class-ratings-settings.php:57
+msgid "Admin must approve reviews?"
+msgstr "Admin måste godkänna recensioner?"
+
+#: includes/class-ratings-settings.php:65
+msgid "Email Settings"
+msgstr "E-postinställningar"
+
+#: includes/class-ratings-settings.php:69
+msgid "Notify listing owner of new ratings?"
+msgstr "Meddela annonsören vid nytt omdöme?"
+
+#: includes/class-ratings-settings.php:78
+msgid "Notify site admin of approved/submitted ratings?"
+msgstr "Meddela sidoadministratören godkända eller inlämnade omdömen?"
+
+#: includes/class-ratings-settings.php:99
+#, fuzzy
+msgid ""
+"A new rating has been posted to the listing [listing]. The rating details "
+"are below.\n"
+"\n"
+"Posted on: [date]\n"
+"Posted by: [rating_author]\n"
+"Rating: [rating_rating]\n"
+"Comments: [rating_comment]\n"
+msgstr ""
+"Kära admin,\n"
+"\n"
+"Ett nytt omdöme har skrivits om [listing] och väntar på ditt godkännande. Du "
+"kan se annonsen och hantera omdömet genom att besöka [url].\n"
+"Detaljer om omdömet finns nedan:\n"
+"\n"
+"Postat: [date]\n"
+"Postat av: [rating_author]\n"
+"Omdöme: [rating_rating]\n"
+"Kommentar: [rating_comment]\n"
+
+#: includes/class-ratings-settings.php:125
+#, fuzzy
+msgid "Rating pending approval email message"
+msgstr "[%s] Omdöme väntar på godkännande"
+
+#: includes/class-ratings-settings.php:129
+#, fuzzy
+msgid ""
+"Dear admin,\n"
+"\n"
+"A new rating has been submitted to the listing [listing] and is pending "
+"approval. You can see the listing and take care of approving it or rejecting "
+"it by visiting [url].\n"
+"Rating details are below:\n"
+"\n"
+"Posted on: [date]\n"
+"Posted by: [rating_author]\n"
+"Rating: [rating_rating]\n"
+"Comments: [rating_comment]\n"
+msgstr ""
+"Kära admin,\n"
+"\n"
+"Ett nytt omdöme har skrivits om [listing] och väntar på ditt godkännande. Du "
+"kan se annonsen och hantera omdömet genom att besöka [url].\n"
+"Detaljer om omdömet finns nedan:\n"
+"\n"
+"Postat: [date]\n"
+"Postat av: [rating_author]\n"
+"Omdöme: [rating_rating]\n"
+"Kommentar: [rating_comment]\n"
+
+#: templates/admin-post-review.tpl.php:5 templates/admin-post-review.tpl.php:28
+msgid "Add Review"
+msgstr "Lägg till recension"
+
+#: templates/admin-post-review.tpl.php:11
+#, fuzzy
+msgid "Author"
+msgstr "Författare:"
+
+#: templates/admin-post-review.tpl.php:13
+msgid "WordPress username or arbitrary username."
+msgstr "WordPress användarnamn eller godtyckligt användarnamn."
+
+#: templates/admin-post-review.tpl.php:29 templates/admin-rating-row.tpl.php:33
+#: templates/ratings.tpl.php:23
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: templates/admin-rating-row.tpl.php:32
+msgid "Edit"
+msgstr "Redigera"
+
+#: templates/admin-rating-row.tpl.php:48 templates/ratings.tpl.php:49
+msgid "Save"
+msgstr "Spara"
+
+#: templates/admin-ratings.tpl.php:4
+msgid "This listing has not been rated yet."
+msgstr "Denna annons har inte betygsatts än."
+
+#: templates/form.tpl.php:7 templates/form.tpl.php:69
+msgid "Post your review"
+msgstr "Skriv ditt omdöme"
+
+#: templates/form.tpl.php:28
+#, fuzzy
+msgid "Name"
+msgstr "Namn:"
+
+#: templates/form.tpl.php:33
+msgid "Email"
+msgstr ""
+
+#: templates/form.tpl.php:41
+msgid "Your review."
+msgstr "Din recension."
+
+#. translators: %s List of allowed tags
+#: templates/form.tpl.php:60
+msgid "You may use these HTML tags: %s."
+msgstr "Du kan använda dessa HTML-taggar:%s."
+
+#: templates/ratings.tpl.php:14
+msgid "There are no reviews yet."
+msgstr "Det finns inga recensioner ännu."
+
+#: templates/ratings.tpl.php:80
+msgid "Your review has been saved and is waiting for approval."
+msgstr "Din recension har sparats och väntar på godkännande."
+
+#: templates/ratings.tpl.php:82
+msgid "Your review has been saved."
+msgstr "Din recension har sparats."
+
+#: templates/ratings.tpl.php:89
+msgid "You have already rated this listing."
+msgstr "Du har redan betygsatt denna annons."
+
+#. translators: %1$s start link HTML, %2$s end link
+#: templates/ratings.tpl.php:93
+#, fuzzy
+msgid "Please %1$slogin%2$s to leave a review."
+msgstr "Vänligen logga in för att betygssätta denna annons."
+
+#: templates/stars.php:35
+msgid "& up"
+msgstr ""
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://businessdirectoryplugin.com"
+msgstr "http://www.businessdirectoryplugin.com"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Allows your users to rate businesses, search by rating, and enter comments "
+"about listings."
+msgstr ""
+"Business Directory Ratings. Låter dina användare betygsätta verksamheter, "
+"söka via omdöme och skriva kommentarer om annonser."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "Business Directory Team"
+msgstr "Business Directory Plugin - Modul för betyg"
+
+#: includes/class-ratings-settings.php:95
+msgctxt "admin settings"
+msgid "New rating posted email message"
+msgstr ""
+
+#: includes/class-ratings-settings.php:98
+msgctxt "email subject"
+msgid "[[site-title]] New rating posted"
+msgstr ""
+
+#: includes/class-ratings-settings.php:128
+#, fuzzy
+msgctxt "email subject"
+msgid "[[site-title]] Rating pending approval"
+msgstr "[%s] Omdöme väntar på godkännande"
+
+#: includes/class-ratings-settings.php:110
+msgctxt "settings"
+msgid ""
+"Sent when a new rating has been posted and already visible in the listing."
+msgstr ""
+
+#: includes/class-ratings-settings.php:112
+#: includes/class-ratings-settings.php:145
+msgctxt "settings"
+msgid "Listing's name (with link)"
+msgstr ""
+
+#: includes/class-ratings-settings.php:113
+#: includes/class-ratings-settings.php:146
+msgctxt "settings"
+msgid ""
+"The name of author of the rating, or the IP address used when it was posted"
+msgstr ""
+
+#: includes/class-ratings-settings.php:114
+#: includes/class-ratings-settings.php:147
+msgctxt "settings"
+msgid "The comment included with the rating"
+msgstr ""
+
+#: includes/class-ratings-settings.php:115
+#: includes/class-ratings-settings.php:148
+msgctxt "settings"
+msgid "The numeric rating"
+msgstr ""
+
+#: includes/class-ratings-settings.php:116
+#: includes/class-ratings-settings.php:149
+#, fuzzy
+msgctxt "settings"
+msgid "The date the rating was posted"
+msgstr "Omdömet godkändes"
+
+#: includes/class-ratings-settings.php:143
+#, fuzzy
+msgctxt "settings"
+msgid "Sent when a new rating has been posted and is pending approval."
+msgstr "Din recension har sparats och väntar på godkännande."
+
+#: includes/class-ratings-settings.php:150
+msgctxt "settings"
+msgid "A link to the detailed view of the rating in the admin dashboard"
+msgstr ""
+
+#~ msgid "Listing ratings pending review"
+#~ msgstr "Omdömen väntar på granskning"
+
+#~ msgid "Ratings for review"
+#~ msgstr "Betyg för granskning"
+
+#~ msgid "Rate this listing"
+#~ msgstr "Betygsätt denna annonsör"
+
+#, fuzzy
+#~ msgid "You can't rate your listings."
+#~ msgstr "Du har redan betygsatt denna annons."
+
+#~ msgid "Rating Tooltips"
+#~ msgstr "Verktygstips omdöme"
+
+#~ msgid "%d stars"
+#~ msgstr "%d stjärnor"
+
+#~ msgid "Rating:"
+#~ msgstr "Betyg:"
+
+#~ msgid "Business Directory Plugin - Ratings Module"
+#~ msgstr "Business Directory Plugin - Modul för betyg"
+
+#~ msgid "D. Rodenbaugh"
+#~ msgstr "D. Rodenbaugh"
+
+#~ msgid "http://www.skylineconsult.com"
+#~ msgstr "http://www.skylineconsult.com"
+
+#, fuzzy
+#~ msgctxt "privacy policy"
+#~ msgid "Ratings"
+#~ msgstr "Omdömen"
+
+#, fuzzy
+#~ msgctxt "wpbdp-ratings"
+#~ msgid "Anonymous"
+#~ msgstr "Anonym"
+
+#, fuzzy
+#~ msgid "Business Directory Plugin"
+#~ msgstr "Business Directory Plugin - Modul för betyg"
+
+#, fuzzy
+#~ msgctxt "settings"
+#~ msgid "the date the rating was posted"
+#~ msgstr "Omdömet godkändes"
+
+#~ msgid "Notification Email"
+#~ msgstr "E-postadress för notifikationer"
+
+#~ msgid ""
+#~ "You can use the placeholders [listing] for the listing title, "
+#~ "[rating_author] for the author of the rating, [rating_comment] for the "
+#~ "rating comment, [rating_rating] for the actual rating and [date] for the "
+#~ "date the rating was posted."
+#~ msgstr ""
+#~ "Du kan använda platshållare [listing] för annonstiteln, [rating_author] "
+#~ "för författaren av omdömet, [rating_somment] för kommentaren för omdömet, "
+#~ "[rating_rating] för själva betyget och [date] för datumet omdömet skrevs."

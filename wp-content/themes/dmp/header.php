@@ -39,8 +39,7 @@
 				<?php
 			endif;
 			$dmp_description = get_bloginfo( 'description', 'display' );
-			if ( $dmp_description || is_customize_preview() ) :
-				?>
+			if ( $dmp_description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $dmp_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->

@@ -1,0 +1,553 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Plugin - Ratings\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-ratings\n"
+"POT-Creation-Date: 2023-09-08 22:48:31+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Axel J. Metayer <axel@kfz.net>\n"
+"Language-Team: BD Team <support@businessdirectoryplugin.com>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: admin.php:20 admin.php:21 business-directory-ratings.php:807
+#: includes/class-ratings-privacy-policy.php:43
+#: includes/class-ratings-settings.php:6 templates/ratings.tpl.php:12
+msgid "Ratings"
+msgstr "Bewertungen"
+
+#: admin.php:64
+msgid "The rating was approved."
+msgstr "Die Bewertung wurde freigegeben."
+
+#: admin.php:68
+msgid "The rating was deleted."
+msgstr "Die Bewertung wurde gelöscht."
+
+#: admin.php:86
+msgid "Search"
+msgstr ""
+
+#: admin.php:98
+msgid "Listing Ratings"
+msgstr "Bewertungen"
+
+#: admin.php:147
+msgid "Please fill in all required fields for the rating"
+msgstr ""
+
+#: admin.php:179
+msgid "There was an error retrieving your rating"
+msgstr ""
+
+#: admin.php:191
+msgid "There was an error saving your rating"
+msgstr ""
+
+#: business-directory-ratings.php:101
+msgid "Rating (average)"
+msgstr "Bewertung (Durchschnitt)"
+
+#: business-directory-ratings.php:207 class-ratings-table.php:21
+#: templates/admin-post-review.tpl.php:17 templates/form.tpl.php:22
+msgid "Rating"
+msgstr "Bewertung"
+
+#: business-directory-ratings.php:212
+msgid "Rating Count"
+msgstr "Anzahl der Bewertungen"
+
+#: business-directory-ratings.php:478
+msgid "Please enter your name."
+msgstr "Bitte geben Sie Ihren Namen ein."
+
+#: business-directory-ratings.php:483
+#, fuzzy
+msgid "Please enter your email."
+msgstr "Bitte geben Sie Ihren Namen ein."
+
+#: business-directory-ratings.php:495
+msgid "Please select a valid rating."
+msgstr "Bitte wählen Sie eine gültige Bewertung (1 bis 5 Sterne)"
+
+#: business-directory-ratings.php:499
+msgid "Please enter a comment."
+msgstr "Bitte geben sie einen Kommentar ein."
+
+#: business-directory-ratings.php:624
+msgid "An unknown error occurred"
+msgstr "Ein unbekannter Fehler ist aufgetreten"
+
+#: business-directory-ratings.php:801
+#, fuzzy
+msgid "Ratings count"
+msgstr "Anzahl der Bewertungen"
+
+#: class-ratings-field.php:27
+msgid "Leave a review"
+msgstr ""
+
+#: class-ratings-field.php:63
+msgid "(More feedback needed)"
+msgstr "(Mehr Feedback erforderlich)"
+
+#: class-ratings-field.php:120 templates/ratings.tpl.php:60
+msgid "Anonymous"
+msgstr "Anonym"
+
+#: class-ratings-table.php:11
+msgid "review pending"
+msgstr "Bewertung wartet auf Freigabe"
+
+#: class-ratings-table.php:12
+msgid "reviews pending"
+msgstr "Ausstehende Bewertung"
+
+#: class-ratings-table.php:20
+msgid "User/IP"
+msgstr "Benutzer / IP"
+
+#: class-ratings-table.php:22
+msgid "Comment"
+msgstr "Kommentar"
+
+#: class-ratings-table.php:23
+msgid "Listing"
+msgstr "Eintrag"
+
+#: class-ratings-table.php:37
+msgid "All"
+msgstr ""
+
+#: class-ratings-table.php:38
+msgid "Pending"
+msgstr ""
+
+#. translators: %s is the date
+#: class-ratings-table.php:138
+#, fuzzy
+msgid "Submitted on %s"
+msgstr "Übermittelt am <i>%s</i>"
+
+#: class-ratings-table.php:155
+msgid "Approve"
+msgstr "Freischalten"
+
+#: class-ratings-table.php:169 templates/admin-rating-row.tpl.php:34
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/class-ratings-personal-data-provider.php:62
+#, fuzzy
+msgid "Rating ID"
+msgstr "Bewertung"
+
+#: includes/class-ratings-personal-data-provider.php:63
+#, fuzzy
+msgid "Rating Author"
+msgstr "Anzahl der Bewertungen"
+
+#: includes/class-ratings-personal-data-provider.php:64
+#, fuzzy
+msgid "Rating Author Email"
+msgstr "Bewertungs Grenzwert"
+
+#: includes/class-ratings-personal-data-provider.php:65
+#, fuzzy
+msgid "Rating Author IP"
+msgstr "Anzahl der Bewertungen"
+
+#: includes/class-ratings-personal-data-provider.php:66
+#, fuzzy
+msgid "Rating Date"
+msgstr "Rating-Vorlagen"
+
+#: includes/class-ratings-personal-data-provider.php:67
+#, fuzzy
+msgid "Rating Value"
+msgstr "Anzahl der Bewertungen"
+
+#: includes/class-ratings-personal-data-provider.php:68
+#, fuzzy
+msgid "Rating Content"
+msgstr "Anzahl der Bewertungen"
+
+#: includes/class-ratings-personal-data-provider.php:69
+#, fuzzy
+msgid "Rated Listing"
+msgstr "Bewerten Sie diesen Eintrag"
+
+#. Plugin Name of the plugin/theme
+msgid "Business Directory Ratings"
+msgstr ""
+
+#: includes/class-ratings-personal-data-provider.php:142
+msgid ""
+"An unknown error occurred while trying to delete information for review "
+"{review_id}."
+msgstr ""
+
+#: includes/class-ratings-privacy-policy.php:44
+msgid ""
+"When visitors leave reviews for directory listings we collect the data shown "
+"in the review form, and also the visitor’s IP address to help spam detection."
+msgstr ""
+
+#: includes/class-ratings-settings.php:8
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: includes/class-ratings-settings.php:13
+msgid "Ratings threshold"
+msgstr "Bewertungs Grenzwert"
+
+#: includes/class-ratings-settings.php:16
+msgid "Minimum number of reviews before ratings are displayed on a listing"
+msgstr ""
+"Mindestanzahl von Bewertungen bevor Bewertungen bei einem Eintrag angezeigt "
+"werden"
+
+#: includes/class-ratings-settings.php:23
+msgid "Allow unregistered users to post reviews?"
+msgstr ""
+"Erlauben Sie <i>nicht registrierten Benutzern</i>, Bewertungen einzureichen?"
+
+#: includes/class-ratings-settings.php:32
+msgid "Allow (some) HTML in ratings comments?"
+msgstr "Bestimmte HTML-Tags in den Bewertungen erlauben?"
+
+#: includes/class-ratings-settings.php:41
+msgid "Rating comments"
+msgstr "Bewertung und Kommentare"
+
+#: includes/class-ratings-settings.php:44
+msgid ""
+"Decide whether rating comments should be required, optional or not used at "
+"all."
+msgstr ""
+"Entscheiden Sie, ob Kommentare zur Bewertung Pflicht, optional oder "
+"überhaupt nicht verwendet werden sollen."
+
+#: includes/class-ratings-settings.php:46
+msgid "Required"
+msgstr "Pflichfeld"
+
+#: includes/class-ratings-settings.php:47
+msgid "Optional"
+msgstr "Optional"
+
+#: includes/class-ratings-settings.php:48
+msgid "Disabled"
+msgstr "Inaktiv"
+
+#: includes/class-ratings-settings.php:57
+msgid "Admin must approve reviews?"
+msgstr "Admin muss Bewertungen freigeben?"
+
+#: includes/class-ratings-settings.php:65
+msgid "Email Settings"
+msgstr "Email Einstellungen"
+
+#: includes/class-ratings-settings.php:69
+msgid "Notify listing owner of new ratings?"
+msgstr "Den Besitzer des Eintrags über neue Bewertungen benachrichtigen?"
+
+#: includes/class-ratings-settings.php:78
+msgid "Notify site admin of approved/submitted ratings?"
+msgstr ""
+"Administrator bei neuen bestätigten/eingereichten Bewertungen "
+"benachrichtigen?"
+
+#: includes/class-ratings-settings.php:99
+#, fuzzy
+msgid ""
+"A new rating has been posted to the listing [listing]. The rating details "
+"are below.\n"
+"\n"
+"Posted on: [date]\n"
+"Posted by: [rating_author]\n"
+"Rating: [rating_rating]\n"
+"Comments: [rating_comment]\n"
+msgstr ""
+"Eine neue Bewertung ist für den Eintrag [listing] eingegangen und wartet auf "
+"Freigabe.\n"
+"Mit folgendem Link können Sie die Bewertung einsehen, freigeben oder "
+"löschen\n"
+"\n"
+"Geschrieben am: [date]\n"
+"Geschrieben von: [rating_author]\n"
+"Bewertung: [rating_rating]\n"
+"Kommentar: [rating_comment]\n"
+
+#: includes/class-ratings-settings.php:125
+#, fuzzy
+msgid "Rating pending approval email message"
+msgstr "Nachricht für die Bewertung wartet auf Freigabe Email"
+
+#: includes/class-ratings-settings.php:129
+#, fuzzy
+msgid ""
+"Dear admin,\n"
+"\n"
+"A new rating has been submitted to the listing [listing] and is pending "
+"approval. You can see the listing and take care of approving it or rejecting "
+"it by visiting [url].\n"
+"Rating details are below:\n"
+"\n"
+"Posted on: [date]\n"
+"Posted by: [rating_author]\n"
+"Rating: [rating_rating]\n"
+"Comments: [rating_comment]\n"
+msgstr ""
+"Lieber Admin,\n"
+"\n"
+"eine neue Bewertung ist für den Eintrag [listing] eingegangen und wartet auf "
+"Freigabe.\n"
+"\n"
+"Mit folgendem Link können Sie die Bewertung einsehen, freigeben oder "
+"löschen\n"
+"[url].\n"
+"\n"
+"Details:\n"
+"\n"
+"Geschrieben am: [date]\n"
+"Geschrieben von: [rating_author]\n"
+"Bewertung: [rating_rating]\n"
+"Kommentar: [rating_comment]\n"
+
+#: templates/admin-post-review.tpl.php:5 templates/admin-post-review.tpl.php:28
+msgid "Add Review"
+msgstr "Bewertung hinzufügen"
+
+#: templates/admin-post-review.tpl.php:11
+#, fuzzy
+msgid "Author"
+msgstr "Autor:"
+
+#: templates/admin-post-review.tpl.php:13
+msgid "WordPress username or arbitrary username."
+msgstr "WordPress-Benutzernamen oder beliebigen Benutzernamen."
+
+#: templates/admin-post-review.tpl.php:29 templates/admin-rating-row.tpl.php:33
+#: templates/ratings.tpl.php:23
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/admin-rating-row.tpl.php:32
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: templates/admin-rating-row.tpl.php:48 templates/ratings.tpl.php:49
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/admin-ratings.tpl.php:4
+msgid "This listing has not been rated yet."
+msgstr "Dieser Eintrag wurde noch nicht bewertet."
+
+#: templates/form.tpl.php:7 templates/form.tpl.php:69
+msgid "Post your review"
+msgstr "Ihre Bewertung abschicken"
+
+#: templates/form.tpl.php:28
+#, fuzzy
+msgid "Name"
+msgstr "Name:"
+
+#: templates/form.tpl.php:33
+msgid "Email"
+msgstr ""
+
+#: templates/form.tpl.php:41
+msgid "Your review."
+msgstr "Ihre Bewertung."
+
+#. translators: %s List of allowed tags
+#: templates/form.tpl.php:60
+msgid "You may use these HTML tags: %s."
+msgstr ""
+"Sie können folgenden <abbr title=\"HyperText Markup Language\">HTML</abbr> "
+"Tags und Attribute verwenden %s"
+
+#: templates/ratings.tpl.php:14
+msgid "There are no reviews yet."
+msgstr ""
+"Es sind noch keine Bewertungen für diesen Eintrag vorhanden. Seien sie der "
+"erste der diesen Eintrag bewertet."
+
+#: templates/ratings.tpl.php:80
+msgid "Your review has been saved and is waiting for approval."
+msgstr "Ihre Bewertung wurde gespeichert und wartet auf Freigabe."
+
+#: templates/ratings.tpl.php:82
+msgid "Your review has been saved."
+msgstr "Die Bewertung wurde gespeichert."
+
+#: templates/ratings.tpl.php:89
+msgid "You have already rated this listing."
+msgstr "Sie haben diesen Eintrag bereits bewertet."
+
+#. translators: %1$s start link HTML, %2$s end link
+#: templates/ratings.tpl.php:93
+#, fuzzy
+msgid "Please %1$slogin%2$s to leave a review."
+msgstr "Bitte <a>einloggen</a> um diesen Eintrag zu bewerten."
+
+#: templates/stars.php:35
+msgid "& up"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://businessdirectoryplugin.com"
+msgstr ""
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Allows your users to rate businesses, search by rating, and enter comments "
+"about listings."
+msgstr ""
+"Business Directory Ratings. Erlaubt Benutzern die Einträge / Unternehmen zu "
+"bewerten, nach Bewertungen zu suchen und Kommentare über die Einträge zu "
+"machen."
+
+#. Author of the plugin/theme
+msgid "Business Directory Team"
+msgstr ""
+
+#: includes/class-ratings-settings.php:95
+msgctxt "admin settings"
+msgid "New rating posted email message"
+msgstr "Neue Bewertung veröffentlicht Email Nachricht"
+
+#: includes/class-ratings-settings.php:98
+msgctxt "email subject"
+msgid "[[site-title]] New rating posted"
+msgstr "[[site-title]] Neue Bewertung veröffentlicht"
+
+#: includes/class-ratings-settings.php:128
+msgctxt "email subject"
+msgid "[[site-title]] Rating pending approval"
+msgstr "[[site-title]] Bewertung wartet auf Freigabe"
+
+#: includes/class-ratings-settings.php:110
+msgctxt "settings"
+msgid ""
+"Sent when a new rating has been posted and already visible in the listing."
+msgstr ""
+"Gesendet, wenn eine neue Bewertung geschrieben und bereits unter dem Eintrag "
+"sichtbar ist."
+
+#: includes/class-ratings-settings.php:112
+#: includes/class-ratings-settings.php:145
+msgctxt "settings"
+msgid "Listing's name (with link)"
+msgstr "Eintragsname (mit Link)"
+
+#: includes/class-ratings-settings.php:113
+#: includes/class-ratings-settings.php:146
+msgctxt "settings"
+msgid ""
+"The name of author of the rating, or the IP address used when it was posted"
+msgstr ""
+"Der Name des Autors der Bewertung, oder die IP-Adresse die beim "
+"veröffentlichen verwendet wurde"
+
+#: includes/class-ratings-settings.php:114
+#: includes/class-ratings-settings.php:147
+msgctxt "settings"
+msgid "The comment included with the rating"
+msgstr "Der Kommentar zu der Bewertung"
+
+#: includes/class-ratings-settings.php:115
+#: includes/class-ratings-settings.php:148
+msgctxt "settings"
+msgid "The numeric rating"
+msgstr "Die numerische Bewertung"
+
+#: includes/class-ratings-settings.php:116
+#: includes/class-ratings-settings.php:149
+msgctxt "settings"
+msgid "The date the rating was posted"
+msgstr "Das Datum den dem die Bewertung geschrieben wurde"
+
+#: includes/class-ratings-settings.php:143
+msgctxt "settings"
+msgid "Sent when a new rating has been posted and is pending approval."
+msgstr ""
+"Wird gesendet, wenn eine neue Bewertung abgegeben wurde und auf Freigabe "
+"wartet."
+
+#: includes/class-ratings-settings.php:150
+msgctxt "settings"
+msgid "A link to the detailed view of the rating in the admin dashboard"
+msgstr "Einen Link zur Detailansicht der Bewertung in der Admin-Öberfläche"
+
+#~ msgid "Listing ratings pending review"
+#~ msgstr "Bewertungen für Einträge die auf Freischaltung warten"
+
+#~ msgid "Ratings for review"
+#~ msgstr "Bewertungen"
+
+#~ msgid "at least "
+#~ msgstr "mindestens"
+
+#~ msgid "Rate this listing"
+#~ msgstr "Bewerten Sie diesen Eintrag"
+
+#, fuzzy
+#~ msgid "You can't rate your listings."
+#~ msgstr "Sie haben diesen Eintrag bereits bewertet."
+
+#~ msgid "Rating Tooltips"
+#~ msgstr "Rating-Tooltips (wenn man mit dem Mauszeiger drüberfährt)"
+
+#~ msgid "Awful"
+#~ msgstr "Schrecklich"
+
+#~ msgid "Bad"
+#~ msgstr "Schlecht"
+
+#~ msgid "Average"
+#~ msgstr "Durchschnittlich"
+
+#~ msgid "Good"
+#~ msgstr "Gut"
+
+#~ msgid "Awesome"
+#~ msgstr "Großartig"
+
+#~ msgid "%d stars"
+#~ msgstr "%d Sterne"
+
+#~ msgid "Rating:"
+#~ msgstr "Bewerten:"
+
+#, fuzzy
+#~ msgctxt "privacy policy"
+#~ msgid "Ratings"
+#~ msgstr "Bewertungen"
+
+#, fuzzy
+#~ msgctxt "wpbdp-ratings"
+#~ msgid "Anonymous"
+#~ msgstr "Anonym"
+
+#~ msgid "Notification Email"
+#~ msgstr "Benachrichtigungs Email"
+
+#~ msgid ""
+#~ "You can use the placeholders [listing] for the listing title, "
+#~ "[rating_author] for the author of the rating, [rating_comment] for the "
+#~ "rating comment, [rating_rating] for the actual rating and [date] for the "
+#~ "date the rating was posted."
+#~ msgstr ""
+#~ "Sie können folgende Platzhalter [listing] für den Eintragstitel, "
+#~ "[rating_author] für den Author der Bewertung, [rating_comment] für den "
+#~ "Kommentar der Bewertung, [rating_rating] für die eigentliche Bewertung "
+#~ "und [Datum] nutzen."
