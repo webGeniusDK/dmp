@@ -1,0 +1,125 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: var(--color-text-main);
+	font-family: var(--font-main);
+	font-size: 1rem;
+	line-height: var(--font-lineheight-body);
+	letter-spacing: 0.1em;
+}
+
+
+// HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	font-family: var(--font-heading);
+	clear: both;
+	color: var(--color-text-heading);
+	font-weight: 600;
+	opacity:1;
+	transition: opacity .3s ease;
+	letter-spacing: 0.005em;
+	margin-bottom: 1em;
+	a & {
+		&:hover {
+			opacity:0.8;
+		}
+	}
+}
+h1 {
+	@include header-h1();
+}
+
+h2 {
+	@include header-h2();
+
+	&.section-title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 1.5rem;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+h3 {
+	@include header-h3();
+}
+
+h4 {
+	@include header-h4();
+	margin-bottom: .765em;
+}
+
+h5 {
+	@include header-h5();
+	margin-bottom: .765em;
+}
+
+h6 {
+	@include header-h6();
+	margin-bottom: .765em;
+}
+
+
+//  COPY
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: var(--color-bg-pre);
+	font-family: var(--font-pre);
+	line-height: var(--font-pre-lineheight);
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: var(--font-code);
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted var(--color-abr-border);
+	cursor: help;
+}
+
+mark,
+ins {
+	background: var(--color-bg-ins);
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

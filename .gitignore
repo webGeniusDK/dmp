@@ -26,7 +26,6 @@ wp-content/themes/dmp/style.css.map
 wp-content/themes/dmp/style.css
 wp-content/themes/dmp/style.min.css
 wp-content/themes/dmp/style.css.min.map
-wp-content/themes/dmp/gulp/node_modules
 wp-content/themes/dmp/gulp/wpgulp.config.js
 wp-content/themes/dmp/cookie-policy-template.htm
 wp-content/db.php
@@ -38,6 +37,9 @@ wp-content/themes/twentytwenty/
 wp-content/themes/twentytwentyone/
 wp-content/debug-wamp.log
 .htaccess
+
+# All node modules folders
+**/node_modules/
 
 # wpengine specific
 .smushit-status

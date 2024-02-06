@@ -1,0 +1,41 @@
+.wpbdp-migrate-pack-info {
+    margin-top: 30px;
+}
+
+.wpbdp-migrate-pack-info dl {
+    margin-left: 10px;
+}
+
+.wpbdp-migrate-pack-info dl dt {
+    font-weight: bold;
+}
+
+.wpbdp-admin-page-migrate-import .export-parts .done .desc {
+    text-decoration: line-through;
+}
+
+.wpbdp-admin-page-migrate-import .export-parts .current .desc {
+    font-weight: bold;
+}
+
+.import-file-selection {
+    width: 40%;
+    float: left;
+}
+
+.import-upload-file {
+    border-left: solid 1px #ccc;
+    padding-left: 30px;
+    width: 50%;
+    float: right;
+}
+
+.import-file-selection .choice-data {
+    padding: 5px 0 8px 5px;
+    border-bottom: dotted 1px #ccc;
+}
+
+.import-file-selection .choice-data .choice-meta {
+    color: #666;
+    font-size: 90%;
+}

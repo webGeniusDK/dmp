@@ -1,0 +1,41 @@
+{
+  "name": "pituffik-pre-process",
+  "version": "1.0.0",
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ],
+  "description": "Preprocessing of SCSS, JS and Optional Images optimization",
+  "scripts": {
+    "build:styles": "sass --no-source-map --style=expanded ../assets/scss/style.scss ../style.css && npx postcss ../style.css --use autoprefixer -d ../ && sass --no-source-map --style=compressed ../assets/scss/style.scss ../style.min.css && npx postcss ../style.min.css --use autoprefixer cssnano -d ../",
+    "build:partialStyles": "node buildPartialStyles.js",
+    "build:customJS": "node ./handleCustomJSBuild.js",
+    "build:images": "imagemin \"../assets/img/raw/*\" -o ../assets/img",
+    "watch:styles": "chokidar \"../assets/scss/**/*.scss\" -c \"npm run build:styles\"",
+    "watch:partials": "chokidar \"../assets/partial-styles/**/*.scss\" -c \"node buildPartialStyles.js {path}\"",
+    "watch:js": "chokidar \"../assets/js/custom/**/*.js\" -c \"npm run build:customJS\"",
+    "watch:php": "node browserSync.js",
+    "watch": "npm-run-all -p watch:styles watch:partials watch:js watch:php",
+    "build": "npm run build:styles && npm run build:partialStyles && npm run build:customJS && npm run build:images"
+  },
+  "author": "Jeppe Risum",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer": "^10.0.0",
+    "babel-cli": "^6.0.0",
+    "browser-sync": "^2.29.3",
+    "chokidar": "^3.5.3",
+    "chokidar-cli": "^2.0.0",
+    "concat-cli": "^4.0.0",
+    "cssnano": "^5.0.0",
+    "imagemin-cli": "^7.0.0",
+    "lodash.debounce": "^4.0.8",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.0.0",
+    "terser": "^5.23.0"
+  }
+}

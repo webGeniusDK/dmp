@@ -1,0 +1,1027 @@
+
+
+.wpbdp-categories {
+  display: none !important;
+}
+.wpbdp-main-box {
+  border-radius: var(--border-radius-md);
+  background-color: var(--ipdk-color-3-75);
+  padding: 3rem 1rem;
+  margin-bottom: 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 4rem 1rem;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 4rem 2rem;
+  }
+
+
+  .search-fields {
+    margin-bottom: 0;
+
+    .main-input {
+      margin-bottom: 0;
+    }
+  }
+
+  .submit-btn {
+    margin-bottom: 0;
+    display: flex;
+
+    br {
+      display: none;
+    }
+
+    input[type="submit"] {
+
+    }
+  }
+}
+.wpbdp-form-field {
+  margin-bottom: 2rem;
+
+  &.wpbdp-form-field-has-description {
+    .wpbdp-form-field-description {
+      @include font-xs();
+      font-weight: 300;
+      color: var(--color-input-desc-text);
+    }
+  }
+
+  &.wpbdp-form-field-id-38,&.wpbdp-form-field-id-15,
+  &.wpbdp-form-field-id-11,&.wpbdp-form-field-id-19,
+  &.wpbdp-form-field-id-36 { // Priser field. Last field before checkboxes
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &.wpbdp-form-field-id-8.wpbdp-half {
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    grid-column: span 12;
+
+    .wpbdp-form-field-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @media screen and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include media-breakpoint-up(lg) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+}
+.wpbdp-main-links {
+  align-items: flex-start;
+  .button {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+.wpbdp-search-page {
+  @include section-padding();
+}
+.search-results {
+  margin-bottom: 4rem;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 6rem;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 8rem;
+  }
+  .wpbdp-pagination {
+    display: none;
+  }
+}
+.inselect {
+  font-weight: 300;
+}
+.title {
+  text-align: center;
+}
+.search-results-count-text {
+  text-align: center;
+}
+.container.search-filters {
+  border-radius: var(--border-radius-sm);
+  background-color: #ffe8e5;
+
+  @include media-breakpoint-up(md) {
+    top: auto;
+    left: auto;
+    position: relative;
+  }
+}
+.wpbdp-search-page, .wpbdp-view-search, .wpbdp-view-submit_listing {
+  .hero-video-background {
+    height: 5rem;
+
+    @include media-breakpoint-up(md) {
+      height: 11rem;
+    }
+  }
+}
+#wpbdp-search-form {
+  padding: 2rem;
+  @include media-breakpoint-up(md) {
+    width:95%;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 3rem;
+    border-radius: var(--border-radius-md);
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 5rem;
+  }
+
+  .wpbdp-view-search & {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap:1rem;
+    grid-column-gap:2rem;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+    }
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: calc(100%/3 - (4/3 * 1rem)) calc(100%/3 - (4/3 * 1rem)) calc(100%/3 - (4/3 * 1rem));
+    }
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: calc(100%/3 - (8/3 * 1rem)) calc(100%/3 - (8/3 * 1rem)) calc(100%/3 - (8/3 * 1rem));
+      grid-column-gap:4rem;
+    }
+
+    .wpbdp-search-filter {
+
+      //flex: 0 1 calc(100%/3 - (12rem/2));
+      text-align: left;
+      margin-bottom: var(--field-gap);
+    }
+  }
+
+  .wpbdp-search-filter {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
+    .wpbdp-search-field-label {
+      flex: 0 1 auto;
+      float: none;
+      margin-bottom: 1rem;
+      width:auto;
+
+
+      @include media-breakpoint-up(md) {
+        flex: 0 1 40%;
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-up(lg) {
+        flex: 0 1 50%;
+      }
+      @include media-breakpoint-up(xl) {
+        flex: 0 1 40%;
+      }
+      label {
+        font-weight: 500;
+        color: #6a6a6a;
+      }
+    }
+
+    .field.inner {
+      display: grid;
+      text-align: left;
+      grid-template-columns: auto;
+      grid-column-gap: var(--field-gap);
+      grid-row-gap: .5rem;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      @include media-breakpoint-up(md) {
+        flex-basis:60%;
+        text-align: right;
+      }
+      @include media-breakpoint-up(lg) {
+        flex-basis:50%;
+      }
+      @include media-breakpoint-up(xl) {
+        flex: 0 1 60%;
+      }
+      >input[type="text"], >select {
+        width: 100%;
+      }
+      label {
+        color:#6a6a6a;
+      }
+    }
+
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-33 { // make a divider between textfields and checkboxes/radio buttons
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #bcbcbc;
+        padding-bottom: 4rem;
+      }
+    }
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-34 { // make a divider between textfields and checkboxes/radio buttons
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 2rem;
+          border-bottom: 1px solid #bcbcbc;
+          padding-bottom: 4rem;
+        }
+    }
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-35 { // make a divider between textfields and checkboxes/radio buttons
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #bcbcbc;
+      padding-bottom: 4rem;
+    }
+
+
+
+    //checkboxes and radio buttons
+
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-15,
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-19,
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-36,
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-39 {
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .wpbdp-search-field-label {
+        flex: 0 1 auto;
+      }
+    }
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-20 { // Ratings field is full width on small screens
+      padding-bottom: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        grid-column: span 2;
+      }
+      @include media-breakpoint-up(md) {
+        border-bottom: 1px solid #bcbcbc;
+        padding-bottom: 3rem;
+      }
+      @include media-breakpoint-up(lg) {
+        grid-column: span 1;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      @include media-breakpoint-up(xl) {
+        grid-column: span 1;
+      }
+      .wpbdp-search-field-label {
+        flex: 0 1 auto;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1rem;
+        }
+      }
+      .field.inner {
+        @include media-breakpoint-up(lg) {
+          flex-basis: auto;
+          width:auto;
+        }
+      }
+    }
+
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-15 { // Køn field has a top border
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #bcbcbc;
+      .field.inner {
+        flex-basis: auto;
+      }
+      .wpbdp-search-field-label {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-19 {  // Sikker sex
+      padding-bottom: 3rem;
+      border-bottom: 1px solid #bcbcbc;
+      @include media-breakpoint-up(lg) {
+        //border:none;
+      }
+      .field.inner {
+        flex-basis: auto;
+      }
+      .wpbdp-search-field-label {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-36 {  // Tatoveringer field
+      @include media-breakpoint-up(sm) {
+        border:none;
+      }
+      .field.inner {
+        flex-basis: auto;
+      }
+      .wpbdp-search-field-label {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-39 {  // Intimbarbering field
+      .field.inner {
+        flex-basis: auto;
+      }
+      .wpbdp-search-field-label {
+        @include media-breakpoint-up(md) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+
+
+    .ipdk-theme &.wpbdp-form-field.wpbdp-form-field-id-8 { // Tilbyder field has a top border
+      padding-top: 2rem;
+      border-top: 1px solid #bcbcbc;
+      grid-column: span 1;
+
+      @include media-breakpoint-up(sm) {
+        grid-column: span 2;
+      }
+      @include media-breakpoint-up(md) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      @include media-breakpoint-up(lg) {
+        grid-column: span 3;
+      }
+      .field.inner {
+        flex-basis: auto;
+        text-align: left;
+        grid-column: span 1;
+
+        @include media-breakpoint-up(sm) {
+          grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint-up(xl) {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      .wpbdp-search-field-label {
+        flex: 0 1 auto;
+        @include media-breakpoint-up(md) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &.wpbdp-form-field-type-radio {
+      flex: 0 1 calc(100% / 3 - 2rem);
+
+      > div {
+        &.field {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .wpbdp-star-group {
+    background-color: #ffd6d1;
+    border-radius: var(--border-radius-sm);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    @include media-breakpoint-up(lg) {
+      padding: 1.5rem 2rem;
+    }
+    input {
+      display: none;
+    }
+
+    .bd-star-rating {
+      svg {
+        transition: all .3s ease;
+        color: #FFF;
+      }
+    }
+    .bd-star-rating-hover, .bd-star-rating-on {
+      svg {
+        color: #ffa599 !important;
+      }
+    }
+    .rating-stars-suffix {
+      display: none;
+    }
+  }
+  .wpbdp-submit {
+    background-color: var(--color-button-bg);
+    width: 100%;
+    padding:1.5rem 2rem;
+    color:rgba(#fff, 0.8);
+    @include font-md();
+    border-radius: var(--border-radius-md);
+    line-height: 1;
+
+    @include media-breakpoint-up(md) {
+      padding:1rem 5rem;
+      width:auto;
+      margin-right: 2rem !important;
+    }
+
+    &:hover {
+      background-color: rgba(#000, 1);
+      color:rgba(#fff, 1);
+    }
+  }
+  a.reset {
+    @include font-sm();
+    margin-top: .5rem;
+    color:rgba(#000, 0.6);
+    text-align: center;
+
+
+    &:hover {
+      color:rgba(#000, 1);
+    }
+    &:after {
+      content: ' alle filtre';
+      padding-left: .5rem;
+    }
+  }
+  p:last-child {
+    margin-top: 2rem;
+    grid-column: span 1;
+    text-align: center;
+
+
+    @include media-breakpoint-up(sm) {
+      grid-column: span 2;
+    }
+
+    @include media-breakpoint-up(xl) {
+      grid-column: span 3;
+    }
+  }
+}
+
+.search-links {
+  display: flex;
+
+  .wpbdp-main-box & a {
+    @include font-xs();
+    white-space: nowrap;
+    color: rgba(#000, 0.6);
+    text-transform: uppercase;
+    margin-top: 1rem;
+
+    &:hover {
+      color: rgba(#000, 1);
+    }
+  }
+}
+.search-actions {
+  width: 100%;
+}
+#wpbdp-bar-show-directory-button {
+  display: none;
+}
+.wpbdp-main-box .main-fields.box-row form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+.favorite-listings {
+  margin-bottom: 1rem;
+  //background: url('img/pink-marble.jpg')  no-repeat center center/cover var(--ipdk-color-3-50);
+  background-color: var(--ipdk-color-3-50);
+
+  .section-features {
+    margin-bottom: var(--gap-sm);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .listing-details {
+    padding: 0 6.18%;
+  }
+}
+
+.favorite-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: row;
+  }
+
+  .slick-slide {
+    margin-top: 1rem;
+  }
+}
+
+.hero-video-background {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-bottom-left-radius: var(--border-radius-md);
+  border-bottom-right-radius: var(--border-radius-md);
+  background-color: #000;
+}
+
+.hero-video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-video-container {
+  position: relative;
+  /* Your padding goes here, this will determine the height */
+  padding: 6rem 0 2rem 0;
+  z-index: 3;
+
+  @include media-breakpoint-up(md) {
+    padding: 20rem 0 10rem 0;
+  }
+
+  .single-wpbdp_listing & {
+    padding: 10rem 0;
+  }
+
+}
+
+.hero-video-content {
+  /* Style your content here */
+
+  text-align: center;
+  /* Additional styling */
+
+  .section-title {
+    color: #fff;
+    @include header-h2();
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+/* Optional: Style for the content below your video */
+.content {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.padding-box-lg {
+  padding: 4rem 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 5rem 1rem;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 6rem 2rem;
+  }
+}
+.wpbdp-listings-list-wrapper {
+  .container {
+    @include media-breakpoint-up(xxl) {
+      max-width: 160rem;
+    }
+    @media screen and (min-width: 1920px) {
+      max-width: 95%;
+    }
+  }
+  .listing-details {
+    margin: 0 6.18%;
+    overflow:hidden;
+  }
+  .address-info {
+    @include font-sm();
+    margin-bottom: 7%;
+  }
+  .home &, .business-directory & {
+    @include section-padding();
+  }
+}
+.single-listing-content-section {
+  @include section-padding();
+}
+
+.bg-video-gradient-fader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 90%);
+  z-index: 1;
+}
+
+
+.wpbdp-listings-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  margin-right: -.6rem;
+  margin-left: -.6rem;
+
+  .listings-count-low & {
+    margin: 0 auto;
+
+    @include media-breakpoint-up(sm) {
+      justify-content: center;
+    }
+  }
+}
+
+.listing-item {
+  position: relative;
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  background-color: #fbfbfb;
+  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  transition: all .3s ease;
+  transform: scale(1);
+
+  @include media-breakpoint-up(sm) {
+    flex-basis: calc(50% - (12px / 2));
+  }
+  @include media-breakpoint-up(lg) {
+    flex-basis: calc(100% / 3 - (12px / 3 * 2));
+  }
+  @include media-breakpoint-up(xl) {
+    flex-basis: calc(100% / 4 - (12px / 4 * 3));
+  }
+  @include media-breakpoint-up(xxl) {
+    flex-basis: calc(100% / 5 - (12px / 4 * 4));
+  }
+  @media screen and (min-width: 1920px) {
+    flex-basis: calc(100% / 6 - (12px / 5 * 5));
+  }
+
+  .listings-count-low & {
+
+    @include media-breakpoint-up(sm) {
+      flex-basis: calc(50% - (12px / 2));
+    }
+    @include media-breakpoint-up(md) {
+      flex-basis: calc(100% / 3 - (12px / 3 * 2));
+    }
+    @include media-breakpoint-up(lg) {
+      flex-basis: calc(100% / 3 - (12px / 3 * 2));
+    }
+  }
+
+  .listings-count-medium & {
+    flex-basis: calc(100% / 4 - (12px / 4 * 3));
+  }
+
+
+  &.favorite {
+    position: relative;
+    flex-basis: calc(100% / 3 - 2rem);
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.20);
+    transform: scale(1.02);
+
+    .polaroid-glass {
+      opacity: 0.5;
+    }
+  }
+}
+
+
+
+.listing-item-image-wrapper {
+  position: relative;
+  font-size: 0;
+}
+
+.listing-item-link {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+  font-size: 1.6rem;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+.listing-item-thumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 6.18% 6.18% 4% 6.18%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.listing-item-pin {
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translate(-50%, -7px);
+  z-index: 3;
+  width: 2.6rem;
+
+  .page-hero & {
+    top: -1.2rem;
+    width: 9.6rem;
+  }
+}
+
+
+.polaroid-glass {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(104, 104, 104, 0.15) 45%, rgba(104, 104, 104, 0) 100%);
+  //background-color:rgba(#67FF00,0.4);
+  box-shadow: inset 1px 1px 4px 1px rgba(129, 129, 129, 0.25);
+}
+
+.listing-details {
+  text-align: left;
+  max-width:90%;
+
+  .listing-title-link {
+    overflow: hidden;
+    max-width:25.7rem;
+
+    @include media-breakpoint-up(sm) {
+        max-width:22.5rem;
+    }
+    @include media-breakpoint-up(md) {
+      max-width:31.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width:25.9rem;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width:24.9rem;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width:21.2rem;
+    }
+
+
+  }
+}
+
+.excerpt-title {
+  white-space: nowrap;
+  @include header-h4();
+  margin: 0 0 .5rem 0;
+  line-height: 1 !important;
+
+  &.favorite {
+    margin-bottom: .5rem;
+    @include header-h3();
+    line-height: 1 !important;
+  }
+}
+
+.listing-item-actions {
+  position: absolute;
+  bottom: 6.18%;
+  left: 1rem;
+  z-index: 3;
+  padding: 0 6.18% 0 6.18%;
+  font-size: 1.6rem;
+  display: none;
+}
+
+.listing-actions {
+  gap: .5rem;
+  padding: 0 6.18% 6.18% 6.18%;
+  @include font-xs();
+  font-weight: 300;
+  text-transform: uppercase;
+  justify-content: flex-start;
+  display: none;
+
+  .um-account & {
+    display: flex;
+  }
+
+  a {
+    color: rgba(#FFF, 0.85);
+    padding: .6rem .8rem .5rem .8rem;
+    line-height: 1;
+    border-radius: 3px;
+
+    &:hover {
+      color: rgba(#FFF, 0.85);
+    }
+
+    &.edit-listing {
+      background-color: #748C88;
+    }
+
+    &.delete-listing {
+      background-color: #BF5C5C;
+    }
+
+    &.wpbdp-button {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.omraade-text {
+  @include font-xs();
+  text-transform: uppercase;
+  font-weight: 300;
+
+  .favorite & {
+    @include font-sm();
+    margin-bottom: 5%;
+  }
+}
+
+
+//Account page
+
+.um-account-tab-Annoncer {
+
+  .excerpt-title {
+    @include header-h5();
+    white-space: normal;
+  }
+
+  ~ .um-col-alt.um-col-alt-b {
+    display: none;
+  }
+}
+
+.um-account {
+  @extend .padding-box-lg;
+
+  .address-info {
+    display: none;
+  }
+
+  .listing-item-actions {
+    display: none;
+  }
+
+  .listing-item {
+    flex-basis: calc(100%/3 - 12px);
+  }
+  .listing-details {
+    margin: 0 6.18%;
+  }
+}
+
+.um-account-heading {
+  @include header-h2();
+  margin-bottom: 2rem;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 4rem;
+  }
+}
+
+.manage-listings-list {
+  display: flex;
+  gap: var(--gap-sm);
+}
+
+//ultimate member
+.ipdk-theme {
+  .um .um-field-label {
+    font-weight: 500;
+    color: #6a6a6a;
+  }
+
+  //UM Buttons
+  .um a.um-button, .um a.um-button.um-disabled:active, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:hover, .um input[type=submit].um-button, .um input[type=submit].um-button:focus {
+    border-radius: var(--button-border-radius);
+    box-shadow:none;
+  }
+  .um input[type=submit].um-button, .um-request-button {
+    background: var(--color-button-bg);
+    color: var(--color-button-text);
+    font-weight: 300;
+
+    &:hover, &:focus {
+      background: var(--color-button-bg-hover);
+    }
+  }
+  .manage-listings-actions {
+      margin-top: 2rem;
+    display: flex;
+    gap:1.2rem;
+  }
+
+  *, *::before, *::after {
+    box-sizing: content-box;
+  }
+  .um-account-tab-delete {
+    .um-field-area {
+      position: relative;
+      z-index: 0;
+      float:left;
+      margin-left: 2rem;
+      clear:right;
+      input[type=password] {
+        width:auto;
+        margin-left: 2rem;
+      }
+    }
+    .um-col-alt.um-col-alt-b {
+      float:left;
+      margin-top: 0;
+      padding-top: 0;
+
+      input[type=submit] {
+        padding:1.2rem 2rem !important;
+        margin-left: 2rem !important;
+      }
+    }
+      .um-field-label {
+        padding-left: 2rem;
+      }
+  }
+}
+
+.wpbdp-form-field .wpbdp-form-field-label {
+  margin-bottom: .7rem;
+  label {
+    font-weight: 500;
+  }
+}
+.wpbdp-form-field-inner {
+  label {
+    font-weight: 300;
+  }
+}
+.wpbdp-form-field.wpbdp-form-field-has-description .wpbdp-form-field-description {
+  margin-bottom: .7rem;
+}
+.listing-submit-confirmation, .wpbdp-submit-page {
+  @include section-padding();
+}
+.wpbdp-view-submit_listing {
+  .entry-header {
+    display: none;
+  }
+  form h3 {
+    display: none;
+  }
+}
+
+.stickytag {
+  position: absolute;
+  z-index: 999999;
+  width: 2.5rem;
+  right: 0.6rem;
+  top: 0.3rem;
+}

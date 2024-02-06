@@ -1,0 +1,33 @@
+a {
+	color: var( --color-cta);
+	text-decoration: none;
+	transition: all .3s ease;
+	display: inline-block;
+	@include font-sm();
+
+	&:visited {
+		color:var( --color-cta-visited);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color:var( --color-cta-hover);
+		transition: all .3s ease;
+	}
+
+	&:focus {
+		outline: thin dotted;
+		color:var( --color-cta-focus);
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+	&.link {
+		display: inline-block;
+	}
+}
+

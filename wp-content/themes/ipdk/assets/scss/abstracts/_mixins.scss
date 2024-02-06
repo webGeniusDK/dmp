@@ -1,0 +1,286 @@
+
+
+// Fluid responsive typography
+@use "sass:math";
+
+
+$grid-breakpoints: (
+				xs: 375px,
+				sm: 480px,
+				md: 768px,
+				lg: 992px,
+				xl: 1200px,
+				xxl: 1500px
+) !default;
+
+$container-max-widths: (
+				xs: 435rem,
+				sm: 72rem,
+				md: 72rem,
+				lg: 90rem,
+				xl: 118.8rem,
+				xxl: 126.2rem
+);
+
+@function strip-unit($value) {
+	@return math.div($value, ($value * 0 + 1));
+}
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 2rem !default;
+$enable-grid-classes: false !default;
+
+@mixin header-h6() {
+	@include fluid-type($screen-min, $screen-max, $header__size-xs-min, $header__size-xs);
+	line-height: $header-line-height-xs;
+
+	@include media-breakpoint-up(md) {
+		line-height: $header-line-height-xs-min;
+	}
+}
+@mixin header-h5() {
+	@include fluid-type($screen-min, $screen-max, $header__size-sm-min, $header__size-sm);
+	line-height: $header-line-height-sm;
+
+	@include media-breakpoint-up(md) {
+		line-height: $header-line-height-sm-min;
+	}
+}
+
+@mixin header-h4() { //Body text
+	@include fluid-type($screen-min, $screen-max, $header__size-md-min, $header__size-md);
+	line-height: $header-line-height-md-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $header-line-height-md;
+	}
+}
+
+@mixin header-h3() {
+	@include fluid-type($screen-min, $screen-max, $header__size-lg-min, $header__size-lg);
+	line-height: $header-line-height-lg-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $header-line-height-lg;
+	}
+}
+@mixin header-h2() {
+	@include fluid-type($screen-min, $screen-max, $header__size-xl-min, $header__size-xl);
+	line-height: $header-line-height-xl-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $header-line-height-xl;
+	}
+}
+@mixin header-h1() {
+	@include fluid-type($screen-min, $screen-max, $header__size-xxl-min, $header__size-xxl);
+	line-height: $header-line-height-xxl-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $header-line-height-xxl;
+	}
+}
+
+
+
+@mixin font-xxs() {
+	@include fluid-type($screen-min, $screen-max, $font__size-xxs-min, $font__size-xxs);
+	line-height: $line-height-xxs-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-xxs;
+	}
+}
+@mixin font-xs() {
+	@include fluid-type($screen-min, $screen-max, $font__size-xs-min, $font__size-xs);
+	line-height: $line-height-xs-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-xs;
+	}
+}
+
+@mixin font-sm() {
+	@include fluid-type($screen-min, $screen-max, $font__size-sm-min, $font__size-sm);
+	line-height: $line-height-sm-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-sm;
+	}
+}
+
+@mixin font-md() { //Body text
+	@include fluid-type($screen-min, $screen-max, $font__size-md-min, $font__size-md);
+	line-height: $line-height-md-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-md;
+	}
+}
+
+@mixin font-lg() {
+	@include fluid-type($screen-min, $screen-max, $font__size-lg-min, $font__size-lg);
+	line-height: $line-height-lg-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-lg;
+	}
+}
+
+@mixin font-xl() {
+	@include fluid-type($screen-min, $screen-max, $font__size-xl-min, $font__size-xl);
+	line-height: $line-height-xl-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-xl;
+	}
+}
+
+@mixin font-xxl() {
+	@include fluid-type($screen-min, $screen-max, $font__size-xxl-min, $font__size-xxl);
+	line-height: $line-height-xxl-min;
+
+	@include media-breakpoint-up(md) {
+		line-height: $line-height-xxl;
+	}
+}
+
+
+//Arrow Right
+
+@mixin arrow-right($color, $size) {
+	width: 0;
+	height: 0;
+	border-top: $size solid transparent;
+	border-bottom: $size solid transparent;
+	border-left: $size + 4 solid $color;
+}
+@mixin arrow-left($color, $size) {
+	width: 0;
+	height: 0;
+	border-top: $size solid transparent;
+	border-bottom: $size solid transparent;
+	border-right: $size + 4 solid $color;
+}
+@mixin subheader() {
+	font-family: var(--font-subheader);
+	text-transform: uppercase;
+	color: var(--color-text-preheader);
+	letter-spacing: 0.1rem;
+	font-weight: 300;
+	opacity:.7;
+}
+@mixin yellow-blue-gradient() {
+	background: rgb(250,227,182);
+	background: linear-gradient(90deg, rgba(250,227,182,1) 0%, rgba(250,227,182,1) 49%, rgba(124,151,166,1) 51%, rgba(124,151,166,1) 100%);
+}
+@mixin bg-load-gradient() {
+	background: rgb(183,183,184);
+	background: linear-gradient(45deg, rgba(183,183,184,0.3) 0%, rgba(250,250,250,0.4) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b7b7b8",endColorstr="#f2f2f2",GradientType=1);
+}
+
+
+
+
+/* If we add the border using a regular CSS border, it won't look good on non-retina devices,
+ * since its edges can look jagged due to lack of antialiasing. In this case, we are several
+ * layers of box-shadow to add the border visually, which will render the border smoother. */
+
+@mixin fluid-size($min-size, $max-size, $property) {
+	#{$property} : $min-size;
+	#{$property} : calc(#{$min-size} + #{strip-unit($max-size) - strip-unit($min-size)} * ((100vw - #{$screen-min}) / #{strip-unit($screen-max - $screen-min)}));
+
+	@media screen and (min-width: $screen-max) {
+		#{$property} : $max-size;
+	}
+}
+
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			font-size: $min-font-size;
+			@media screen and (min-width: $min-vw) {
+				font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+			}
+			@media screen and (min-width: $max-vw) {
+				font-size: $max-font-size;
+			}
+		}
+	}
+}
+
+@mixin overlay($color, $opacity) {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: $color;
+	opacity: $opacity;
+	z-index: 9;
+}
+
+@mixin bg-cover() {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin box-padding() {
+	padding: var(--box-padding-mobile);
+
+	@include media-breakpoint-up(md) {
+		padding: var(--box-padding-tablet);
+	}
+	@include media-breakpoint-up(xl) {
+		padding: var(--box-padding-desktop);
+	}
+}
+
+@mixin section-padding() {
+	padding: var(--section-padding-mobile) 0;
+
+	@include media-breakpoint-up(md) {
+		padding: var(--section-padding-tablet) 0;
+	}
+	@include media-breakpoint-up(xl) {
+		padding: var(--section-padding-desktop) 0;
+	}
+}
+
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+	$min: map-get($breakpoints, $name);
+	@return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+	$min: breakpoint-min($name, $breakpoints);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+	@each $breakpoint, $container-max-width in $max-widths {
+		@include media-breakpoint-up($breakpoint, $breakpoints) {
+			max-width: $container-max-width;
+		}
+	}
+}

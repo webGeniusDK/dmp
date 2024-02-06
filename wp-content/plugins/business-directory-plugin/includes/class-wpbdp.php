@@ -53,7 +53,7 @@ final class WPBDP {
 	}
 
 	private function setup_constants() {
-		define( 'WPBDP_VERSION', '6.3.10' );
+		define( 'WPBDP_VERSION', '6.3.11' );
 
 		define( 'WPBDP_PATH', wp_normalize_path( plugin_dir_path( WPBDP_PLUGIN_FILE ) ) );
 		define( 'WPBDP_INC', trailingslashit( WPBDP_PATH . 'includes' ) );
@@ -84,13 +84,12 @@ final class WPBDP {
 		require_once WPBDP_INC . 'licensing.php';
 
 		require_once WPBDP_INC . 'form-fields.php';
+		require_once WPBDP_INC . 'models/form-fields-validation.php';
 		require_once WPBDP_INC . 'payment.php';
 		require_once WPBDP_PATH . 'includes/class-payment-gateways.php';
 		require_once WPBDP_INC . 'installer.php';
 
 		require_once WPBDP_INC . 'class-cron.php';
-
-		require_once WPBDP_INC . 'helpers/class-currency-helper.php';
 		require_once WPBDP_INC . 'admin/settings/class-settings.php';
 
 		require_once WPBDP_INC . 'helpers/functions/general.php';
@@ -571,7 +570,7 @@ final class WPBDP {
 			$res->add( 'uploadErrors', $error_msg );
 		}
 
-		$res->add( 'is_admin', current_user_can( 'administrator' ) );
+		$res->add( 'is_admin', current_user_can( 'manage_options' ) );
 		$res->add( 'slots_available', $slots_available );
 		$res->add( 'attachmentIds', $attachments );
 		$res->add( 'html', $html );
@@ -676,7 +675,7 @@ final class WPBDP {
 	public function frontend_manual_upgrade_msg() {
 		wp_enqueue_style( 'wpbdp-base-css' );
 
-		if ( current_user_can( 'administrator' ) ) {
+		if ( current_user_can( 'manage_options' ) ) {
 			return wpbdp_render_msg(
 				str_replace(
 					'<a>',
@@ -696,5 +695,4 @@ final class WPBDP {
 	public function get_db_version() {
 		return $this->_db_version;
 	}
-
 }

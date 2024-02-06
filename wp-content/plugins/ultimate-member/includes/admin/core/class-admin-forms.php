@@ -234,7 +234,7 @@ if ( ! class_exists( 'um\admin\core\Admin_Forms' ) ) {
 						}
 
 						if ( ! empty( $data['description'] ) )
-							$html .= '<div class="um-admin-clear"></div><p class="description">' . $data['description'] . '</p>';
+							$html .= '<div class="clear"></div><p class="description">' . $data['description'] . '</p>';
 
 						$html .= '</td></tr>';
 
@@ -256,7 +256,7 @@ if ( ! class_exists( 'um\admin\core\Admin_Forms' ) ) {
 							}
 
 							if ( ! empty( $data['description'] ) )
-								$html .= '<div class="um-admin-clear"></div><p class="description">' . $data['description'] . '</p>';
+								$html .= '<div class="clear"></div><p class="description">' . $data['description'] . '</p>';
 
 							$html .= '</td></tr>';
 
@@ -277,7 +277,7 @@ if ( ! class_exists( 'um\admin\core\Admin_Forms' ) ) {
 							}
 
 							if ( ! empty( $data['description'] ) )
-								$html .= '<div class="um-admin-clear"></div><p class="description">' . $data['description'] . '</p>';
+								$html .= '<div class="clear"></div><p class="description">' . $data['description'] . '</p>';
 
 							$html .= '</td></tr>';
 
@@ -534,29 +534,31 @@ if ( ! class_exists( 'um\admin\core\Admin_Forms' ) ) {
 		 *
 		 * @return bool|string
 		 */
-		function render_icon( $field_data ) {
-
+		public function render_icon( $field_data ) {
 			if ( empty( $field_data['id'] ) ) {
 				return false;
 			}
 
-			$id = ( ! empty( $this->form_data['prefix_id'] ) ? $this->form_data['prefix_id'] : '' ) . '_' . $field_data['id'];
+			// Required modal scripts for proper functioning
+			UM()->admin()->enqueue()->load_modal();
+
+			$id      = ( ! empty( $this->form_data['prefix_id'] ) ? $this->form_data['prefix_id'] : '' ) . '_' . $field_data['id'];
 			$id_attr = ' id="' . esc_attr( $id ) . '" ';
 
-			$name = $field_data['id'];
-			$name = ! empty( $this->form_data['prefix_id'] ) ? $this->form_data['prefix_id'] . '[' . $name . ']' : $name;
-			$name_attr = ' name="' . $name . '" ';
+			$name      = $field_data['id'];
+			$name      = ! empty( $this->form_data['prefix_id'] ) ? $this->form_data['prefix_id'] . '[' . $name . ']' : $name;
+			$name_attr = ' name="' . esc_attr( $name ) . '" ';
 
-			$value = $this->get_field_value( $field_data );
-			$value_attr = ' value="' . $value . '" ';
+			$value      = $this->get_field_value( $field_data );
+			$value_attr = ' value="' . esc_attr( $value ) . '" ';
 
-			$html = '<span class="um_admin_fonticon_wrapper"><a href="javascript:void(0);" class="button" data-modal="UM_fonticons" data-modal-size="normal" data-dynamic-content="um_admin_fonticon_selector" data-arg1="" data-arg2="" data-back="">' . __( 'Choose Icon', 'ultimate-member' ) . '</a>
+			$html = '<span class="um_admin_fonticon_wrapper"><a href="javascript:void(0);" class="button" data-modal="UM_fonticons" data-modal-size="normal" data-dynamic-content="um_admin_fonticon_selector" data-arg1="" data-arg2="" data-back="" data-icon_field="' . esc_attr( $id ) . '">' . esc_html__( 'Choose Icon', 'ultimate-member' ) . '</a>
 				<span class="um-admin-icon-value">';
 
 			if ( ! empty( $value ) ) {
-				$html .= '<i class="' . $value . '"></i>';
+				$html .= '<i class="' . esc_attr( $value ) . '"></i>';
 			} else {
-				$html .= __( 'No Icon', 'ultimate-member' );
+				$html .= esc_html__( 'No Icon', 'ultimate-member' );
 			}
 
 			$html .= '</span><input type="hidden" ' . $name_attr . ' ' . $id_attr . ' ' . $value_attr . ' />';
@@ -569,11 +571,11 @@ if ( ! class_exists( 'um\admin\core\Admin_Forms' ) ) {
 
 			$html .= '</span></span>';
 
+			// Required include the fonticons modal *.php file.
 			UM()->metabox()->init_icon = true;
 
 			return $html;
 		}
-
 
 		/**
 		 * @param $field_data
@@ -1366,13 +1368,20 @@ if ( ! class_exists( 'um\admin\core\Admin_Forms' ) ) {
 
 			$upload_frame_title = ! empty( $field_data['upload_frame_title'] ) ? $field_data['upload_frame_title'] : __( 'Select media', 'ultimate-member' );
 
-			$image_id = ! empty( $value['id'] ) ? $value['id'] : '';
-			$image_width = ! empty( $value['width'] ) ? $value['width'] : '';
-			$image_height = ! empty( $value['height'] ) ? $value['height'] : '';
+			$image_id        = ! empty( $value['id'] ) ? $value['id'] : '';
+			$image_width     = ! empty( $value['width'] ) ? $value['width'] : '';
+			$image_height    = ! empty( $value['height'] ) ? $value['height'] : '';
 			$image_thumbnail = ! empty( $value['thumbnail'] ) ? $value['thumbnail'] : '';
-			$image_url = ! empty( $value['url'] ) ? $value['url'] : '';
+			$image_url       = ! empty( $value['url'] ) ? $value['url'] : '';
 
-			$html = "<div class=\"um-media-upload\">" .
+			$wrapper_classes = array();
+			if ( ! isset( $field_data['preview'] ) || false !== $field_data['preview'] ) {
+				$wrapper_classes[] = 'um-media-preview-enabled';
+			}
+			$wrapper_classes = implode( ' ', $wrapper_classes );
+			$wrapper_classes = ! empty( $wrapper_classes ) ? ' ' . $wrapper_classes : '';
+
+			$html = '<div class="um-media-upload' . $wrapper_classes . '">' .
 					"<input type=\"hidden\" class=\"um-media-upload-data-id\" name=\"{$name}[id]\" id=\"{$id}_id\" value=\"$image_id\">" .
 					"<input type=\"hidden\" class=\"um-media-upload-data-width\" name=\"{$name}[width]\" id=\"{$id}_width\" value=\"$image_width\">" .
 					"<input type=\"hidden\" class=\"um-media-upload-data-height\" name=\"{$name}[height]\" id=\"{$id}_height\" value=\"$image_height\">" .

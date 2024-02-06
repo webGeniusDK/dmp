@@ -1,0 +1,37 @@
+.wpbdp-abc-filtering {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.wpbdp-abc-filtering .reset {
+    font-size: 90%;
+    float: right;
+}
+
+.wpbdp-abc-filtering .letter {
+    margin: 0 4px;
+}
+
+.wpbdp-abc-filtering .letter.current a {
+    color: inherit;
+}
+
+.wpbdp-abc-filtering .letter.current {
+    font-weight: bold;
+}
+
+
+.with-region-sidelist .wpbdp-abc-filtering {
+    width: 75%;
+}
+
+
+@media screen and (max-width: 704px) {
+    .with-region-sidelist .wpbdp-abc-filtering {
+        width: 100%;
+    }
+}
+
+.wpbdp-wp-theme-twentytwenty .wpbdp-abc-filtering {
+    font-size: 1.5rem;
+}

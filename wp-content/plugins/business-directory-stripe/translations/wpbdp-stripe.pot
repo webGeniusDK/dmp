@@ -1,0 +1,247 @@
+# Copyright (C) 2023 Business Directory Team
+# This file is distributed under the same license as the Business Directory Stripe package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Stripe 5.4\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/business-directory-stripe\n"
+"POT-Creation-Date: 2023-04-05 14:44:34+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: business-directory-stripe.php:24
+msgid ""
+"The Stripe module for Business Directory Plugin was deactivated because it "
+"requires PHP 5.6 or newer."
+msgstr ""
+
+#: business-directory-stripe.php:27
+msgid ""
+"Hi, we noticed that your site is running on an outdated version of PHP. New "
+"versions of PHP are faster, more secure and include the features our module "
+"requires to support the latest version of Stripe's API."
+msgstr ""
+
+#: business-directory-stripe.php:30
+msgid ""
+"You should upgrade to <strong>PHP 5.6</strong>, but if you want your site "
+"to also be considerable faster and even more secure, we recommend going up "
+"to <strong>PHP 7.2</strong>."
+msgstr ""
+
+#: business-directory-stripe.php:33
+msgid ""
+"Please read <a "
+"href=\"https://wordpress.org/support/upgrade-php/\">Upgrading PHP</a> to "
+"understand more about PHP and how to upgrade."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:38
+msgid "Stripe"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:105
+msgid ""
+"Stripe gateway is not currently available. Please reload this page or "
+"select another gateway (if available)."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:152
+#. translators: %1$s Start link html, %2$s end link html, %3$s open link html
+msgid ""
+"For this gateway to correctly work with your site you need to %1$sspecify a "
+"webhook URL%2$s in your %3$sStripe Account Settings%2$s."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:161
+#. translators: %s the site url
+msgid "Please use %s as the webhook URL Stripe will use to contact your site."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:172
+msgid "Checkout Window Title"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:178
+msgid "TEST Publishable Key"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:183
+msgid "TEST Secret Key"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:188
+msgid "LIVE Publishable Key"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:193
+msgid "LIVE Secret Key"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:198
+msgid "Use a custom form instead of a \"Stripe Checkout\" button?"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:204
+msgid "Verify billing address during checkout?"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:220
+#. translators: %s is the setting name
+msgid "%s is missing."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:247
+#. translators: %s is the field name
+msgid "This field is required (%s)."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:290
+msgid "There was an error while configuring Stripe gateway"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:314
+msgid "Pay now via Stripe"
+msgstr ""
+
+#: includes/class-stripe-gateway.php:348
+msgid "Invalid request."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:359
+msgid "Payment was not generated."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:397 includes/class-stripe-gateway.php:408
+#: includes/class-stripe-gateway.php:503
+msgid "Stripe Customer couldn't be retrieved."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:467
+msgid "No Stripe token was generated."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:509
+msgid "Stripe Plan couldn't be retrieved."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:543
+msgid "Your payment was declined (due to incorrect credit card information)."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:546
+msgid "Invalid request: <error-message>."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:1122
+#. translators: %1$s is the listing ID
+msgid ""
+"An error occurred while trying to get customer information for listing with "
+"ID #%1$s. Please try again later or contact the site administrator."
+msgstr ""
+
+#: includes/class-stripe-gateway.php:1138
+msgid ""
+"An error occurred while trying to cancel your subscription. Please try "
+"again later or contact the site administrator."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Business Directory Stripe"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://businessdirectoryplugin.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Business Directory Payment Gateway for Stripe.  Allows you to collect "
+"payments from Business Directory Plugin listings via Stripe."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Business Directory Team"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:11
+msgctxt "checkout"
+msgid "Personal Info"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:14
+msgctxt "checkout"
+msgid "Email Address"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:15
+msgctxt "checkout"
+msgid "We will send a receipt to this e-mail address."
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:20
+msgctxt "checkout"
+msgid "Name"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:21
+msgctxt "checkout"
+msgid "Name on card."
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:27
+msgctxt "checkout"
+msgid "Credit Card Info"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:34
+msgctxt "checkout"
+msgid "Billing Details"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:37
+msgctxt "checkout"
+msgid "Address"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:38
+msgctxt "checkout"
+msgid "Please enter the address where you receive your billing statement."
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:43
+msgctxt "checkout"
+msgid "Address Line 2"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:44
+msgctxt "checkout"
+msgid ""
+"Additional details (suite, apt no, etc.) associated with your billing "
+"address."
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:49
+msgctxt "checkout"
+msgid "City"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:54
+msgctxt "checkout"
+msgid "State / Province"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:59
+msgctxt "checkout"
+msgid "Postal Code"
+msgstr ""
+
+#: templates/stripe-checkout-billing-form.tpl.php:64
+msgctxt "checkout"
+msgid "Country"
+msgstr ""

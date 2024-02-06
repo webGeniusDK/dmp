@@ -3,8 +3,6 @@
  * @package WPBDP\Listing
  * @since 3.4
  */
-require_once WPBDP_PATH . 'includes/models/class-payment.php';
-require_once WPBDP_PATH . 'includes/models/class-listing-subscription.php';
 require_once WPBDP_PATH . 'includes/helpers/class-listing-image.php';
 class WPBDP_Listing {
 
@@ -83,7 +81,7 @@ class WPBDP_Listing {
 		if ( $result && $sorted ) {
 			uasort(
 				$result,
-				function( $x, $y ) {
+				function ( $x, $y ) {
 					return $y->weight - $x->weight;
 				}
 			);
@@ -467,7 +465,6 @@ class WPBDP_Listing {
 		}
 
 		return true;
-
 	}
 
 	public function publish() {
@@ -1164,7 +1161,7 @@ class WPBDP_Listing {
 					)
 				)
 			);
-			$candidate++;
+			++$candidate;
 
 			if ( false == add_post_meta( $this->id, '_wpbdp[import_sequence_id]', $candidate, true ) ) {
 				$sequence_id = 0;

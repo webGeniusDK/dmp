@@ -1,0 +1,84 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button {
+	border: var(--button-border);
+	border-color: var(--color-button-border);
+	border-radius: var(--button-border-radius);
+	background: var(--color-button-bg);
+	color: var(--color-button-text);
+	line-height: 1;
+	padding: 0.6em 1em;
+	transition: all .3s ease;
+	font-weight: 300;
+
+	&:hover {
+		border-color: transparent;
+	}
+	&.visited {
+		color: var(--color-button-text);
+	}
+	&:active,
+	&:focus {
+		border-color: transparent;
+	}
+
+	&.large {
+		@include font-sm();
+	}
+	&.secondary {
+		background: var(--color-button-secondary-bg);
+		color: var(--color-button-secondary-text);
+		border-color: var(--color-button-secondary-border);
+
+		&:hover {
+			background: var(--color-button-secondary-bg-hover);
+			color: var(--color-button-secondary-text);
+			border-color: var(--color-button-secondary-border);
+		}
+		&:active,
+		&:focus {
+			background: var(--color-button-secondary-bg);
+			color: var(--color-button-secondary-text);
+			border-color: var(--color-button-secondary-border);
+		}
+
+	}
+}
+.button-alt {
+	background-color: var(--color-button-alt-bg );
+	color: var(--color-button-alt-text);
+	border-color: transparent;
+
+	&:hover {
+		background-color: var(--color-button-alt-bg-hover);
+		color: var(--color-button-alt-text);
+		border-color: transparent;
+	}
+
+	&:active,
+	&:focus {
+		background-color: var(--color-button-alt-bg);
+		color: var(--color-button-alt-text);
+		border-color: var(--color-button-alt-focus-border);
+	}
+}
+.um-request-button {
+	background-color: var(--color-cta);
+
+	&:visited {
+		color:var(--color-cta-visited);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color:var(--color-cta-hover);
+	}
+
+	&:focus {
+		outline: thin dotted;
+		color:var(--color-cta-focus);
+	}
+}

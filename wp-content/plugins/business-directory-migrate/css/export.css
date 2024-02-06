@@ -1,0 +1,16 @@
+.wpbdp-admin-page-migrate-export .export-parts .done .desc {
+    text-decoration: line-through;
+}
+
+.wpbdp-admin-page-migrate-export .export-parts .current .desc {
+    font-weight: bold;
+}
+
+
+.wpbdp-admin-page-migrate-export .wpbdp-migrate-done {
+    display: none;
+}
+
+.wpbdp-admin-page-migrate-export .cleanup-link {
+    display: none;
+}

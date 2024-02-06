@@ -1,6 +1,4 @@
 <?php
-require_once WPBDP_PATH . 'includes/models/class-payment.php';
-
 /**
  * @since 5.0
  */
@@ -184,5 +182,4 @@ class WPBDP__Admin__Payments extends WPBDP__Admin__Controller {
 			exit;
 		}
 	}
-
 }

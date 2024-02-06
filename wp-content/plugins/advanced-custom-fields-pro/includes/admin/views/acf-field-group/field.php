@@ -25,6 +25,10 @@ if ( isset( $field['endpoint'] ) && $field['endpoint'] ) {
 $field_label      = acf_get_field_label( $field, 'admin' );
 $field_type_label = acf_get_field_type_label( $field['type'] );
 
+if ( acf_is_pro() && acf_get_field_type_prop( $field['type'], 'pro' ) && ! acf_pro_is_license_active() ) {
+	$field_type_label .= '<span class="acf-pro-label acf-pro-label-field-type">PRO</span>';
+}
+
 if ( ! isset( $num_field_groups ) ) {
 	$num_field_groups = 0;
 }
@@ -114,6 +118,10 @@ if ( isset( $field['conditional_logic'] ) && is_array( $field['conditional_logic
 						<?php
 						switch ( $tab_key ) {
 							case 'general':
+								$field_type_select_class = 'field-type';
+								if ( ! apply_filters( 'acf/field_group/enable_field_type_select2', true ) ) {
+									$field_type_select_class .= ' disable-select2';
+								}
 								// type
 								acf_render_field_setting(
 									$field,
@@ -123,7 +131,7 @@ if ( isset( $field['conditional_logic'] ) && is_array( $field['conditional_logic
 										'type'         => 'select',
 										'name'         => 'type',
 										'choices'      => acf_get_grouped_field_types(),
-										'class'        => 'field-type',
+										'class'        => $field_type_select_class,
 									),
 									true
 								);

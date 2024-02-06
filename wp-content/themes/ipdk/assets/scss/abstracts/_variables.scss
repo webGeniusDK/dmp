@@ -1,0 +1,174 @@
+
+
+
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__text-main: #404040;
+
+
+
+
+
+
+
+//Buttons
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+
+
+
+$screen-min: 320px;
+$screen-max: 1188px;
+
+
+:root {
+  --font_size-base: 62.5%;
+  --font-heading: 'Khand', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-main: 'Rubik', -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  --font-code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;;
+  --font-pre: "Courier 10 Pitch", courier, monospace;
+  --font-lineheight-pre: 1.6;
+  --font-lineheight-body: 1.6;
+
+  //Various
+  --border-radius: 0;
+
+  /* Color Theme Swatches in Hex */
+  --ipdk-color-1: #EBD8CC;
+  --ipdk-color-2: #B0EBA9;
+  --ipdk-color-3: #EBC5C0;
+  --ipdk-color-4: #A9E8EB;
+  --ipdk-color-5: #EBB5D8;
+
+  --ipdk-color-3-50: #F5E2DF;
+  --ipdk-color-3-75: #F0D4D0;
+
+
+  /* Color Theme Swatches in RGBA */
+  --ipdk-color-1-rgba: rgba(235,216,204, 1);
+  --ipdk-color-2-rgba: rgba(176,235,169, 1);
+  --ipdk-color-3-rgba: rgba(235,197,192, 1);
+  --ipdk-color-4-rgba: rgba(169,232,235, 1);
+  --ipdk-color-5-rgba: rgba(235,181,216, 1);
+
+  /* Color Theme Swatches in HSLA */
+  --ipdk-color-1-hsla: hsla(23, 43, 86, 1);
+  --ipdk-color-2-hsla: hsla(113, 62, 79, 1);
+  --ipdk-color-3-hsla: hsla(6, 51, 83, 1);
+  --ipdk-color-4-hsla: hsla(182, 62, 79, 1);
+  --ipdk-color-5-hsla: hsla(321, 57, 81, 1);
+
+  --color-success: #89bd96;
+  --color-error: #f7c2c2;
+  --color-warning: #F4BA7A;
+
+  --color-cta: #171717;
+  --color-cta-visited: var(--color-cta);
+  --color-cta-hover: #4a5a63;
+  --color-cta-focus: #4a5a63;
+  --color-cta-tooltip: #F4BA7A;
+
+
+  --color-button-bg:rgba(0, 0, 0, 0.8);
+  --color-button-bg-visited: var(--color-button-bg);
+  --color-button-bg-hover: #000;
+  --color-button-text: rgba(255,255,255,0.85);
+  --color-button-border: transparent;
+  --color-button-focus-border: lightblue;
+  --button-border: 1px solid var(--color-button-border);
+
+  --color-button-secondary-bg: #ffe5e5;
+  --color-button-secondary-bg-visited: var(--color-button-secondary-bg);
+  --color-button-secondary-bg-hover: #f5dddd;
+  --color-button-secondary-text: rgba(0,0,0,0.85);
+  --color-button-secondary-border: transparent;
+  --color-button-secondary-focus-border: pink;
+
+  --color-button-alt-bg: #171717;
+  --color-button-alt-bg-visited: var(--color-button-alt-bg);
+  --color-button-alt-bg-hover: #000;
+  --color-button-alt-text: rgba(255,255,255,0.85);
+  --color-button-alt-focus-border: lightblue;
+
+  --gap-sm: 1.2rem;
+  --color-bg-body: #F5F5F5;
+  --color-bg-header:#FFF;
+  --color-bg-screen: #f1f1f1;
+  --color-bg-hr: #ccc;
+  --color-bg-pre: #eee;
+  --color-bg-ins: #fff9c0;
+  --color-text-main: #2a2a2a;
+  --color-text-heading: #1a1a1a;
+  --color-text-main-light: rgba(255,255,255,0.85);
+  --color-text-preheader: #a3a3a3; //#8d8d8d;
+  --color-text-screen: #21759b;
+  --color-abr-border: #21759b;
+  --color-border: #e1e1e1;
+
+  --color-input-border: transparent;
+  --color-input-bg: #FFF;
+
+  --color-input-text: #666;
+  --color-input-text-label: #6a6a6a;
+  --color-input-text-focus: #111;
+  --color-form-field-bg: #FFF;
+  --color-form-field-bg-alt: #ebebeb;
+  --color-input-desc-text: #171717;
+
+  --color-nav-link: rgba(255,255,255,0.75);
+  --color-nav-link-visited: var(--color-nav-link);
+  --color-nav-link-hover: #FFF;
+  --color-nav-link-focus: #FFF;
+  --color-nav-link-active: #FFF;
+  --color-nav-link-current: pink;
+
+  --color-hamburger-lines: rgba(255,255,255,0.85);
+  --color-hamburger-bg: transparent;
+
+  --color-form-field-autofill-bg: #f5fbff;
+  --color-form-field-autofill-text: #545454;
+
+  //Floating label styles
+  --input-padding-label-top: 28px;
+  --input-padding-label-h: 1.1rem;
+  --input-padding-label-w: 1.4rem;
+  --input-padding: var(--input-padding-label-h) var(--input-padding-label-w);
+  --input-padding-label: var(--input-padding-label-top) var(--input-padding-label-w) var(--input-padding-label-h) var(--input-padding-label-w) ;
+  --select-padding-label: var(--input-padding-label-top) 5rem var(--input-padding-label-h) var(--input-padding-label-w) ;
+
+  --input-padding-sm-h: 1rem;
+  --input-padding-sm-w: 1rem;
+  --input-padding-sm: var(--input-padding-sm-h) var(--input-padding-sm-w);
+
+  --input-padding-md-h: 1.5rem;
+  --input-padding-md-w: 1.5rem;
+  --input-padding-md: var(--input-padding-md-h) var(--input-padding-md-w);
+
+  --field-gap: 1.2rem;
+  --border-radius-sm:5px;
+  --border-radius-md:8px;
+
+  --button-padding-h: 1.2rem;
+  --button-padding-w: 2.6rem;
+  --button-padding: var(--button-padding-h) var(--button-padding-w);
+  --button-padding-sm: 1rem 1.5rem;
+  --button-padding-lg-h: 1.8rem;
+  --button-padding-lg-w: 2.4rem;
+  --button-padding-lg: var(--button-padding-lg-h) var(--button-padding-lg-w);
+  --button-border-radius: var(--border-radius-sm);
+
+
+  --selection-bg-color: #1e1e1e;
+  --selection-text-color: #FFF;
+
+  --box-padding-mobile:2rem;
+  --box-padding-tablet:4rem;
+  --box-padding-desktop:6rem;
+
+  --section-padding-mobile:4rem;
+  --section-padding-tablet:6rem;
+  --section-padding-desktop:8rem;
+}

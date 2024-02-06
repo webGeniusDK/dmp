@@ -47,11 +47,9 @@ class WPBDP_CSVImportAdmin {
 	}
 
 	function ajax_csv_import() {
-		global $wpbdp;
+		WPBDP_App_Helper::permission_check( 'manage_options' );
 
-		if ( ! current_user_can( 'administrator' ) ) {
-			die();
-		}
+		global $wpbdp;
 
 		$import_id = wpbdp_get_var(
 			array(
@@ -103,6 +101,8 @@ class WPBDP_CSVImportAdmin {
 	}
 
 	public function ajax_autocomplete_user() {
+		WPBDP_App_Helper::permission_check( 'edit_posts' );
+
 		$term  = wpbdp_get_var( array( 'param' => 'term' ), 'request' );
 		$users = get_users( array( 'search' => "*{$term}*" ) );
 
@@ -191,7 +191,7 @@ class WPBDP_CSVImportAdmin {
 		echo '<h3 style="margin-top:1em">' . __( 'Example CSV Import File', 'business-directory-plugin' ) . '</h3>';
 
 		echo '<textarea class="wpbdp-csv-import-example" rows="20">';
-		echo $this->example_csv_content();
+		echo esc_html( $this->example_csv_content() );
 		echo '</textarea>';
 
 		echo wpbdp_admin_footer();

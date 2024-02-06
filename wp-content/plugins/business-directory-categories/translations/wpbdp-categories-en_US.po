@@ -1,0 +1,165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Business Directory Plugin - Enhanced Categories\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
+"directory-categories\n"
+"POT-Creation-Date: 2020-06-30 22:08:46+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BD Team <support@businessdirectoryplugin.com>\n"
+"Language-Team: BD Team <support@businessdirectoryplugin.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: business-directory-categories.php:103
+msgid "Enhanced Categories"
+msgstr ""
+
+#: business-directory-categories.php:160
+msgid ""
+"BD will try to honor this setting as much as possible, but custom CSS or "
+"theme code could prevent this from working."
+msgstr ""
+
+#: business-directory-categories.php:265
+msgid "-- Select a category --"
+msgstr ""
+
+#: category-icons.php:37
+msgid "Category Images"
+msgstr ""
+
+#: category-icons.php:38
+msgid "Display the category list using images"
+msgstr ""
+
+#: category-icons.php:39
+msgid "Category image width (px)"
+msgstr ""
+
+#: category-icons.php:40
+msgid "Category image height (px)"
+msgstr ""
+
+#: category-icons.php:193
+msgid "Add Image"
+msgstr ""
+
+#: category-icons.php:265
+msgid "Upload"
+msgstr ""
+
+#: category-icons.php:286
+msgid "Delete"
+msgstr ""
+
+#: category-icons.php:297
+msgid "Upload Image"
+msgstr ""
+
+#: includes/class-categories-abc-filtering.php:132
+msgid "(Reset)"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Business Directory Plugin - Enhanced Categories Module"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.businessdirectoryplugin.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Category goodies for Business Directory Plugin, including parent/child "
+"hierarchy navigation, images on categories and more."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "D. Rodenbaugh"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://businessdirectoryplugin.com"
+msgstr ""
+
+#: business-directory-categories.php:107
+msgctxt "settings"
+msgid "Enable ABC filtering?"
+msgstr ""
+
+#: business-directory-categories.php:110
+msgctxt "settings"
+msgid "Displays links on top of listings for alphabetic filtering."
+msgstr ""
+
+#: business-directory-categories.php:117
+msgctxt "settings"
+msgid "Main Directory Behavior"
+msgstr ""
+
+#: business-directory-categories.php:119
+msgctxt "settings"
+msgid "Settings related to the Enhanced Categories module."
+msgstr ""
+
+#: business-directory-categories.php:124
+msgctxt "settings"
+msgid "Operation Mode"
+msgstr ""
+
+#: business-directory-categories.php:128
+msgctxt "settings"
+msgid "Parent + Child categories"
+msgstr ""
+
+#: business-directory-categories.php:129
+msgctxt "settings"
+msgid "Parent only categories"
+msgstr ""
+
+#: business-directory-categories.php:137
+msgctxt "settings"
+msgid "Show listings from subcategories in parent categories?"
+msgstr ""
+
+#: business-directory-categories.php:146
+msgctxt "settings"
+msgid "Force child category selection"
+msgstr ""
+
+#: business-directory-categories.php:149
+msgctxt "settings"
+msgid ""
+"Disable parent categories as 'selectable' on the category drop-down when a "
+"child category is present."
+msgstr ""
+
+#: business-directory-categories.php:157
+msgctxt "settings"
+msgid "Number of category columns to use"
+msgstr ""
+
+#: category-icons.php:172
+msgctxt "wpbdp-customizations"
+msgid "Image"
+msgstr ""
+
+#: category-icons.php:193
+msgctxt "wpbdp-customizations"
+msgid "Change Image"
+msgstr ""
+
+#: category-icons.php:263
+msgctxt "wpbdp-customizations"
+msgid "Upload Image"
+msgstr ""
+
+#: category-icons.php:275
+msgctxt "wpbdp-customizations"
+msgid "Category Image"
+msgstr ""

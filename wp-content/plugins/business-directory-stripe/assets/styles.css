@@ -1,0 +1,11 @@
+.wpbdp-payment-gateway-stripe-form-fields .wpbdp-checkout-submit input.processing_payment{opacity:.7;}
+.wpbdp-payment-gateway-stripe-form-fields .wpbdp-checkout-submit input.payment_completed{
+background-color:#4CAF50;
+border-color:#4CAF50;
+color:#fff;
+}
+.wpbdp-checkout-cc-fields .StripeElement {
+background: #fff;
+padding: 6px 12px;
+border: 1px solid #efefef;
+}
