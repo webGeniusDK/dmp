@@ -38,7 +38,7 @@ class WPBDP_Dashboard {
 			)
 		);
 		if ( $recent_listings ) {
-			include dirname( dirname( __FILE__ ) ) . '/views/widgets/dashboard-widget.php';
+			include dirname( __DIR__ ) . '/views/widgets/dashboard-widget.php';
 		}
 	}
 }

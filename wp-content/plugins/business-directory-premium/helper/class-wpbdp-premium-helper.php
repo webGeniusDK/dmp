@@ -39,7 +39,7 @@ class WPBDP_Premium_Helper {
 			return $current_object->ID;
 		}
 
-		if ( $add_admin && current_user_can( 'administrator' ) ) {
+		if ( $add_admin && current_user_can( 'manage_options' ) ) {
 			return $current_object->ID;
 		}
 

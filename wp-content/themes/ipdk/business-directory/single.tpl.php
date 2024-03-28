@@ -152,9 +152,10 @@ usort( $bottom_fields, function ( $a, $b ) use ( $bottom_field_ids ) {
 
 						foreach ( $bottom_fields as $field ) {
 							$item_class = "field-" . $field->id;
+                            $value = $field->value ? $field->value : 'Ikke angivet';
 							echo '<div class="single-listing-detail-item ' . $item_class . '">';
 							echo '<h3 class="single-listing-detail-label">' . $field->label . "</h3>";
-							echo '<div class="single-listing-detail-value">' . $field->value . "</div>";
+							echo '<div class="single-listing-detail-value">' . $value . "</div>";
 							echo '</div>';
 						}
 						wpbdp_x_part( 'parts/listing-socials' );

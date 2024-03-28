@@ -8,7 +8,7 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	background: url('img/listing-bg.png') var(--color-bg-body);;
+	background: url('img/listing-bg.png') var(--color-bg-body);
 }
 
 .site-branding-logo-desktop {
@@ -42,6 +42,7 @@ body {
 		color:#FFF;
 	}
 }
+
 .footer {
 	flex-shrink: 0;
 }
@@ -53,8 +54,6 @@ body {
 .fade-in-block {
 	opacity:0;
 }
-
-
 .container {
 	position: relative;
 	width: 100%;
@@ -63,8 +62,31 @@ body {
 
 	@include make-container-max-widths();
 }
+.page-content-padding {
+	padding: 4rem 0;
+
+	@include media-breakpoint-up(md) {
+		padding: 6rem 0;
+	}
+	@include media-breakpoint-up(lg) {
+		padding: 8rem 0;
+	}
+	.single-wpbdp_listing & {
+		padding-top: 0;
+
+		@include media-breakpoint-up(md) {
+			padding-top: 0;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-top: 0;
+		}
+	}
+}
+
+
 .page-section {
 	border-radius: var(--border-radius-md);
+	@include section-padding();
 }
 .section-features {
 	@include bg-cover();

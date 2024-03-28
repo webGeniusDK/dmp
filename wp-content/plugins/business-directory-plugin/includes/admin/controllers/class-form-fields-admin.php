@@ -4,6 +4,10 @@
  */
 class WPBDP_FormFieldsAdmin {
 
+	public $api;
+
+	public $admin;
+
 	public function __construct() {
 		$this->api   = wpbdp_formfields_api();
 		$this->admin = wpbdp()->admin;
@@ -186,7 +190,7 @@ class WPBDP_FormFieldsAdmin {
 	 */
 	private function check_permission( $action ) {
 		$nonce = array( 'nonce' => $action );
-		WPBDP_App_Helper::permission_check( 'manage_categories', $nonce );
+		WPBDP_App_Helper::permission_check( 'manage_options', $nonce );
 	}
 
 	private function process_field_form() {

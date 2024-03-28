@@ -18,14 +18,8 @@
                     mobileFirst: true,
                     dots: true,
                     responsive: [{
-                        breakpoint: 992,
-                        settings: "unslick"
-                    }, {
                         breakpoint: 800,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1
-                        }
+                        settings: "unslick"
                     }, {
                         breakpoint: 480,
                         settings: {
@@ -45,7 +39,9 @@
     $(document).ready(function () {
 
         if ($('.ipdk-slider').length) {
-            ipdkSliders();
+            setTimeout(function () {
+                ipdkSliders();
+            }, 1000);
             $(window).resize(function () {
                 ipdkSliders();
             });

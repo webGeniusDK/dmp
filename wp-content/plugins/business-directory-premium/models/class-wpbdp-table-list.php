@@ -42,7 +42,7 @@ class WPBDP_Table_List {
 			if ( $show && $shown < $this->max_columns() ) {
 				$label    = $this->maybe_add_sort( $sort_options, $field );
 				$content .= '<div>' . $label . '</div>';
-				++ $shown;
+				++$shown;
 
 				// Track the columns that are shown with the field id.
 				$wpbdp_columns[] = $field->id;
@@ -140,7 +140,7 @@ class WPBDP_Table_List {
 			if ( ! $field->display_in( 'excerpt' ) || $shown >= $this->max_columns() ) {
 				continue;
 			}
-			++ $shown;
+			++$shown;
 
 			$sort_id = $this->get_field_sort_id( $field, $options );
 			if ( isset( $options[ $sort_id ] ) ) {
@@ -174,10 +174,6 @@ class WPBDP_Table_List {
 	 * @since 5.1
 	 */
 	public function use_selected_template( $path ) {
-		return dirname( dirname( __FILE__ ) ) . '/views/tables/excerpt-content.tpl.php';
+		return dirname( __DIR__ ) . '/views/tables/excerpt-content.tpl.php';
 	}
-}
-
-function wpbdp_user_max_columns() {
-	return apply_filters( 'wpbdp_table_max_columns', 6 );
 }

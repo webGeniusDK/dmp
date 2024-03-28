@@ -606,7 +606,7 @@ class WPBDP_Licensing {
 	 * @since 5.16 Chaged to only show notice to administrators.
 	 */
 	public function admin_notices() {
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! wpbdp_user_is_admin() ) {
 			return;
 		}
 
@@ -813,7 +813,7 @@ class WPBDP_Licensing {
 	}
 
 	public function ajax_activate_license() {
-		WPBDP_App_Helper::permission_check( 'edit_posts' );
+		WPBDP_App_Helper::permission_check();
 		check_ajax_referer( 'license activation', 'nonce' );
 
 		$setting_id = wpbdp_get_var( array( 'param' => 'setting' ), 'post' );
@@ -827,13 +827,13 @@ class WPBDP_Licensing {
 			wp_send_json( $response );
 		}
 
+		// Store the new license key. This clears stored information about the license.
+		wpbdp_set_option( 'license-key-' . $item_type . '-' . $item_id, $key );
+
 		if ( ! $key ) {
 			$response['error'] = esc_html__( 'Please enter a license key.', 'business-directory-plugin' );
 			wp_send_json( $response );
 		}
-
-		// Store the new license key. This clears stored information about the license.
-		wpbdp_set_option( 'license-key-' . $item_type . '-' . $item_id, $key );
 
 		$result = $this->license_action( $item_type, $item_id, 'activate', $key );
 
@@ -845,7 +845,7 @@ class WPBDP_Licensing {
 
 			$response = array(
 				'success' => false,
-				'error'   => sprintf( _x( 'Could not activate license: %s.', 'licensing', 'business-directory-plugin' ), $result->get_error_message() ),
+				'error'   => sprintf( __( 'Could not activate license: %s.', 'business-directory-plugin' ), $result->get_error_message() ),
 			);
 		} else {
 			$response = array(
@@ -864,7 +864,7 @@ class WPBDP_Licensing {
 	}
 
 	public function ajax_deactivate_license() {
-		WPBDP_App_Helper::permission_check( 'edit_posts' );
+		WPBDP_App_Helper::permission_check();
 		check_ajax_referer( 'license activation', 'nonce' );
 
 		$setting_id = wpbdp_get_var( array( 'param' => 'setting' ), 'post' );

@@ -7,7 +7,7 @@ class WPBDP_List_Layout {
 	}
 
 	public function register_settings( $settings ) {
-		$images = plugins_url( '/images/', dirname( __FILE__ ) );
+		$images = plugins_url( '/images/', __DIR__ );
 		wpbdp_register_setting(
 			array(
 				'id'      => 'list-layout',

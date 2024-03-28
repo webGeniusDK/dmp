@@ -149,7 +149,7 @@ add_action( 'widgets_init', 'ipdk_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ipdk_scripts() {
-	wp_enqueue_style( 'ipdk-fonts', 'https://fonts.googleapis.com/css2?family=Khand:wght@400;500;600&family=Rubik:wght@300;400;500;600&display=swap', array(), null );
+	wp_enqueue_style( 'ipdk-fonts', 'https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&family=Rubik:wght@300;400;500;600&display=swap', array(), null );
     function choose_file_type() {
         if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
             $file_type = '';
@@ -218,8 +218,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 function add_container_start() {
-	get_template_part( 'template-parts/content', 'hero-section-video-strip', array( 'video-inner-content' => '<h1 class="hero-title">Tilføj annonce</h1>' ) );
-
 	echo '<div class="container">';
 }
 add_action('wpbdp_before_submit_listing_page', 'add_container_start', 20);

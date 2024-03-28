@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/business-"
 "directory-premium\n"
-"POT-Creation-Date: 2022-11-14 18:22:34+00:00\n"
+"POT-Creation-Date: 2024-01-30 16:41:59+00:00\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -186,7 +186,7 @@ msgstr ""
 msgid "Oops! That is the wrong license key for this plugin."
 msgstr ""
 
-#: classes/class-wpbdp-pro-spam.php:176
+#: classes/class-wpbdp-pro-spam.php:178
 msgid "Your entry appears to be blocked spam!"
 msgstr ""
 
@@ -263,24 +263,24 @@ msgstr ""
 msgid "Activate"
 msgstr "Attiva"
 
-#: models/class-wpbdp-plugin-api.php:111
+#: models/class-wpbdp-plugin-api.php:115
 #, fuzzy
 msgid "Your License Key was invalid"
 msgstr "La chiave di licenza non è valida"
 
 #. translators: %1$s: Start link HTML, %2$s: End link HTML
-#: models/class-wpbdp-plugin-api.php:115
+#: models/class-wpbdp-plugin-api.php:119
 msgid ""
 "You had an error communicating with the Business Directory API. %1$sClick "
 "here%2$s for more information."
 msgstr ""
 
-#: models/class-wpbdp-plugin-api.php:118
+#: models/class-wpbdp-plugin-api.php:122
 msgid "You had an HTTP error connecting to the Business Directory API"
 msgstr ""
 
 #. translators: %1$s: Error code, %2$s: Error message
-#: models/class-wpbdp-plugin-api.php:130
+#: models/class-wpbdp-plugin-api.php:134
 msgid "There was a %1$s error: %2$s"
 msgstr ""
 
@@ -350,7 +350,7 @@ msgstr ""
 msgid "No Fee Plan"
 msgstr ""
 
-#: views/widgets/dashboard-widget.php:41
+#: views/widgets/dashboard-widget.php:40
 msgid "Free"
 msgstr ""
 

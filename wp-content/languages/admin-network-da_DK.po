@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.4.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-14 08:24:07+0000\n"
+"PO-Revision-Date: 2024-01-20 10:01:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
 "Language: da_DK\n"
 "Project-Id-Version: WordPress - 6.4.x - Development - Administration - Network Admin\n"
 
@@ -22,6 +22,22 @@ msgstr "Tabel sorteret efter brugerregistreret dato."
 #: wp-admin/includes/class-wp-ms-themes-list-table.php:346
 msgid "Table ordered by Theme Name."
 msgstr "Tabel sorteret efter tema navn."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:404
+msgid "Table ordered by Site Registered Date."
+msgstr "Tabel sorteret efter webstedsregistreret dato."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:403
+msgid "Table ordered by Last Updated."
+msgstr "Tabel sorteret efter sidst opdateret."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:398
+msgid "Table ordered by Site Path."
+msgstr "Tabel sorteret efter webstedssti."
+
+#: wp-admin/includes/class-wp-ms-sites-list-table.php:395
+msgid "Table ordered by Site Domain Name."
+msgstr "Tabel sorteret efter websteds domænenavn."
 
 #: wp-admin/includes/network.php:697
 msgid "https://wordpress.org/documentation/article/nginx/"

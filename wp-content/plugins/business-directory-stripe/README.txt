@@ -5,7 +5,7 @@ Tags: business directory,classifieds,ads
 Requires at least: 5.5.4
 Tested up to: 5.7.5
 Last Updated: 2020-Oct-21
-Stable tag: 5.4
+Stable tag: 5.5
 
 == Description ==
 This plugins add support for Stripe as a payment method in Business Directory Plugin.

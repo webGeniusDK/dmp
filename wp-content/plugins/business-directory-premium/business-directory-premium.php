@@ -3,7 +3,7 @@
  * Plugin Name: Business Directory Premium
  * Plugin URI: https://businessdirectoryplugin.com
  * Description: One Business Directory Plugin to rule them all.
- * Version: 5.6.1
+ * Version: 5.6.2
  * Author: Business Directory Team
  * Author URI: https://businessdirectoryplugin.com
  * Text Domain: wpbdp-pro
@@ -91,7 +91,7 @@ function wpbdp_premium_load_license( $args ) {
 add_action( 'wpbdp_register_group', 'wpbdp_premium_load_license' );
 
 function wpbdp_premium_plugin_url() {
-	return plugins_url( '', dirname( __FILE__ ) . '/' . basename( __FILE__ ) );
+	return plugins_url( '', __DIR__ . '/' . basename( __FILE__ ) );
 }
 
 function wpbdp_premium_autoloader( $class_name ) {
@@ -136,9 +136,13 @@ function wpbdp_premium_autoloader( $class_name ) {
 	}
 
 	$file     = 'class-' . str_replace( '_', '-', strtolower( $class_name ) ) . '.php';
-	$filepath = dirname( __FILE__ ) . '/' . $classes[ $class_name ] . '/' . $file;
+	$filepath = __DIR__ . '/' . $classes[ $class_name ] . '/' . $file;
 	if ( file_exists( $filepath ) ) {
 		require $filepath;
 	}
 }
 spl_autoload_register( 'wpbdp_premium_autoloader' );
+
+function wpbdp_user_max_columns() {
+	return apply_filters( 'wpbdp_table_max_columns', 6 );
+}

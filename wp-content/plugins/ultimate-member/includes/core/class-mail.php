@@ -305,7 +305,7 @@ if ( ! class_exists( 'um\core\Mail' ) ) {
 				 * }
 				 * add_filter( 'um_email_template_body_attrs', 'my_email_template_body_attrs', 10, 3 );
 				 */
-				$body_attrs = apply_filters( 'um_email_template_body_attrs', 'style="background: #f2f2f2;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;"', $slug, $args );
+				$body_attrs = apply_filters( 'um_email_template_body_attrs', 'style="background: #fff;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;"', $slug, $args );
 				?>
 
 				<body <?php echo $body_attrs; ?>>
@@ -351,8 +351,8 @@ if ( ! class_exists( 'um\core\Mail' ) ) {
 			 */
 			$message = apply_filters( 'um_email_send_message_content', $message, $slug, $args );
 
-			add_filter( 'um_template_tags_patterns_hook', array( &$this, 'add_placeholder' ) );
-			add_filter( 'um_template_tags_replaces_hook', array( &$this, 'add_replace_placeholder' ) );
+//			add_filter( 'um_template_tags_patterns_hook', array( &$this, 'add_placeholder' ) );
+//			add_filter( 'um_template_tags_replaces_hook', array( &$this, 'add_replace_placeholder' ) );
 
 			// Convert tags in email template.
 			return um_convert_tags( $message, $args );
@@ -421,8 +421,8 @@ if ( ! class_exists( 'um\core\Mail' ) ) {
 			$mail_from_addr    = UM()->options()->get( 'mail_from_addr' ) ? UM()->options()->get( 'mail_from_addr' ) : get_bloginfo( 'admin_email' );
 			$this->headers     = 'From: ' . stripslashes( $mail_from ) . ' <' . $mail_from_addr . '>' . "\r\n";
 
-			add_filter( 'um_template_tags_patterns_hook', array( UM()->mail(), 'add_placeholder' ) );
-			add_filter( 'um_template_tags_replaces_hook', array( UM()->mail(), 'add_replace_placeholder' ) );
+			add_filter( 'um_template_tags_patterns_hook', array( $this, 'add_placeholder' ) );
+			add_filter( 'um_template_tags_replaces_hook', array( $this, 'add_replace_placeholder' ) );
 
 			/**
 			 * Filters email notification subject.
@@ -623,6 +623,8 @@ if ( ! class_exists( 'um\core\Mail' ) ) {
 			$placeholders[] = '{login_url}';
 			$placeholders[] = '{password}';
 			$placeholders[] = '{account_activation_link}';
+			$placeholders[] = '{action_url}';
+			$placeholders[] = '{action_title}';
 			return $placeholders;
 		}
 
@@ -641,6 +643,16 @@ if ( ! class_exists( 'um\core\Mail' ) ) {
 			$replace_placeholders[] = um_get_core_page( 'login' );
 			$replace_placeholders[] = esc_html__( 'Your set password', 'ultimate-member' );
 			$replace_placeholders[] = um_user( 'account_activation_link' );
+
+			$set_password_required = get_user_meta( um_user( 'ID' ), 'um_set_password_required', true );
+			if ( empty( $set_password_required ) || 'pending' === um_user( 'status' ) ) {
+				$replace_placeholders[] = um_get_core_page( 'login' );
+				$replace_placeholders[] = esc_html__( 'Login to our site', 'ultimate-member' );
+			} else {
+				$replace_placeholders[] = um_user( 'password_reset_link' );
+				$replace_placeholders[] = esc_html__( 'Set your password', 'ultimate-member' );
+			}
+
 			return $replace_placeholders;
 		}
 	}

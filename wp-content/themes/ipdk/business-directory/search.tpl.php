@@ -1,4 +1,5 @@
-<?php get_template_part( 'template-parts/content', 'hero-section-video-strip.php' ); ?>
+
+
 <div id="wpbdp-search-page" class="wpbdp-search-page businessdirectory-search businessdirectory wpbdp-page <?php echo $_class; ?>">
 
 <div class="container">

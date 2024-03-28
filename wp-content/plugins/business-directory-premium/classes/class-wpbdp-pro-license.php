@@ -49,7 +49,7 @@ class WPBDP_Pro_License {
 		);
 
 		ob_start();
-		include dirname( dirname( __FILE__ ) ) . '/views/license/license-box.php';
+		include dirname( __DIR__ ) . '/views/license/license-box.php';
 		$html = ob_get_contents();
 		ob_end_clean();
 

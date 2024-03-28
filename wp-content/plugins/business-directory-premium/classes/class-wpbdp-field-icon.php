@@ -401,7 +401,7 @@ class WPBDP_Field_Icon {
 	public function icon_selector( $field, $hidden_fields ) {
 		$show_icon_field = $field->has_display_flag( 'icon' ) || $field->has_display_flag( 'fieldlabelicon' ) || $field->has_display_flag( 'valueicon' );
 
-		include dirname( dirname( __FILE__ ) ) . '/views/fields/icon-selector.php';
+		include dirname( __DIR__ ) . '/views/fields/icon-selector.php';
 	}
 
 	/**

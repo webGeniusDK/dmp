@@ -1,15 +1,15 @@
-# Copyright (C) 2023 Business Directory Team
+# Copyright (C) 2024 Business Directory Team
 # This file is distributed under the same license as the Business Directory Premium package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Business Directory Premium 5.6.1\n"
+"Project-Id-Version: Business Directory Premium 5.6.2\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/business-directory-premium\n"
-"POT-Creation-Date: 2023-10-04 22:25:38+00:00\n"
+"POT-Creation-Date: 2024-01-30 16:41:59+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
@@ -155,7 +155,7 @@ msgstr ""
 msgid "Oops! That is the wrong license key for this plugin."
 msgstr ""
 
-#: classes/class-wpbdp-pro-spam.php:176
+#: classes/class-wpbdp-pro-spam.php:178
 msgid "Your entry appears to be blocked spam!"
 msgstr ""
 
@@ -230,22 +230,22 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: models/class-wpbdp-plugin-api.php:111
+#: models/class-wpbdp-plugin-api.php:115
 msgid "Your License Key was invalid"
 msgstr ""
 
-#: models/class-wpbdp-plugin-api.php:115
+#: models/class-wpbdp-plugin-api.php:119
 #. translators: %1$s: Start link HTML, %2$s: End link HTML
 msgid ""
 "You had an error communicating with the Business Directory API. %1$sClick "
 "here%2$s for more information."
 msgstr ""
 
-#: models/class-wpbdp-plugin-api.php:118
+#: models/class-wpbdp-plugin-api.php:122
 msgid "You had an HTTP error connecting to the Business Directory API"
 msgstr ""
 
-#: models/class-wpbdp-plugin-api.php:130
+#: models/class-wpbdp-plugin-api.php:134
 #. translators: %1$s: Error code, %2$s: Error message
 msgid "There was a %1$s error: %2$s"
 msgstr ""
@@ -314,7 +314,7 @@ msgstr ""
 msgid "No Fee Plan"
 msgstr ""
 
-#: views/widgets/dashboard-widget.php:41
+#: views/widgets/dashboard-widget.php:40
 msgid "Free"
 msgstr ""
 

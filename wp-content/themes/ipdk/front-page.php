@@ -19,7 +19,7 @@ global $post;
 
     <main id="primary" class="site-main">
         <?php get_template_part( 'template-parts/content', 'favorite-listing-section' ); ?>
-        <section class="page-section listings-section">
+        <section class="listings-section">
             <div class="section-features">
 				<?php
 				while ( have_posts() ) :

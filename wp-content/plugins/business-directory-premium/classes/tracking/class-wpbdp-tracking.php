@@ -104,7 +104,7 @@ class WPBDP_Tracking {
 			return;
 		}
 
-		$can_save = ! current_user_can( 'administrator' ) || wpbdp_get_option( 'listings-stats-admin-enabled' );
+		$can_save = ! current_user_can( 'manage_options' ) || wpbdp_get_option( 'listings-stats-admin-enabled' );
 		if ( $can_save ) {
 			$listing    = get_post();
 			$ip         = WPBDP_IP_Helper::get_user_ip();

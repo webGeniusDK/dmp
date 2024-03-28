@@ -24,9 +24,9 @@ foreach ( $fields->not( 'social' ) as $field ) {
 		// Add a placeholder when there is an extra column in the header.
 		if ( isset( $wpbdp_columns[ $shown ] ) && $wpbdp_columns[ $shown ] !== $field->id ) {
 			echo '<div></div>';
-			++ $shown;
+			++$shown;
 		}
-		++ $shown;
+		++$shown;
 		$html = $field->html;
 		if ( ! $html ) {
 			echo '<div></div>';

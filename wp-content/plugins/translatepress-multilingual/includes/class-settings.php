@@ -443,7 +443,6 @@ class TRP_Settings{
             'block-crawlers'                    => 'yes',
             'automatically-translate-slug'      => 'yes',
             'machine_translation_counter_date'  => date ("Y-m-d" ),
-            'machine_translation_counter'       => 0,
             'machine_translation_limit'         => 1000000
             /*
              * These settings are merged into the saved DB option.
@@ -480,7 +479,7 @@ class TRP_Settings{
             $iso_codes          = $this->trp_languages->get_iso_codes( $all_language_codes, false );
 
             $tp_data = get_option('trp_db_stored_data', array() );
-            $languages_that_support_formality = isset( $tp_data['trp_mt_supported_languages']['deepl'] ) ? $tp_data['trp_mt_supported_languages']['deepl']['formality-supported-languages'] : '' ;
+            $languages_that_support_formality = ( isset( $tp_data['trp_mt_supported_languages']['deepl'] ) && isset( $tp_data['trp_mt_supported_languages']['deepl']['formality-supported-languages'] ) ) ? $tp_data['trp_mt_supported_languages']['deepl']['formality-supported-languages'] : '' ;
 
             wp_localize_script( 'trp-settings-script', 'trp_url_slugs_info', array( 'iso_codes'                         => $iso_codes,
                                                                                                       'languages_that_support_formality'  => $languages_that_support_formality,

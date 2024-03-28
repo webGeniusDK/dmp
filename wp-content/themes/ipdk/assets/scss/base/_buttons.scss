@@ -26,6 +26,7 @@ a.button {
 
 	&.large {
 		@include font-sm();
+		line-height: 1;
 	}
 	&.secondary {
 		background: var(--color-button-secondary-bg);

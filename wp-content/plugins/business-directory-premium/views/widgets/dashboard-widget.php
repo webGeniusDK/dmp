@@ -33,15 +33,13 @@
 				<td><?php echo esc_html( $listing_object->get_status_label() ); ?></td>
 				<td>
 					<?php
-						$plan = $listing_object->get_fee_plan();
+					$plan = $listing_object->get_fee_plan();
 					if ( ! $plan ) {
 						esc_html_e( 'No Fee Plan', 'wpbdp-pro' );
+					} elseif ( 0.0 == $plan->fee_price ) {
+						esc_html_e( 'Free', 'wpbdp-pro' );
 					} else {
-						if ( 0.0 == $plan->fee_price ) {
-							esc_html_e( 'Free', 'wpbdp-pro' );
-						} else {
-							echo esc_html( $plan->fee_price );
-						}
+						echo esc_html( $plan->fee_price );
 					}
 					?>
 				</td>

@@ -314,17 +314,14 @@ final class WPBDP__Settings__Bootstrap {
 
 		// Search.
 		wpbdp_register_settings_group( 'search_settings', __( 'Searching', 'business-directory-plugin' ), 'listings' );
+
+		// Deprecated.
 		wpbdp_register_setting(
 			array(
 				'id'      => 'search-form-in-results',
-				'type'    => 'radio',
-				'name'    => __( 'Display advanced search form', 'business-directory-plugin' ),
+				'type'    => 'hidden',
+				'class'   => 'hidden',
 				'default' => 'above',
-				'options' => array(
-					'above' => _x( 'Above results', 'admin settings', 'business-directory-plugin' ),
-					'below' => _x( 'Below results', 'admin settings', 'business-directory-plugin' ),
-					'none'  => _x( 'Don\'t show with results', 'admin settings', 'business-directory-plugin' ),
-				),
 				'group'   => 'search_settings',
 			)
 		);
@@ -1275,7 +1272,7 @@ final class WPBDP__Settings__Bootstrap {
 
 		return sprintf(
 			/* translators: %1$s: gateway name, %2$s: explanation string */
-			_x( 'AED currency is not supported by %1$s. %2$s', 'admin settings', 'business-directory-plugin' ),
+			__( 'AED currency is not supported by %1$s. %2$s', 'business-directory-plugin' ),
 			'<b>' . implode( ' or ', $aed_usupported_gateways ) . '</b>',
 			_n(
 				'If you are using this gateway, we recommend you disable it if you wish to collect payments in this currency.',
@@ -1463,10 +1460,10 @@ final class WPBDP__Settings__Bootstrap {
 					'subject' => '[[site-title]] Contact via "[listing]"',
 					'body'    => '' .
 								/* translators: %s: url shortcode */
-								sprintf( _x( 'You have received a reply from your listing at %s.', 'contact email', 'business-directory-plugin' ), '[listing-url]' ) . "\n\n" .
+								sprintf( __( 'You have received a reply from your listing at %s.', 'business-directory-plugin' ), '[listing-url]' ) . "\n\n" .
 
 								/* translators: %s: name shortcode */
-								sprintf( _x( 'Name: %s', 'contact email', 'business-directory-plugin' ), '[name]' ) . "\n" .
+								sprintf( __( 'Name: %s', 'business-directory-plugin' ), '[name]' ) . "\n" .
 
 								/* translators: %s: email shortcode */
 								sprintf( __( 'Email: %s', 'business-directory-plugin' ), '[email]' ) . "\n" .
@@ -1478,7 +1475,7 @@ final class WPBDP__Settings__Bootstrap {
 								'[message]' . "\n\n" .
 
 								/* translators: %s: date shortcode */
-								sprintf( _x( 'Time: %s', 'contact email', 'business-directory-plugin' ), '[date]' ),
+								sprintf( __( 'Time: %s', 'business-directory-plugin' ), '[date]' ),
 				),
 				'placeholders' => array(
 					'listing-url' => _x( 'Listing\'s URL', 'admin settings', 'business-directory-plugin' ),
@@ -1700,7 +1697,7 @@ final class WPBDP__Settings__Bootstrap {
 	 * @since v5.9
 	 */
 	private static function uninstall_section() {
-		if ( ! current_user_can( 'manage_options' ) ) {
+		if ( ! wpbdp_user_is_admin() ) {
 			return;
 		}
 

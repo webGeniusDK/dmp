@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 6.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-12-07 09:43:49+0000\n"
+"PO-Revision-Date: 2024-01-20 10:05:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"X-Generator: GlotPress/4.0.0-beta.2\n"
 "Language: da_DK\n"
 "Project-Id-Version: WordPress - 6.4.x - Development - Administration\n"
 
@@ -37,8 +37,30 @@ msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "Europe/Copenhagen"
 
+#: wp-admin/my-sites.php:81 wp-admin/network/menu.php:53
+#: wp-admin/network/site-new.php:182 wp-admin/network/site-new.php:192
+#: wp-admin/network/sites.php:381
+msgid "Add New Site"
+msgstr "Tilføj nyt websted"
+
+#: wp-admin/menu.php:305 wp-admin/plugins.php:752 wp-admin/network/menu.php:106
+msgid "Add New Plugin"
+msgstr "Tilføj nyt plugin"
+
+#: wp-admin/includes/image-edit.php:80
+msgid "Rotate 180&deg;"
+msgstr "Roter 180&deg;"
+
+#: wp-admin/includes/image-edit.php:79
+msgid "Rotate 90&deg; right"
+msgstr "Roter 90&deg; mod højre"
+
+#: wp-admin/includes/image-edit.php:78
+msgid "Rotate 90&deg; left"
+msgstr "Roter 90&deg; mod venstre"
+
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:68 wp-admin/about.php:93
+#: wp-admin/about.php:68 wp-admin/about.php:94 wp-admin/about.php:120
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -317,6 +339,14 @@ msgstr "Aktuel tid"
 msgid "Ordered by Comment Date, descending."
 msgstr "Sorteret efter kommentar-dato, faldende."
 
+#: wp-admin/includes/class-wp-comments-list-table.php:547
+msgid "Table ordered by Post Replied To."
+msgstr "Tabel sorteret efter indlægssvar."
+
+#: wp-admin/includes/class-wp-comments-list-table.php:546
+msgid "Table ordered by Comment Author."
+msgstr "Tabel sorteret efter kommentarforfatter."
+
 #: wp-admin/includes/class-core-upgrader.php:37
 msgid "Attempting to restore the previous version."
 msgstr "Forsøger at gendanne den tidligere version."
@@ -324,6 +354,10 @@ msgstr "Forsøger at gendanne den tidligere version."
 #: wp-admin/includes/class-bulk-upgrader-skin.php:163
 msgid "More details."
 msgstr "Flere detaljer."
+
+#: wp-admin/contribute.php:101
+msgid "Find your team &rarr;"
+msgstr "Find dit hold &rarr;"
 
 #: wp-admin/contribute.php:99
 msgid "Shape the future of the web with WordPress"
@@ -537,12 +571,12 @@ msgid "<a href=\"https://wordpress.org/documentation/article/customizer/\">Docum
 msgstr "<a href=\"https://wordpress.org/documentation/article/customizer/\">Dokumentation om Tilpasser</a>"
 
 #. translators: The localized WordPress download URL.
-#: wp-admin/about.php:406
+#: wp-admin/about.php:433
 msgid "https://wordpress.org/download/"
 msgstr "https://da.wordpress.org/download/"
 
 #. translators: %s: The major version of WordPress for this branch.
-#: wp-admin/about.php:403
+#: wp-admin/about.php:430
 msgid "This is the final release of WordPress %s"
 msgstr "Dette er den endelige udgave af WordPress %s"
 
@@ -878,17 +912,17 @@ msgid "Reach out to WordPress Core developers to ensure you'll never have this p
 msgstr "Tag fat i WordPress Core-udviklere for at sikre, at du aldrig får dette problem igen."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:400
+#: wp-admin/about.php:427
 msgid "Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Vigtigt! Din version af WordPress (%1$s) vil ikke længere modtage sikkerhedsopdateringer i den nærmeste fremtid. For at holde dit websted sikkert, bedes du <a href=\"%2$s\">opdatere til den nyeste version af WordPress</a>."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:397
+#: wp-admin/about.php:424
 msgid "Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Vigtig! Din version af WordPress (%1$s) understøttes ikke længere, du vil ikke modtage sikkerhedsopdateringer til dit websted. For at holde dit websted sikkert skal du <a href=\"%2$s\">opdatere til den nyeste version af WordPress</a>."
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:271
+#: wp-admin/about.php:298
 msgid "Learn more about WordPress %s"
 msgstr "Lær mere om WordPress %s"
 
@@ -1796,7 +1830,7 @@ msgstr "Tilføj en nyt applikation adgangskode"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Kræves for at oprette en applikation adgangskode, men ikke for at opdatere brugeren."
 
-#: wp-admin/about.php:341
+#: wp-admin/about.php:368
 msgid "Go to Updates"
 msgstr "Gå til opdateringer"
 
@@ -2125,7 +2159,7 @@ msgstr "\"%1$s\" værdien er mindre end \"%2$s\"."
 msgid "Environment type"
 msgstr "Miljøtype"
 
-#: wp-admin/about.php:257
+#: wp-admin/about.php:284
 msgid "Accessibility"
 msgstr "Tilgængelighed"
 
@@ -3769,7 +3803,7 @@ msgstr "https://make.wordpress.org/hosting/handbook/handbook/server-environment/
 msgid "The WordPress Hosting Team maintains a list of those modules, both recommended and required, in <a href=\"%1$s\" %2$s>the team handbook%3$s</a>."
 msgstr "WordPress' hostingteam opretholder en liste over de moduler, både anbefalede og nødvendige, i \"<a href=\"%1$s\" %2$s>teamhåndbogen%3$s</a>\"."
 
-#: wp-admin/about.php:247 wp-admin/includes/class-wp-site-health.php:259
+#: wp-admin/about.php:274 wp-admin/includes/class-wp-site-health.php:259
 #: wp-admin/includes/class-wp-site-health.php:737
 #: wp-admin/includes/class-wp-site-health.php:884
 #: wp-admin/includes/class-wp-site-health.php:1122
@@ -5037,7 +5071,7 @@ msgstr "Tilføj til: %s"
 msgid "Track %s."
 msgstr "Spornummer %s."
 
-#: wp-admin/includes/schema.php:1282
+#: wp-admin/includes/schema.php:1280
 msgid "My Network"
 msgstr "Mit netværk"
 
@@ -6596,8 +6630,8 @@ msgstr "Du har desværre ikke tilladelse til at tilføje brugere til dette netv�
 msgid "Sorry, you are not allowed to edit this changeset."
 msgstr "Beklager, du har ikke ret til at redigere dette ændringssæt."
 
-#: wp-admin/includes/ajax-actions.php:4329 wp-admin/update.php:207
-#: wp-admin/update.php:230
+#: wp-admin/includes/ajax-actions.php:4329 wp-admin/update.php:211
+#: wp-admin/update.php:234
 msgid "Sorry, you are not allowed to update themes for this site."
 msgstr "Du har desværre ikke tilladelse til at opdatere temaer på dette websted."
 
@@ -6826,7 +6860,7 @@ msgid "Sorry, you are not allowed to delete themes on this site."
 msgstr "Du har desværre ikke tilladelse til at slette temaer på dette websted."
 
 #: wp-admin/includes/ajax-actions.php:4202 wp-admin/theme-install.php:16
-#: wp-admin/update.php:258 wp-admin/update.php:300 wp-admin/update.php:334
+#: wp-admin/update.php:262 wp-admin/update.php:304 wp-admin/update.php:342
 msgid "Sorry, you are not allowed to install themes on this site."
 msgstr "Du har desværre ikke tilladelse til at installere temaer på dette websted."
 
@@ -7304,7 +7338,7 @@ msgid "(Currently set to: %s)"
 msgstr "(på nuværende tidspunkt sat til: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:371
+#: wp-admin/about.php:398
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Version %s</strong> tog hånd om ét sikkerhedsproblem."
 
@@ -7316,15 +7350,15 @@ msgstr "https://da.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Profilbillede"
 
-#: wp-admin/about.php:48 wp-admin/about.php:368
+#: wp-admin/about.php:48 wp-admin/about.php:395
 msgid "Maintenance and Security Releases"
 msgstr "Vedligeholdelses- og sikkerhedsudgivelser"
 
-#: wp-admin/about.php:365
+#: wp-admin/about.php:392
 msgid "Security Releases"
 msgstr "Sikkerhedsudgivelser"
 
-#: wp-admin/about.php:362
+#: wp-admin/about.php:389
 msgid "Maintenance Releases"
 msgstr "Vedligeholdelsesudgivelser"
 
@@ -10472,13 +10506,15 @@ msgstr "Vis værktøjslinje på webstedet"
 
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:65 wp-admin/about.php:90 wp-admin/about.php:394
+#: wp-admin/about.php:65 wp-admin/about.php:91 wp-admin/about.php:117
+#: wp-admin/about.php:421
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Hvis du vil vide mere, så læs <a href=\"%s\">udgivelsesnoterne</a>."
 
+#. translators: 1: WordPress version number, 2: Plural number of bugs.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:388
+#: wp-admin/about.php:53 wp-admin/about.php:415
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> lukkede nogle sikkerhedshuller og rettede %2$s fejl."
@@ -10487,33 +10523,33 @@ msgstr[1] "<strong>Version %1$s</strong> lukkede nogle sikkerhedshuller og rette
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:78 wp-admin/about.php:382
+#: wp-admin/about.php:79 wp-admin/about.php:409
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> lukkede et sikkerhedshul og rettede %2$s fejl."
 msgstr[1] "<strong>Version %1$s</strong> lukkede et sikkerhedshul og rettede %2$s fejl."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:53 wp-admin/about.php:376
+#: wp-admin/about.php:105 wp-admin/about.php:403
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Version %1$s</strong> rettede %2$s fejl."
 msgstr[1] "<strong>Version %1$s</strong> rettede %2$s fejl."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:373
+#: wp-admin/about.php:400
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Version %s</strong> tog sig af nogle sikkerhedsproblemer."
 
-#: wp-admin/about.php:367
+#: wp-admin/about.php:394
 msgid "Maintenance and Security Release"
 msgstr "Vedligeholdelse- og sikkerhedsudgivelse"
 
-#: wp-admin/about.php:364
+#: wp-admin/about.php:391
 msgid "Security Release"
 msgstr "Sikkerhedsudgivelse"
 
-#: wp-admin/about.php:361
+#: wp-admin/about.php:388
 msgid "Maintenance Release"
 msgstr "Vedligeholdelsesudgivelse"
 
@@ -10774,11 +10810,11 @@ msgstr "<strong>Rediger</strong> tager dig til redigeringsskærmbilledet for ind
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Da dette er en Multisite-installation, kan du tilføje konti, der allerede findes på netværket, ved at angive et brugernavn eller e-mailadresse, og tildele brugeren en rolle. For at få flere muligheder, såsom at angive en adgangskode, skal du være en netværksadministrator og føre markøren over linket til en eksisterende brugers navn. Derefter kan du gå til Rediger brugerprofil under Netværkadministrator > Alle brugere."
 
-#: wp-admin/about.php:348
+#: wp-admin/about.php:375
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Gå til Kontrolpanel &rarr; Forside"
 
-#: wp-admin/about.php:341
+#: wp-admin/about.php:368
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Tilbage til Kontrolpanel &rarr; Opdateringer"
 
@@ -11410,7 +11446,7 @@ msgstr "WordPress > Opdater"
 msgid "There is a new version of %1$s available. <a href=\"%2$s\" %3$s>View version %4$s details</a>. <em>Automatic update is unavailable for this plugin.</em>"
 msgstr "Der er en ny version af %1$s til rådighed. <a href=\"%2$s\" %3$s>Vis detaljer for version %4$s</a>. <em>Automatisk opdatering er ikke muligt for dette plugin.</em>"
 
-#: wp-admin/includes/class-theme-upgrader-skin.php:44 wp-admin/update.php:215
+#: wp-admin/includes/class-theme-upgrader-skin.php:44 wp-admin/update.php:219
 msgid "Update Theme"
 msgstr "Opdater tema"
 
@@ -12171,12 +12207,12 @@ msgid "No items."
 msgstr "Ingen elementer."
 
 #. translators: %s: Asterisk symbol (*).
-#: wp-admin/includes/schema.php:1143
+#: wp-admin/includes/schema.php:1141
 msgid "To use a subdomain configuration, you must have a wildcard entry in your DNS. This usually means adding a %s hostname record pointing at your web server in your DNS configuration tool."
 msgstr "For at bruge subdomæne-indstillingerne, skal du have et jokertegn eller stjernealias anført i din DNS. Det betyder som regel, at du skal tilføje et %s til den hostname record, der peger på dit websted i din DNS-indstilling."
 
 #. translators: %s: Host name.
-#: wp-admin/includes/schema.php:1132
+#: wp-admin/includes/schema.php:1130
 msgid "The installer attempted to contact a random hostname (%s) on your domain."
 msgstr "Installeringsfunktionen forsøgte at kontakte et tilfældigt værtsnavn (%s) på dit domæne."
 
@@ -12367,28 +12403,28 @@ msgstr "Gem menu"
 msgid "Updating Theme %1$s (%2$d/%3$d)"
 msgstr "Opdaterer tema %1$s (%2$d/%3$d)"
 
-#: wp-admin/includes/schema.php:1147
+#: wp-admin/includes/schema.php:1145
 msgid "You can still use your site but any subdomain you create may not be accessible. If you know your DNS is correct, ignore this message."
 msgstr "Du kan stadig bruge dit websted, men kan måske ikke få adgang til de websteder du opretter. Hvis du er sikker på at dine DNS-indstillinger er korrekte, kan du se bort fra denne meddelelse."
 
 #. translators: %s: Error message.
-#: wp-admin/includes/schema.php:1137
+#: wp-admin/includes/schema.php:1135
 msgid "This resulted in an error message: %s"
 msgstr "Dette førte til en fejlmeddelelse: %s"
 
-#: wp-admin/includes/schema.php:1016
+#: wp-admin/includes/schema.php:1014
 msgid "You must provide a valid email address."
 msgstr "Du skal skrive en gyldig e-mailadresse."
 
-#: wp-admin/includes/schema.php:1005 wp-admin/includes/schema.php:1011
+#: wp-admin/includes/schema.php:1003 wp-admin/includes/schema.php:1009
 msgid "The network already exists."
 msgstr "Netværket findes allerede."
 
-#: wp-admin/includes/schema.php:998
+#: wp-admin/includes/schema.php:996
 msgid "You must provide a name for your network of sites."
 msgstr "Du skal anføre et navn til dit netværk af websteder."
 
-#: wp-admin/includes/schema.php:995
+#: wp-admin/includes/schema.php:993
 msgid "You must provide a domain name."
 msgstr "Du skal angive et domænenavn."
 
@@ -12449,7 +12485,7 @@ msgstr "WordPress-opdateringer"
 msgid "Edit menu item"
 msgstr "Rediger menupunkt"
 
-#: wp-admin/about.php:348 wp-admin/includes/network.php:166
+#: wp-admin/about.php:375 wp-admin/includes/network.php:166
 msgid "Go to Dashboard"
 msgstr "Gå til kontrolpanelet"
 
@@ -12779,27 +12815,27 @@ msgid "Your WordPress database is already up to date!"
 msgstr "Din WordPress-database er allerede opdateret!"
 
 #. translators: %s: File name.
-#: wp-admin/update.php:315
+#: wp-admin/update.php:323
 msgid "Installing theme from uploaded file: %s"
 msgstr "Installerer tema fra uploadet fil: %s"
 
 #: wp-admin/theme-install.php:60 wp-admin/theme-install.php:178
-#: wp-admin/theme-install.php:180 wp-admin/update.php:308
+#: wp-admin/theme-install.php:180 wp-admin/update.php:316
 msgid "Upload Theme"
 msgstr "Upload tema"
 
 #. translators: %s: Theme name and version.
-#: wp-admin/update.php:287
+#: wp-admin/update.php:291
 msgid "Installing Theme: %s"
 msgstr "Installerer temaet %s"
 
 #. translators: %s: File name.
-#: wp-admin/update.php:167
+#: wp-admin/update.php:171
 msgid "Installing plugin from uploaded file: %s"
 msgstr "Installerer plugin fra uploadet fil: %s"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:122
-#: wp-admin/plugin-install.php:150 wp-admin/update.php:160
+#: wp-admin/plugin-install.php:150 wp-admin/update.php:164
 msgid "Upload Plugin"
 msgstr "Upload plugin"
 
@@ -13561,7 +13597,7 @@ msgstr "Hej verden!"
 
 #. translators: %s: Site link.
 #. translators: First post content. %s: Site link.
-#: wp-admin/includes/schema.php:1295 wp-admin/includes/upgrade.php:196
+#: wp-admin/includes/schema.php:1293 wp-admin/includes/upgrade.php:196
 msgid "Welcome to %s. This is your first post. Edit or delete it, then start writing!"
 msgstr "Velkommen til %s. Dette er dit første indlæg. Rediger eller slet det og begynd derefter at skrive!"
 
@@ -13722,7 +13758,7 @@ msgstr "Deaktiver tilgængelighedstilstand"
 msgid "Enable accessibility mode"
 msgstr "Aktiver tilgængelighedstilstand"
 
-#: wp-admin/update.php:280
+#: wp-admin/update.php:284
 msgid "Install Themes"
 msgstr "Installer temaer"
 
@@ -13880,7 +13916,7 @@ msgstr "Lynrediger"
 msgid "Quick Edit"
 msgstr "Lynrediger"
 
-#: wp-admin/includes/schema.php:1128
+#: wp-admin/includes/schema.php:1126
 msgid "Warning! Wildcard DNS may not be configured correctly!"
 msgstr "Advarsel! DNS jokertegn er muligvis ikke korrekt indstillet!"
 
@@ -14788,8 +14824,8 @@ msgid "The uploaded file could not be moved to %s."
 msgstr "Den uploadede fil kunne ikke flyttes til %s."
 
 #: wp-admin/includes/class-file-upload-upgrader.php:57
-#: wp-admin/includes/class-file-upload-upgrader.php:96
-#: wp-admin/includes/class-file-upload-upgrader.php:112
+#: wp-admin/includes/class-file-upload-upgrader.php:120
+#: wp-admin/includes/class-file-upload-upgrader.php:136
 msgid "Please select a file"
 msgstr "Vælg venligst en fil"
 
@@ -14892,6 +14928,7 @@ msgstr "Deaktiver vedligeholdelsestilstand&#8230;"
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "Aktiverer vedligeholdelsestilstand&#8230;"
 
+#: wp-admin/includes/class-file-upload-upgrader.php:92
 #: wp-admin/includes/file.php:1666 wp-admin/includes/file.php:1864
 msgid "Incompatible Archive."
 msgstr "Inkompatibel pakke."

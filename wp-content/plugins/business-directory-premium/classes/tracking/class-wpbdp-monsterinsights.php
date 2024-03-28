@@ -89,7 +89,7 @@ class WPBDP_MonsterInsights {
 		<div class="error is-dismissible">
 			<p>
 				<?php
-				echo sprintf(
+				printf(
 					/* translators: %s: addon name */
 					esc_html__( 'Please install or update %1$s with version %2$s or newer to use the %3$s integration.', 'wpbdp-pro' ),
 					wp_kses_post( self::cta() ),

@@ -5,8 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class WPBDP_Plugin_Api {
 
-	protected $license = '';
-	protected $cache_key = '';
+	protected $license       = '';
+	protected $cache_key     = '';
 	protected $cache_timeout = '+6 hours';
 
 	/**
@@ -61,7 +61,7 @@ class WPBDP_Plugin_Api {
 	public function get_api_info() {
 		$url = $this->api_url();
 		if ( ! empty( $this->license ) ) {
-			$url .= '?l=' . urlencode( base64_encode( $this->license ) );
+			$url .= '?l=' . rawurlencode( base64_encode( $this->license ) );
 		}
 
 		$addons = $this->get_cached();
@@ -74,6 +74,10 @@ class WPBDP_Plugin_Api {
 			$addons = $response['body'];
 			if ( ! empty( $addons ) ) {
 				$addons = json_decode( $addons, true );
+				if ( ! is_array( $addons ) ) {
+					// Fallback in case of error.
+					$addons = array();
+				}
 
 				foreach ( $addons as $k => $addon ) {
 					if ( ! isset( $addon['categories'] ) ) {
@@ -112,7 +116,7 @@ class WPBDP_Plugin_Api {
 		if ( is_wp_error( $resp ) ) {
 			$link = 'https://businessdirectoryplugin.com/knowledge-base/installation-guide/';
 			/* translators: %1$s: Start link HTML, %2$s: End link HTML */
-			$message = sprintf( __( 'You had an error communicating with the Business Directory API. %1$sClick here%2$s for more information.', 'wpbdp-pro' ), '<a href="' . esc_url( $link ) . '" target="_blank">', '</a>' );
+			$message  = sprintf( __( 'You had an error communicating with the Business Directory API. %1$sClick here%2$s for more information.', 'wpbdp-pro' ), '<a href="' . esc_url( $link ) . '" target="_blank">', '</a>' );
 			$message .= ' ' . $resp->get_error_message();
 		} elseif ( 'error' === $body || is_wp_error( $body ) ) {
 			$message = __( 'You had an HTTP error connecting to the Business Directory API', 'wpbdp-pro' );
@@ -138,7 +142,7 @@ class WPBDP_Plugin_Api {
 	 * @since 5.0
 	 */
 	protected function api_url() {
-		return $this->store_url() . '/wp-json/s11edd/v1/updates/';
+		return $this->store_url() . 'wp-json/s11edd/v1/updates/';
 	}
 
 	/**
@@ -170,7 +174,7 @@ class WPBDP_Plugin_Api {
 		$plugin      = array();
 		if ( empty( $download_id ) && ! empty( $addons ) ) {
 			foreach ( $addons as $addon ) {
-				if ( strtolower( $license_plugin->plugin_name ) == strtolower( $addon['title'] ) ) {
+				if ( strtolower( $license_plugin->plugin_name ) === strtolower( $addon['title'] ) ) {
 					return $addon;
 				}
 			}
@@ -188,12 +192,12 @@ class WPBDP_Plugin_Api {
 	protected function get_cached() {
 		$cache = get_option( $this->cache_key );
 
-		if ( empty( $cache ) || empty( $cache['timeout'] ) || current_time( 'timestamp' ) > $cache['timeout'] ) {
+		if ( empty( $cache ) || empty( $cache['timeout'] ) || time() > $cache['timeout'] ) {
 			return false; // Cache is expired
 		}
 
 		$version     = wpbdp_get_version();
-		$for_current = isset( $cache['version'] ) && $cache['version'] == $version;
+		$for_current = isset( $cache['version'] ) && $cache['version'] === $version;
 		if ( ! $for_current ) {
 			// Force a new check.
 			return false;
@@ -207,8 +211,8 @@ class WPBDP_Plugin_Api {
 	 */
 	protected function set_cached( $addons ) {
 		$data = array(
-			'timeout' => strtotime( $this->cache_timeout, current_time( 'timestamp' ) ),
-			'value'   => json_encode( $addons ),
+			'timeout' => strtotime( $this->cache_timeout, time() ),
+			'value'   => wp_json_encode( $addons ),
 			'version' => wpbdp_get_version(),
 		);
 

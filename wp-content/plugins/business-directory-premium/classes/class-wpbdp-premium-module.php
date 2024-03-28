@@ -37,7 +37,7 @@ class WPBDP_Premium_Module {
 	 *
 	 * @var string
 	 */
-	public $version = '5.6.1';
+	public $version = '5.6.2';
 
 	public function __construct( $file = false ) {
 		$this->title               = 'Business Directory Premium';
@@ -189,13 +189,13 @@ class WPBDP_Premium_Module {
 	 * Load the translations.
 	 */
 	private function load_textdomain() {
-		$languages_dir = dirname( dirname( __FILE__ ) ) . '/languages';
+		$languages_dir = dirname( __DIR__ ) . '/languages';
 		load_plugin_textdomain( 'wpbdp-pro', false, $languages_dir );
 	}
 
 	public function enqueue_styles() {
 		$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$url = plugins_url( '/resources/bd' . $min . '.css', dirname( __FILE__ ) );
+		$url = plugins_url( '/resources/bd' . $min . '.css', __DIR__ );
 
 		wp_enqueue_style( 'wpbdp-pro', $url, array(), $this->version );
 	}

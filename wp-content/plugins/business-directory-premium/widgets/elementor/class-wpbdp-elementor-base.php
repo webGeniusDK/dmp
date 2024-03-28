@@ -101,7 +101,6 @@ abstract class WPBDP_Elementor_Base extends \Elementor\Widget_Base {
 	 * @since 5.2
 	 */
 	protected function additional_controls() {
-
 	}
 
 	/**

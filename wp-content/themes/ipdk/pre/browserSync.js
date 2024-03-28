@@ -6,7 +6,7 @@ browserSync.init({
 		key: '../webgenius.local+1-key.pem',
 		cert: '../webgenius.local+1.pem',
 	},
-	proxy: 'http://dmp.local',
+	proxy: 'https://dmp.local',
 	port: 3535,
 	injectChanges: true,
 	watchEvents: ['change', 'add', 'unlink', 'addDir', 'unlinkDir'],

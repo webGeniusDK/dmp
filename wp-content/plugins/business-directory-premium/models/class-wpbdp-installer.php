@@ -51,8 +51,8 @@ class WPBDP_Installer {
 			return;
 		}
 
-		include_once( ABSPATH . 'wp-admin/includes/class-wp-upgrader.php' );
-		include_once( ABSPATH . 'wp-admin/includes/plugin-install.php' );
+		include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
+		include_once ABSPATH . 'wp-admin/includes/plugin-install.php';
 
 		$api = plugins_api(
 			'plugin_information',

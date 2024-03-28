@@ -125,6 +125,8 @@ class WPBDP_Pro_Spam {
 		if ( function_exists( 'wp_check_comment_disallowed_list' ) ) {
 			return wp_check_comment_disallowed_list( $author, $email, $url, $content, $ip, $user_agent );
 		} else {
+			// WP 5.4 and below.
+			// phpcs:ignore WordPress.WP.DeprecatedFunctions
 			return wp_blacklist_check( $author, $email, $url, $content, $ip, $user_agent );
 		}
 	}
