@@ -23,7 +23,8 @@ wp-content/cache/*
 wp-content/cache/supercache/*
 wp-content/themes/ipdk/css/
 wp-content/themes/ipdk/style.css.map
-
+wp-content/themes/ipdk/style.css
+wp-content/themes/ipdk/style.min.css
 wp-content/themes/ipdk/style.css.min.map
 wp-content/themes/ipdk/gulp/wpgulp.config.js
 wp-content/themes/ipdk/cookie-policy-template.htm
